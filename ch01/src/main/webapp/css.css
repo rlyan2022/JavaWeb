@@ -1,0 +1,126 @@
+/* ovtime.com - book */
+*{margin:0; padding:0;}
+body {margin:0; padding:0; color:#000; font-size:12px; color:#123472; line-height:150%; font-family:"ו",Arial, Helvetica, sans-serif;}
+
+a:link {color:#123472; text-decoration:none;}
+#shenfenshibie {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+
+a:visited{color:#123472; text-decoration:none;}
+a:hover{color:#ff0000; text-decoration: underline;}
+a:active{color:#123472; text-decoration: underline;}
+
+
+#topexplain{width:938px; height:25px; line-height:25px; margin:0 auto; padding:0 0 0 30px; border-right:1px solid #ddd; border-bottom:1px solid #ddd; border-left:1px solid #ddd; background-color:#F0F0F0;}
+
+#topmenu{width:970px; height:110px; margin:0 auto;}
+#topmenu ul{margin:5px 0 0 80px; list-style:none;}
+#topmenu li{float:left;margin:0 30px; width:50px; height:80px; text-align:center;}
+#topmenu li.logo{width:221px;}
+
+
+#bookmunu{width:970px; height:58px; margin:0 auto; padding:0; background:url(images/munubg.gif) no-repeat; border-bottom:3px solid #D0D6E2;}
+.jsmenu{
+	height:29px;
+	margin:0;
+	float: right;
+	padding: 0;
+}
+.jsmenu ul{margin:0; padding:0; list-style:none;}
+.jsmenu ul li{float:left;margin:0 2px !important; margin:0 1px; text-align:center; display:block padding:0; width:93px; height:29px; line-height:29px; cursor:pointer;}
+.jsmenu ul li.active{font-weight:bold; background:url(images/munuthe1.gif) no-repeat;}
+.jsmenu ul li.normal{background:url(images/munuthe2.gif) no-repeat;}
+
+#conmenu{width:970px; height:29px; line-height:29px; margin:0; padding:0; text-align:center;}
+
+
+#indexfirst{width:970px; height:320px; margin:7px auto!important; margin:5px auto; padding:0;}
+#menunav{
+	float:left;
+	width:250px;
+	height:330px;
+	border:1px solid #AAB6CC;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0;
+	padding: 0;
+}
+#menunav2{
+	float:left;
+	width:326px;
+	height:188px;
+	border:1px solid #AAB6CC;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 5px;
+	margin-left: 0;
+	padding: 0;
+	position: absolute;
+	left: 444px;
+	top: 284px;
+}
+
+#menunav ul{ margin:0 5px; list-style:none; padding:0;}
+#menunav li{height:27px; line-height:27px; padding:0 0 0 10px; background:url(../images/bgdot.gif) repeat-x bottom;}
+#menunav li strong{color:#780820;}
+
+#thenew{float:right;width:710px; height:330px; border:1px solid #AAB6CC;}
+#therecom{
+	width:700px;
+	height:100px;
+s;
+	margin-top: 3px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	margin-left: 40px;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+.tit{height:27px; margin:1px; padding:0; background:url(images/index-titbg.gif) repeat-x;}
+.tit h1{float:left; height:19px; line-height:19px; text-align:center; width:126px; font-size:12px; margin:3px 0 0 20px; padding:5px 0 0 0; background:url(images/index-tith1.gif) no-repeat; display:block;}
+
+#ad1{float:left; width:450px; height:98px; margin:0; padding:0; border:1px solid #AAB6CC;}
+
+
+
+#indexsec{width:970px; height:auto; margin:5px auto 0 auto; padding:0;}
+.seleft{width:300px; height:430px; margin:0 0 5px 0; padding:0; border:1px solid #AAB6CC;}
+.seleft ul{margin:0 0 0 10px; padding:0; list-style:none;}
+.seleft ol{margin:0 0 0 40px; padding:0;}
+.seleft li{line-height:20px; margin:0; padding:0;}
+
+#seright{width:662px; margin:0; padding:0; float:right;}
+
+#search{width:660px; height:40px; border:1px solid #AAB6CC;}
+#search span{height:38px; line-height:38px; text-align:center; display:block; margin:1px; padding:0; background:url(images/index-searchbg.gif);}
+
+#menulist{float:right;width:660px; height:auto; margin:5px 0 !important; margin:3px 0; padding:0;}
+
+.mlist{width:325px; height:270px; margin:2px; padding:0; float:left;}
+.mlist ul{margin:5px 0 0 10px !important; margin:2px 0 0 10px; padding:0; list-style:none;}
+.mlist ul li{ line-height:24px;}
+.mlistin{height:27px; margin:1px; padding:0; background:url(images/index-titbg1.gif) bottom repeat-x;}
+.mlistin h1{float:left; height:19px; line-height:19px; text-align:center; width:126px; font-size:12px; margin:3px 0 0 20px; padding:5px 0 0 0; background:url(images/index-tith1.gif) no-repeat; display:block;}
+
+.copyright{width:970px; height:50px; margin:0 auto 5px auto; padding:0; border:1px solid #AAB6CC; display:block; clear:both;}
+.copyright ul{margin:0px; padding:0; list-style:none;}
+.copyright ul li{width:970px; height:25px; line-height:25px; text-align:center;}
+
+
+
+.end{width:970px; height:0; display:block; margin:0 auto; padding:0; font-size:0; line-height:0;}
+#yuangongxinxi {
+	padding-top: 40px;
+}
+#messageBox {
+	padding-top: 10px;
+	padding-left: 100px;
+
+}

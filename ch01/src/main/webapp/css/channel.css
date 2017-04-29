@@ -1,0 +1,33 @@
+/* ovtime.com - book */
+
+#place{width:940px; height:25px; line-height:25px; margin:5px auto; padding:0 0 0 30px; border:1px solid #AAB6CC;}
+
+#channelcont{width:970px; margin:0 auto; padding:0;}
+#channelright{width:300px; margin:0; padding:0; float:right;}
+#channelleft{float:left; width:970px; margin:0; padding:0;}
+.channelinleft{width:970px; margin:0 0 5px 0; padding:0; border:1px solid #AAB6CC;}
+.channelinleft dl{margin:2px 5px; padding:0;}
+.channelinleft dt{margin:0; padding:0; height:25px; font-weight:bold; line-height:25px;}
+.channelinleft dd.introduce{color:#666; border:none;margin:0 0 0 10px;}
+.channelinleft dd{margin:0; padding:0; line-height:20px; color:#999; border-bottom:1px dashed #AAB6CC;}
+.channeltit{height:25px; line-height:25px; text-align: right; margin:0 5px; padding:0 0 0 20px; background:url(../images/bgdot1.gif) repeat-x bottom; border-bottom:2px solid #D7DFEF; color:#123472; display:block;}
+.channeltit h1{float:left;font-size:12px; margin:0; padding:0;}
+
+
+
+#channellist{width:660px; height:867px; margin:0; padding:0; border:1px solid #AAB6CC;}
+#channellist dl{margin:2px 5px; padding:0;}
+#channellist dt{margin:0; padding:0; height:25px; font-weight:bold; line-height:25px;}
+#channellist dd.introduce{color:#666; border:none;margin:0 0 0 10px;}
+#channellist dd{margin:0; padding:0; line-height:18px; color:#999; border-bottom:1px dashed #AAB6CC;}
+#nextpage{width:650px; height:50px; line-height:50px; text-align:right;}
+
+
+#downtitle{width:660px; height:40px; line-height:40px; text-align:center; font-size:16px; font-weight:bold; color:#72123F;}
+#attribute{width:660px; height:104px; margin:0; padding:0;}
+#attribute ul{margin:0; padding:0; list-style:none;}
+#attribute li{width:288px; height:25px; line-height:25px; margin:0 1px 1px 1px; padding:0 0 0 40px; display:inline; float:left; background-color:#D0D9EB;}
+
+.brief{width:650px; line-height：25px; margin:5px 0; padding:0 5px; border-bottom:1px dashed #AAB6CC;}
+
+#downurl{width:650px; line-height:25px; margin:5px 0; padding:0 5px; border-bottom:1px dashed #AAB6CC;}

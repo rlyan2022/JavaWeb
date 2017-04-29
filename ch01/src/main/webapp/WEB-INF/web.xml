@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>StatusRecognise</servlet-name>
+    <servlet-class>com.sanqing.servlet.StatusRecognise</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MsgPublish</servlet-name>
+    <servlet-class>com.sanqing.servlet.MsgPublish</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetMessageList</servlet-name>
+    <servlet-class>com.sanqing.servlet.GetMessageList</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetMessage</servlet-name>
+    <servlet-class>com.sanqing.servlet.GetMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommitReply</servlet-name>
+    <servlet-class>com.sanqing.servlet.CommitReply</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CommitCriticism</servlet-name>
+    <servlet-class>com.sanqing.servlet.CommitCriticism</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>StatusRecognise</servlet-name>
+    <url-pattern>/StatusRecogniseAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MsgPublish</servlet-name>
+    <url-pattern>/MsgPublish</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMessageList</servlet-name>
+    <url-pattern>/GetMessageList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMessage</servlet-name>
+    <url-pattern>/GetMessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommitReply</servlet-name>
+    <url-pattern>/CommitReply</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommitCriticism</servlet-name>
+    <url-pattern>/CommitCriticism</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
