@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- XML声明 -->
+<!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+ "http://struts.apache.org/dtds/struts-2.1.dtd"><!-- 指定Struts 2配置文件的DTD信息 -->
+<struts><!-- 根节点 -->
+	<constant name="struts.i18n.encoding" value="gb2312"></constant>
+	<package name="struts2" extends="struts-default">
+ 		<action name="login" class="com.sanqing.action.LoginAction">
+ 			<result name="studentSuccess" type="chain">getRandomSubject</result><!--进入考试页面-->
+ 			<result name="teacherSuccess" type="redirect">/teacher/index.html</result><!--老师登录成功页面-->
+ 			<result name="input">/login.jsp</result><!--登录失败页面-->
+ 		</action>
+ 		<action name="subjectAdd" class="com.sanqing.action.SubjectAddAction">
+ 			<result name="success" type="redirect">/teacher/subjectAdd.jsp</result><!--重定向到试题添加页面-->
+ 			<result name="input">/teacher/subjectAdd.jsp</result><!--请求转发到试题添加页面-->
+ 		</action>
+ 		<action name="subjectQuery" class="com.sanqing.action.QuerySubjectAction">
+ 			<result name="success">/teacher/subjectManage.jsp</result><!--跳转到试题列表管理页面-->
+ 		</action>
+ 		<action name="subjectParticular" class="com.sanqing.action.SubjectParticularAction">
+ 			<result name="success">/teacher/subjectShow.jsp</result><!--跳转到试题详细显示页面-->
+ 		</action>
+ 		<action name="subjectUpadateBefore" class="com.sanqing.action.SubjectUpdateBefore">
+ 			<result name="success">/teacher/subjectUpdate.jsp</result><!--跳转到试题更新页面-->
+ 		</action>
+ 		<action name="subjectUpadate" class="com.sanqing.action.SubjectUpdateAction">
+ 			<result name="success">/teacher/subjectUpdate.jsp</result><!--跳转到试题更新页面-->
+ 		</action>
+ 		<action name="subjectLikeQuery" class="com.sanqing.action.LikeQuerySubjectAction">
+ 			<result name="success">/teacher/subjectManage.jsp</result><!--跳转到试题列表管理页面-->
+ 		</action>
+ 		<action name="getRandomSubject" class="com.sanqing.action.GetRandomSubject">
+ 			<result name="success">/student/index.jsp</result><!--跳转到考试页面-->
+ 		</action>
+ 		<action name="submitExam" class="com.sanqing.action.SubmitExamAction">
+ 			<result name="success">/student/examResult.jsp</result><!--跳转到考试页面-->
+ 		</action>
+ 		<action name="showSubjectAnswer" class="com.sanqing.action.ShowSubjectAnswer">
+ 			<result name="success">/student/showAnswer.jsp</result><!--跳转到考试页面-->
+ 		</action>
+ 		<action name="queryStudentByName" class="com.sanqing.action.QueryStudentByName">
+ 			<result name="success">/teacher/studentManage.jsp</result><!--跳转到学生管理页面-->
+ 		</action>
+ 		<action name="queryStudentByClass" class="com.sanqing.action.QueryStudentByClass">
+ 			<result name="success">/teacher/studentManage.jsp</result><!--跳转到学生管理页面-->
+ 		</action>
+ 	</package>	
+</struts>

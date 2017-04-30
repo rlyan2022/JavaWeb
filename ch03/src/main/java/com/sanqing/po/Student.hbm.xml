@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sanqing.po.Student" table="tb_student"><!-- 每个class对应一个持久化对象 -->
+        <id name="studentID" type="string"><!-- id元素用来定义主键标识,并指定主键生成策略 -->
+            <generator class="assigned"></generator>
+        </id>
+        <property name="password"></property><!-- 映射password属性 -->
+        <property name="studentName"></property><!-- 映射studentName属性 -->
+        <property name="result"></property><!-- 映射result属性 -->
+        <property name="sclass"></property><!-- 映射sclass属性 -->
+    </class>
+</hibernate-mapping>

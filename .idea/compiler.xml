@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ch01" />
         <module name="ch02" />
+        <module name="ch03" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ch01" target="1.5" />
       <module name="ch02" target="1.5" />
+      <module name="ch03" target="1.5" />
       <module name="JavaWeb" target="1.5" />
     </bytecodeTargetLevel>
   </component>
