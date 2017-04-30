@@ -12,6 +12,7 @@
     <groupId>com.sanqing.javaweb</groupId>
     <artifactId>ch02</artifactId>
     <packaging>war</packaging>
+    <description>投票系统</description>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

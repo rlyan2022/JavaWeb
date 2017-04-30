@@ -12,6 +12,7 @@
     <groupId>com.sanqing.javaweb</groupId>
     <artifactId>ch01</artifactId>
     <packaging>war</packaging>
+    <description>企业日常事务管理系统</description>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
