@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?><!-- XML声明 -->
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd"><!-- 指定Struts 2配置文件的DTD信息 -->
+<struts><!-- 根节点 -->
+    <constant name="struts.i18n.encoding" value="gb2312"></constant>
+    <package name="struts2" extends="jfreechart-default">
+        <action name="addVote" class="com.sanqing.action.AddVoteAction">
+            <result name="success">/admin/addVote.jsp</result>
+        </action>
+        <action name="showVote" class="com.sanqing.action.ShowVoteAction">
+            <result name="success">/admin/showVote.jsp</result>
+        </action>
+        <action name="deleteVote" class="com.sanqing.action.DeleteVoteAction">
+            <result name="success" type="chain">showVote</result>
+        </action>
+        <action name="showVoteByChannel" class="com.sanqing.action.ShowVoteByChannelAction">
+            <result name="success">index.jsp</result>
+            <result name="input">index.jsp</result>
+        </action>
+        <action name="voteResult" class="com.sanqing.action.VoteResultAction">
+            <result name="success" type="chart">
+                <param name="width">400</param>
+                <param name="height">300</param>
+            </result>
+        </action>
+        <action name="doVote" class="com.sanqing.action.DoVoteAction">
+            <result name="success" type="chain">voteResult</result>
+            <result name="input" type="chain">showVoteByChannel</result>
+        </action>
+    </package>
+</struts>
