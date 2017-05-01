@@ -1,0 +1,342 @@
+BODY{
+	SCROLLBAR-FACE-COLOR: #f6f6f6;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+    SCROLLBAR-SHADOW-COLOR: #cccccc; 
+	SCROLLBAR-3DLIGHT-COLOR: #cccccc; 
+    SCROLLBAR-ARROW-COLOR: #330000; 
+	SCROLLBAR-TRACK-COLOR: #f6f6f6; 
+    SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+
+	MARGIN-TOP: 0px;
+	MARGIN-LEFT: 5px;
+	MARGIN-RIGHT: 5px;
+	MARGIN-BOTTOM: 0px;
+	
+	FONT-SIZE: 12px;
+	COLOR: #003366;
+	FONT-FAMILY: ו;
+	BACKGROUND-COLOR: white
+}
+
+A:active,A:visited,A:link {
+	COLOR: #0629FD;
+	TEXT-DECORATION: none
+}
+
+A:hover {
+	COLOR: #FF6600;
+	TEXT-DECORATION: none
+}
+
+A.relatelink:active,A.relatelink:visited,A.relatelink:link { 
+	color: white;
+	TEXT-DECORATION: none
+}
+
+A.relatelink:hover {
+	COLOR: #FF6600;
+	TEXT-DECORATION: none
+}
+
+td {
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: white;
+	height:24px
+}
+
+.tdWordBreak {
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: white;
+	word-break: break-all;
+	height:24px;}
+
+.tableQry {
+	width: 982px;
+	border: 0px}
+	
+.tdQryLabel {
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: white;
+	text-align: right;
+	height: 24px;
+	width: 66px
+}
+
+.tdQryEdit{
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: white;
+	height: 24px;
+	width: 210px
+}
+
+.tdEdit {
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: #EDEBEC;
+	height:24px
+}
+
+#PowerTable {
+	BACKGROUND-COLOR: #707070;
+	word-break: break-all;
+	width: 994px;
+}
+
+.tableBanner {
+	font-size: 12px;
+	color: white;
+	BACKGROUND-COLOR: #707070;
+	width: 994px}
+
+.tdBanner {
+	font-size: 12px;
+	color: white;
+	BACKGROUND-COLOR: #707070;
+	height:24px;
+	width: 331px}
+
+.itptd1 {
+	font-size: 12px;
+	FONT-WEIGHT: bold;
+	color: #003366;
+	BACKGROUND-COLOR: #A2B5CD;
+	height:24px
+}
+
+.itptd2 {
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: #6386D6;
+	height:24px
+}
+
+
+.calendar {
+	BACKGROUND-COLOR: #efefef;
+}
+.tdLine {
+	font-size: 12px;
+	color: #003366;
+	height:24px;
+	border-bottom: 1px solid #6386D6
+}
+.tdBottomRightLine {
+	font-size: 12px;
+	color: #003366;
+	height:24px;
+	border-bottom: 1px solid #6386D6;
+	border-right:1px solid #6386D6	         
+}
+.tdNoLine {
+	font-size: 12px;
+	color: #003366;
+	height:24px
+}
+
+.tdTitle {
+	font-size: 12px;
+	color: #003366;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: #E6F5FC;
+	text-align:center;
+	height:24px
+}
+
+.paginate {
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: #E6F5FC;
+	height:24px
+}
+
+.line_td {
+	border-left: 1px;
+	border-right: 1px;
+	border-top: 1px;
+	border-bottom: 1px solid #C0C0C0
+}
+
+.labelTitle {
+	FONT-WEIGHT: bold;
+	COLOR: #003366;
+	POSITION: relative;
+	TOP: 2px
+}
+
+.whiteTitle {
+	FONT-WEIGHT: bold;
+	font-size: 12px;
+	COLOR: white;
+}
+
+.titles {
+	FONT-WEIGHT: bold;
+	COLOR: #CC9900;
+	font-size: 18px;
+}
+
+.labelAlarm {
+	font-size: 13px;
+	color: red;
+}
+
+.labelWhite {
+	font-size: 12px;
+	color: white;
+}
+
+.labelBanner {
+	font-size: 14px;
+	FONT-WEIGHT: bold;
+	color: #003366;
+}
+
+.menu_title {
+	FONT-WEIGHT: bold;
+	COLOR: #215dc6;
+	POSITION: relative;
+	TOP: 2px
+}
+
+.menu_title2 {
+	FONT-WEIGHT: bold;
+	COLOR: #428eff;
+	POSITION: relative;
+	TOP: 2px
+}
+
+.editorShort {
+	BORDER-RIGHT: #707070 1px solid;
+	BORDER-TOP: #707070 1px solid;
+	BORDER-LEFT: #707070 1px solid;
+	BORDER-BOTTOM: #707070 1px solid;
+	WIDTH: 80px
+}
+
+.editor {
+	BORDER-RIGHT: #707070 1px solid;
+	BORDER-TOP: #707070 1px solid;
+	BORDER-LEFT: #707070 1px solid;
+	BORDER-BOTTOM: #707070 1px solid;
+	WIDTH: 150px
+}
+.editorLong {
+	BORDER-RIGHT: #707070 1px solid;
+	BORDER-TOP: #707070 1px solid;
+	BORDER-LEFT: #707070 1px solid;
+	BORDER-BOTTOM: #707070 1px solid;
+	WIDTH: 250px
+}
+.editorArea {
+	BORDER-RIGHT: #707070 1px solid;
+	BORDER-TOP: #707070 1px solid;
+	BORDER-LEFT: #707070 1px solid;
+	BORDER-BOTTOM: #707070 1px solid;
+}
+
+.editor2 {
+	BORDER-RIGHT: #707070 1px solid;
+	BORDER-TOP: #707070 1px solid;
+	BORDER-LEFT: #707070 1px solid;
+	BORDER-BOTTOM: #707070 1px solid;
+}
+.editor3 {
+	BORDER-RIGHT: #707070 1px solid;
+	BORDER-TOP: #707070 1px solid;
+	BORDER-LEFT: #707070 1px solid;
+	BORDER-BOTTOM: #707070 1px solid;
+	HEIGHT:	18px;
+	WIDTH: 86px
+}
+.editor4 {
+	BORDER-RIGHT: #707070 1px solid;
+	BORDER-TOP: #707070 1px solid;
+	BORDER-LEFT: #707070 1px solid;
+	BORDER-BOTTOM: #707070 1px solid;
+	HEIGHT:	18px;
+	WIDTH: 245px
+}
+
+.MyButton{
+	BORDER-RIGHT: #707070 1px solid; 
+	PADDING-RIGHT: 2px; 
+	BORDER-TOP: #707070 1px solid; 
+	PADDING-TOP: 2px; 
+	BORDER-LEFT: #707070 1px solid;
+	PADDING-LEFT: 2px; 
+	BORDER-BOTTOM: #707070 1px solid
+	FONT-SIZE: 12px; 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#C7C7C7); 
+	CURSOR: hand; 
+	COLOR: black; 
+}
+.ButtonTable{
+	display:inline;
+	cursor: hand;
+	height:24;
+}
+.ButtonTable_td{
+	border-top:1pt solid #8596CA;
+	border-bottom:1pt solid #5A6DA5;
+	padding-top:0;
+	BACKGROUND-COLOR: #ffffff;
+	background-image: url(../images/botton002.gif);
+	background-repeat: repeat-x;
+	cursor:hand;
+	color:#5A6CA2;
+}
+.ButtonValue{
+	color:#5A6CA2;
+	font-size: 13px;
+}
+.ButtonDisable{
+	filter:dropshadow(color=#FFFFFF,offx=1,offy=1);
+	color:#A0B0C9;
+	cursor:default;
+}
+
+.selectShort{
+	width:80px;
+}
+
+.select{
+	width:150px;
+}
+
+.selectLong{
+	width:250px;
+}
+
+.tableEdit{
+	background-color:#707070;
+}
+
+.tdEditLabel{
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: #EDEBEC;
+	text-align:right;
+	height:24px;
+	width: 70px;
+}
+
+.tdEditContent{
+	font-size: 12px;
+	color: #003366;
+	BACKGROUND-COLOR: #EDEBEC;
+	height:24px;
+	width: 220px;
+}
+
+.tdEditTitle{
+	font-size: 12px;
+	color: #003366;
+	FONT-WEIGHT: bold;
+	BACKGROUND-COLOR: #E6F5FC;
+	text-align:center;
+	height:24px;
+}

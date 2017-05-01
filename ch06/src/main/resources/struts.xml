@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation"
+              value="false"/>
+    <constant name="struts.devMode" value="false"/>
+    <!-- 与spring集成 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <!-- 改变后缀名 -->
+    <constant name="struts.action.extension" value="do"/>
+    <!-- 配置国际化资源文件 -->
+    <constant name="struts.custom.i18n.resources"
+              value="globalMessages"/>
+    <!-- 处理编码问题 -->
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <!-- 当修改配置文件不需要重启服务，开发比较有用 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 报表 -->
+    <!--
+    <package name="lee" namespace="/" extends="jasperreports-default">
+        <action name="jasper" class="jasperAction">
+            <result name="success" type="jasper">
+                <param name="location">report\jasper\order.jrxml</param>
+                <param name="format">HTML</param>
+                <param name="dataSource">order</param>
+            </result>
+        </action>
+    </package>
+    -->
+    <!-- 用户登录 -->
+    <package name="san" namespace="/" extends="struts-default">
+        <action name="login" class="loginAction">
+            <result name="success">/back_index.html</result>
+            <result name="input">/index.jsp</result>
+        </action>
+    </package>
+    <!-- 控制相关模块 -->
+    <package name="qing" namespace="/control" extends="struts-default">
+        <interceptors><!--配置拦截器 -->
+            <interceptor name="loginIntercepter"
+                         class="com.sanqing.intercepter.LoginIntercepter"/><!--配置登录判断拦截器-->
+            <interceptor-stack name="mydefault"><!--配置拦截器栈-->
+                <interceptor-ref name="defaultStack"/><!--Struts 2默认拦截器 -->
+                <interceptor-ref name="loginIntercepter"/><!--登录判断拦截器 -->
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="mydefault"/><!--配置默认拦截器-->
+        <global-results>
+            <result name="pub_add_success">/share/pub_add_success.jsp</result>
+            <result name="pub_update_success">/share/pub_update_success.jsp</result>
+            <result name="pub_del_success">/share/pub_del_success.jsp</result>
+            <result name="input">/index.jsp</result>
+        </global-results>
+        <!-- 客户显示 -->
+        <action name="customer" class="customerAction">
+            <result name="success">
+                /customer/customer_list.jsp
+            </result>
+        </action>
+        <!-- 客户管理 -->
+        <action name="customermanage_*" class="customerManageAction" method="{1}">
+            <result name="add">/customer/customer_add.jsp</result>
+            <result name="update">/customer/customer_update.jsp</result>
+            <result name="query">/customer/customer_query.jsp</result>
+        </action>
+        <!-- 产品类别显示 -->
+        <action name="producttype" class="productTypeAction">
+            <result name="success">
+                /product/producttype_list.jsp
+            </result>
+        </action>
+        <!-- 产品类别管理 -->
+        <action name="producttypemanage_*" class="productTypeManageAction" method="{1}">
+            <result name="add">/product/producttype_add.jsp</result>
+            <result name="update">/product/producttype_update.jsp</result>
+            <result name="query">/product/producttype_query.jsp</result>
+        </action>
+        <!-- 产品显示 -->
+        <action name="product" class="productAction">
+            <result name="success">
+                /product/product_list.jsp
+            </result>
+        </action>
+        <!-- 产品管理 -->
+        <action name="productmanage_*" class="productManageAction" method="{1}">
+            <result name="add">/product/product_add.jsp</result>
+            <result name="update">/product/product_update.jsp</result>
+            <result name="query">/product/product_query.jsp</result>
+        </action>
+        <!-- 订单显示 -->
+        <action name="order" class="orderAction">
+            <result name="success">
+                /order/order_list.jsp
+            </result>
+        </action>
+        <!-- 订单管理 -->
+        <action name="ordermanage_*" class="orderManageAction" method="{1}">
+            <result name="add">/order/order_add.jsp</result>
+            <result name="update">/order/order_update.jsp</result>
+            <result name="query">/order/order_query.jsp</result>
+        </action>
+        <!-- 报价显示 -->
+        <action name="quotation" class="quotationAction">
+            <result name="success">
+                /quotation/quotation_list.jsp
+            </result>
+        </action>
+        <!-- 报价管理 -->
+        <action name="quotationmanage_*" class="quotationManageAction" method="{1}">
+            <result name="add">/quotation/quotation_add.jsp</result>
+            <result name="update">/quotation/quotation_update.jsp</result>
+            <result name="query">/quotation/quotation_query.jsp</result>
+        </action>
+        <!-- 用户显示 -->
+        <action name="user" class="userAction">
+            <result name="success">
+                /user/user_list.jsp
+            </result>
+        </action>
+        <!-- 用户管理 -->
+        <action name="usermanage_*" class="userManageAction" method="{1}">
+            <result name="add">/user/user_add.jsp</result>
+            <result name="update">/user/user_update.jsp</result>
+            <result name="query">/user/user_query.jsp</result>
+        </action>
+    </package>
+</struts>
