@@ -18,7 +18,7 @@ public class CommitReply extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.setCharacterEncoding("gbk");//设置参数编码格式
+        request.setCharacterEncoding("UTF-8");//设置参数编码格式
         String replyContent = request.
                 getParameter("replyContent");//获得输入的回复内容
         int messageID = Integer.parseInt(

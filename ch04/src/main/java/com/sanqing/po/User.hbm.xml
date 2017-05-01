@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sanqing.po.User">
+        <id name="username">
+            <generator class="assigned"></generator>
+        </id>
+        <property name="password"></property>
+        <property name="nickname"></property>
+        <property name="question"></property>
+        <property name="answer"></property>
+    </class>
+</hibernate-mapping>
+

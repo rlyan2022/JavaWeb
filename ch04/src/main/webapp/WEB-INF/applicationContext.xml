@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+		xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	<!-- 定义数据源 -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3308/db_blog</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>1016</value>
+		</property>
+	</bean>
+
+	<!-- 定义SessionFactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource"/>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/sanqing/po/User.hbm.xml</value>
+				<value>com/sanqing/po/Article.hbm.xml</value>
+				<value>com/sanqing/po/BlogInfo.hbm.xml</value>
+				<value>com/sanqing/po/Critique.hbm.xml</value>
+				<value>com/sanqing/po/Dianjiliang.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 定义HibernateTemplate -->
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+
+	<!-- 配置DAO组件 -->
+	<bean id="userDAO" class="com.sanqing.dao.UserDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+
+	<!-- 配置业务逻辑组件 -->
+	<bean id="userService" class="com.sanqing.service.UserServiceImpl">
+		<property name="userDAO">
+			<ref bean="userDAO"/>
+		</property>
+	</bean>
+
+	<!-- 配置RegisterAction -->
+	<bean id="registerAction" class="com.sanqing.action.Register" scope="prototype">
+		<property name="userService">
+			<ref bean="userService"/>
+		</property>
+	</bean>
+
+	<!-- 配置LoginAction -->
+	<bean id="loginAction" class="com.sanqing.action.Login" scope="prototype">
+		<property name="userService">
+			<ref bean="userService"/>
+		</property>
+	</bean>
+
+	<!-- 配置DAO组件 -->
+	<bean id="blogInfoDAO" class="com.sanqing.dao.BlogInfoDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+
+	<!-- 配置业务逻辑组件 -->
+	<bean id="blogInfoService" class="com.sanqing.service.BlogInfoServiceImpl">
+		<property name="blogInfoDAO">
+			<ref bean="blogInfoDAO"/>
+		</property>
+	</bean>
+
+	<!-- 配置EditBlogInfo Action -->
+	<bean id="editeBlogInfo" class="com.sanqing.action.EditBlogInfo" scope="prototype">
+		<property name="blogInfoService">
+			<ref bean="blogInfoService"/>
+		</property>
+	</bean>
+
+	<!-- 配置GetBlogInfo Action -->
+	<bean id="GetBlogInfo" class="com.sanqing.action.GetBlogInfo" scope="prototype">
+		<property name="blogInfoService">
+			<ref bean="blogInfoService"/>
+		</property>
+	</bean>
+
+	<!-- 配置ArticleDAO -->
+	<bean id="articleDAO" class="com.sanqing.dao.ArticleDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+
+	<!-- 配置ArticleService -->
+	<bean id="articleService" class="com.sanqing.service.ArticleServiceImpl">
+		<property name="articleDAO">
+			<ref bean="articleDAO"/>
+		</property>
+		<property name="critiqueDAO">
+			<ref bean="critiqueDAO"/>
+		</property>
+	</bean>
+
+	<!-- AddArticle Action -->
+	<bean id="addArticle" class="com.sanqing.action.AddArticle" scope="prototype">
+		<property name="articleService">
+			<ref bean="articleService"/>
+		</property>
+	</bean>
+
+	<!-- ShowUserAllArticle Action -->
+	<bean id="showUserAllArticle" class="com.sanqing.action.ShowUserAllArticle" scope="prototype">
+		<property name="articleService">
+			<ref bean="articleService"/>
+		</property>
+	</bean>
+
+	<!-- ShowAllArticle Action -->
+	<bean id="showAllArticle" class="com.sanqing.action.ShowAllArticle" scope="prototype">
+		<property name="articleService">
+			<ref bean="articleService"/>
+		</property>
+	</bean>
+
+	<!-- 配置dianjiliangDAO -->
+	<bean id="dianjiliangDAO" class="com.sanqing.dao.DianjiliangDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+
+	<!-- 配置dianjiliangService -->
+	<bean id="dianjiliangService" class="com.sanqing.service.DianjiliangServiceImpl">
+		<property name="dianjiliangDAO">
+			<ref bean="dianjiliangDAO"/>
+		</property>
+	</bean>
+
+
+
+
+	<!-- 配置critiqueDAO -->
+	<bean id="critiqueDAO" class="com.sanqing.dao.CritiqueDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+
+	<!-- 配置critiqueService -->
+	<bean id="critiqueService" class="com.sanqing.service.CritiqueServiceImpl">
+		<property name="critiqueDAO">
+			<ref bean="critiqueDAO"/>
+		</property>
+	</bean>
+
+	<!-- AddCritique Action -->
+	<bean id="addCritique" class="com.sanqing.action.AddCritique" scope="prototype">
+		<property name="critiqueService">
+			<ref bean="critiqueService"/>
+		</property>
+	</bean>
+
+	<!-- ShowArticle Action -->
+	<bean id="showArticle" class="com.sanqing.action.ShowArticle" scope="prototype">
+		<property name="articleService">
+			<ref bean="articleService"/>
+		</property>
+		<property name="dianjiliangService">
+			<ref bean="dianjiliangService"/>
+		</property>
+		<property name="critiqueService">
+			<ref bean="critiqueService"/>
+		</property>
+		<property name="blogInfoService">
+			<ref bean="blogInfoService"/>
+		</property>
+	</bean>
+
+	<!-- ShowRss Action -->
+	<bean id="showRSS" class="com.sanqing.action.ShowRSS" scope="prototype">
+		<property name="articleService">
+			<ref bean="articleService"/>
+		</property>
+	</bean>
+</beans>

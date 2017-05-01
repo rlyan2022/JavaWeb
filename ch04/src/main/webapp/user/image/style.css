@@ -1,0 +1,227 @@
+body
+{
+}
+
+td
+{
+	font-family: "Tahoma"; 
+	font-size: 12px; 
+}
+.lt0 {
+	padding: 3px 7px 3px 7px;
+}
+a
+{
+	font-family: "Tahoma"; 
+	color:#333333;
+	text-decoration:none;
+}
+a:hover
+{
+	font-family: "Tahoma"; 
+	color:#ffcc00;
+	text-decoration:none;
+}
+.lt1 {
+	border: solid 1px #CCCCCC;
+	background: #EFEFEF;
+	padding: 2px 6px 2px 6px;
+}
+.lt2 {
+	border: solid 1px #CCCCCC;
+	background: #ffffff;
+	padding: 1px 6px 1px 6px;
+	font-family: "Tahoma"; 
+	font-size: 12px; 
+}
+.ltsep {
+	color: #999999;
+	padding: 0px 1px;
+}
+.buttoncss
+{
+	color:#333333;
+	font-family: "Tahoma"; 
+	font-size: 12px; 
+	background-color:#FFFFFF;
+	border:solid 1px #CCCCCC;
+}
+.inputcss
+{
+	color:#333333;
+	font-family: "Tahoma"; 
+	font-size: 12px; 
+	border:solid 1px #CCCCCC;
+}
+.navicss
+{
+	font-family: "Tahoma"; 
+	font-size: 12px; 
+}
+a.navicss
+{
+	color:#333333;
+	text-decoration:none;
+}
+a.navicss:hover
+{
+	color:#333333;
+	text-decoration:none;
+}
+.subjectcss
+{
+	color:#E9167D;
+	font-size:36px;
+	font-family:ºÚÌå,Ó×Ô²,Verdana;
+	font-weight:bold;
+	filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1);
+}
+.descss
+{
+	color:#F6EB15;
+	font-size:14px;
+	font-family:ºÚÌå,Ó×Ô²,Verdana;
+	font-weight:bold;
+	filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1);
+}
+
+.post
+{
+	border: 1px solid #CCCCCC;
+	border-bottom-width: 2px;
+	border-right-width: 2px;
+	padding: 0px;
+	margin-bottom: 28px;
+}
+
+.postbody a
+{
+	color: #1D58D1;
+}
+
+h2 a, .postfoot a
+{
+	color: #223355;
+}
+
+h2 {
+	margin-top : 10px;
+	font-size : 1em;
+}
+
+p.date {
+	font-size : 1.2em;
+	font-weight : bold;	
+	margin-bottom : 0px;
+	padding : 2px 0px;
+	color : #AAAAAA;
+	text-align: right;
+}
+
+p.date span {
+	background-color : #FFF;
+}
+p.date a
+{
+	color: #888888;
+}
+
+p {
+	margin : 0px;
+	margin-bottom: 14px;
+}
+
+.posthead
+{
+	background-color: #EEEEEE;
+	background-image:  url(/images/PostHeaderBg.gif);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 4px;
+	color: #444444;
+	font-size: 9px;
+}
+
+.postbody
+{
+	padding: 4px;
+	margin-bottom: 14px;
+	font-size: 13px;
+}
+
+.posthead h2
+{
+	font-size: 13px;
+	margin: 0px;
+}
+.postfoot
+{
+	padding: 4px;
+	margin: 0px;
+	color: #AAAAAA;
+	border-top: 1px solid #DDDDDD;
+	font-size: 0.8em;
+}
+
+div..ImageList {
+	padding-left: 12px;
+	padding-bottom: 18%;
+}
+
+div.ImageThumbnail {
+	float: left;
+	margin-top: 12px;
+	margin-right: 2px;
+	color: #333333;
+	background: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	width: 144px;
+	height: 180px;
+	text-align: center;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+div.ImageThumbnail1
+{
+	float: left;
+	margin-top: 12px;
+	margin-right: 2px;
+	color: #333333;
+	background: #F5F5F5;
+	border: 1px solid #DDDDDD;
+	width: 132px;
+	height: 132px;
+	text-align: center;
+	vertical-align: bottom;
+	overflow: hidden;
+}
+
+div.ImageThumbnail IMG {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border: 1px solid #666666;
+}
+
+div.ImageThumbnail div.ImageThumbnailImage {
+	margin-top: 12px;
+	margin-bottom: 8px;
+}
+
+div.ImageThumbnail1 div.ImageThumbnailImage {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+div.ImageThumbnail div.ImageThumbnailTitle {
+	font-size: 100%;
+	margin: 0px 12px 8px 12px;
+}
+.title
+{
+	color:#666666;
+	font-size:15px;
+	font-family:simhei,Verdana;
+	font-weight:bold;
+}

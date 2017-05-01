@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sanqing.po.BlogInfo">
+        <id name="username">
+            <generator class="assigned"></generator>
+        </id>
+        <property name="blogtitle"></property>
+        <property name="idiograph"></property>
+    </class>
+</hibernate-mapping>
+

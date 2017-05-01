@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+        "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+    <validator type="requiredstring">
+        <param name="fieldName">blogtitle</param>
+        <param name="trim">true</param>
+        <message>必须输入博客标题</message>
+    </validator>
+
+    <validator type="regex">
+        <param name="fieldName">blogtitle</param>
+        <param name="expression"><![CDATA[([\u4e00-\u9fa5,a-z,A-Z,0-9]{4,20})]]></param>
+        <message>博客标题长度必须为4至20之间</message>
+    </validator>
+
+    <validator type="requiredstring">
+        <param name="fieldName">idiograph</param>
+        <param name="trim">true</param>
+        <message>必须输入个性签名</message>
+    </validator>
+
+    <validator type="regex">
+        <param name="fieldName">idiograph</param>
+        <param name="expression"><![CDATA[([\u4e00-\u9fa5,a-z,A-Z,0-9]{4,20})]]></param>
+        <message>个性签名长度必须为4至20之间</message>
+    </validator>
+</validators>
+
+
+
+
+
+
+
+
+

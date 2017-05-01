@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+>
+
+	<channel>
+		<title>北风博客网</title>
+		<link>http://localhost:8480/ch04/login.jsp</link>
+		<description>专注于IT培训</description>
+		<item>
+			<title>测试RSS</title>
+			<link>http://localhost:8480/ch04/login.jsp</link>
+			<description>测试RSS，成功</description>
+			<author>lifengxing</author>
+			<pubDate>Thu, 19 Mar 2009 02:46:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>

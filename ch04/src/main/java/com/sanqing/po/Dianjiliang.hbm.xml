@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.sanqing.po.Dianjiliang">
+        <id name="id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="AId"></property>
+        <property name="ip"></property>
+        <property name="time"></property>
+    </class>
+</hibernate-mapping>
+

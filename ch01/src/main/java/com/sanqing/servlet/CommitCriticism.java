@@ -18,7 +18,7 @@ public class CommitCriticism extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.setCharacterEncoding("gbk");
+        request.setCharacterEncoding("UTF-8");
         String criticismContent = request.getParameter("criticismContent");//获得用户输入的回复内容
         int messageID = Integer.parseInt(request.getParameter("messageID"));
         ServletContext servletContext = getServletContext();

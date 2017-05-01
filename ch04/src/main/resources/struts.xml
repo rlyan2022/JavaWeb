@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+		"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.custom.i18n.resources" value="myMessage"></constant>
+	<package name="struts2" extends="struts-default">
+		<interceptors>
+			<interceptor name="userInterceptor" class="com.sanqing.interceptor.UserInterceptor"></interceptor>
+		</interceptors>
+
+		<action name="register" class="registerAction">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+
+		<action name="login" class="loginAction">
+			<result name="success">/success.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+
+		<action name="editBlogInfo" class="editeBlogInfo">
+			<result name="success" type="chain">getBlogInfo</result>
+			<result name="error">/error.jsp</result>
+			<result name="input">/user/editbloginfo.jsp</result>
+		</action>
+
+		<action name="getBlogInfo" class="GetBlogInfo">
+			<result name="success">/user/editbloginfo.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
+		<action name="addArticle" class="addArticle">
+			<result name="success" type="chain">showUserAllArticle</result>
+			<result name="error">/error.jsp</result>
+			<result name="login" type="redirect">/login.jsp</result>
+			<interceptor-ref name="userInterceptor"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+
+		<action name="showUserAllArticle" class="showUserAllArticle">
+			<result name="success">/user/showUserAllArticle.jsp</result>
+		</action>
+
+		<action name="showAllArticle" class="showAllArticle">
+			<result name="success">/showAllArticle.jsp</result>
+		</action>
+
+		<action name="showArticle" class="showArticle">
+			<result name="success">/user/showArticle.jsp</result>
+		</action>
+
+		<action name="addCritique" class="addCritique">
+			<result name="success" type="chain">showArticle</result>
+		</action>
+
+		<action name="photoUpload" class="com.sanqing.action.PhotoUpload">
+			<result name="success" type="chain">showPhoto</result>
+			<result name="input">/user/showphoto.jsp</result>
+			<!-- 配置fileUpload拦截器 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 配置允许上传文件类型 -->
+				<param name="allowedTypes">image/bmp,image/pjpeg,image/gif,image/png</param>
+				<!-- 配置允许上传文件大小最大值 -->
+				<param name="maximumSize">512000</param>
+			</interceptor-ref>
+			<result name="login" type="redirect">/login.jsp</result>
+			<interceptor-ref name="userInterceptor"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>
+
+		<action name="showPhoto" class="com.sanqing.action.ShowPhoto">
+			<result name="success">/user/showphoto.jsp</result>
+		</action>
+
+		<action name="showRSS" class="showRSS">
+			<result name="success">/rss.xml</result>
+		</action>
+	</package>
+</struts>

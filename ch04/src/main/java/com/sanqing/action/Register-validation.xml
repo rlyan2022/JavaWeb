@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+        "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+    <validator type="requiredstring">
+        <param name="fieldName">username</param>
+        <param name="trim">true</param>
+        <message>必须输入用户名</message>
+    </validator>
+
+    <validator type="regex">
+        <param name="fieldName">username</param>
+        <param name="expression"><![CDATA[(\w{6,20})]]></param>
+        <message>用户名长度必须为6至20之间</message>
+    </validator>
+
+    <validator type="requiredstring">
+        <param name="fieldName">password</param>
+        <param name="trim">true</param>
+        <message>必须输入密码</message>
+    </validator>
+
+    <validator type="regex">
+        <param name="fieldName">password</param>
+        <param name="expression"><![CDATA[(\w{6,20})]]></param>
+        <message>密码长度必须为6至20之间</message>
+    </validator>
+
+    <validator type="requiredstring">
+        <param name="fieldName">repassword</param>
+        <param name="trim">true</param>
+        <message>必须输入确认密码</message>
+    </validator>
+
+    <validator type="regex">
+        <param name="fieldName">repassword</param>
+        <param name="expression"><![CDATA[(\w{6,20})]]></param>
+        <message>确认密码长度必须为6至20之间</message>
+    </validator>
+
+    <validator type="fieldexpression">
+        <param name="fieldName">repassword</param>
+        <param name="expression"><![CDATA[(repassword==password)]]></param>
+        <message>密码和确认密码必须一致</message>
+    </validator>
+
+    <validator type="requiredstring">
+        <param name="fieldName">nickname</param>
+        <param name="trim">true</param>
+        <message>必须输入昵称</message>
+    </validator>
+
+    <validator type="regex">
+        <param name="fieldName">nickname</param>
+        <param name="expression"><![CDATA[([\u4e00-\u9fa5]{2,20})]]></param>
+        <message>昵称长度必须为2至20之间</message>
+    </validator>
+
+    <validator type="requiredstring">
+        <param name="fieldName">answer</param>
+        <param name="trim">true</param>
+        <message>必须输入密码保护答案</message>
+    </validator>
+
+    <validator type="regex">
+        <param name="fieldName">answer</param>
+        <param name="expression"><![CDATA[([\u4e00-\u9fa5]{5,50})]]></param>
+        <message>密码保护答案长度必须为5至50之间</message>
+    </validator>
+</validators>
+
+
+
+
+
+
+
+
+

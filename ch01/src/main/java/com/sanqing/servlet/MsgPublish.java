@@ -18,7 +18,7 @@ public class MsgPublish extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.setCharacterEncoding("gbk");        //设置参数编码
+        request.setCharacterEncoding("UTF-8");        //设置参数编码
         String title = request.getParameter("title");//获得用户输入的标题
         String content = request.getParameter("content");//获得用户输入的标题
         ServletContext servletContext = getServletContext();

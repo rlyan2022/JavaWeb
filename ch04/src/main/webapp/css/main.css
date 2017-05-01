@@ -1,0 +1,92 @@
+* { margin: 0; padding: 0; border-width: 0; font-size: 10px; }
+* * { font-size: 1em; }
+body { background: #3a567e url(../images/bg.gif) center center repeat-y; }
+hr { height: 1px; margin: 2em 0 1.5em 0; background: #425767; border-width: 0; }
+
+/*FORMS*/
+input { padding: .4em; background: #fff url(../images/input_bg.gif) bottom repeat-x; border: 1px solid #b0b5bd; border-bottom: 1px solid #757a82; font: 1.2em Lucida Sans Unicode, Trebuchet MS, Sans; color: #222; }
+input:focus { border-top: 1px solid #757a82; border-bottom: 1px solid #b0b5bd; font-weight: bold }
+input.button { float: none !important; width: 100% !important; margin: 0 !important; padding: .5em; background: #fff url(../images/button_bg.gif) bottom repeat-x; border: 1px solid #fff; font: 1.2em verdana; font-weight: bold; text-align: center; color: #222; cursor: pointer; }
+input.button:hover { background: #fff url(../images/button_bg_hover.gif) top repeat-x; }
+label { font: 1.2em verdana; font-weight: bold; color: #7c7c7c; }
+textarea { width: 97%; margin-top: .5em; padding: .6em; background: url(../images/input_bg.gif) bottom repeat-x; border: 1px solid #b0b5bd; border-bottom: 1px solid #757a82; font: 1.2em Lucida Sans Unicode, Trebuchet MS, Sans; color: #222; }
+textarea:focus { border-top: 1px solid #757a82; border-bottom: 1px solid #b0b5bd; font-weight: bold; }
+
+form.h input { float: left; width: 55%; margin-bottom: .5em; }
+form.h label { float: left; width: 40%; }
+form.h .button_wrapper { margin-top: 1em; }
+
+/*LAYOUT*/
+#container { width: 77.2em; margin-right: auto; margin-left: auto; padding: 0 .4em 0 .4em; background: #3c5769; border-right: 1px solid #5c7690; border-left: 1px solid #5c7690; }
+#scene { position: relative; width: 77em; height: 16.8em; margin-bottom: .4em; border: 1px solid #516980; border-top-width: 0; }
+#scene img { width: 77em; height: 16.8em; }
+#scene h1 { position: absolute; top: .9em; left: 1.2em; font: 2.8em Lucida Sans Unicode, Trebuchet MS, Sans; color: #fff; }
+#scale_area { position: absolute; bottom: 0; left: 1em; width: 28em; height: 1.9em; }
+#scale_knob { width: 7.4em; height: 1.3em; padding: .3em; background: #3e5a82; border: 1px solid #102c54; border-bottom-width: 0; font: 1em Lucida Sans Unicode, Trebuchet MS, Sans; font-weight: bold; text-align: center; color: #fff; cursor: pointer; }
+#menu { position: absolute; right: 2em; bottom: 0; }
+#menu .holder { float: left; height: 2.4em; margin-right: .3em; background: #131b22 url(../images/menu_holder_bg.gif) top repeat-x; border: 1px solid #00040b; border-bottom-width: 0; }
+#menu .holder a { display: block; width: 8.4em; margin: .1em; margin-bottom: 0; background: #011b41 url(../images/menu_bg.gif) top repeat-x; font: 1em Verdana; line-height: 2.3em; font-weight: bold; text-align: center; text-decoration: none; color: #fff; }
+#menu .holder a:hover { background: #6d89b1 url(../images/menu_bg_hover.gif) top repeat-x; }
+#content { background: #fff; border-top: 1px solid #5c7690; }
+#col_left { float: left; width: 48.5em; padding: 2em; background: #fff; border-right: .1em solid #ddd; }
+.post .meta { padding-bottom: .1em; border-bottom: 1px solid #f0f0f0; }
+.date { float: left; }
+.date .month { width: 4.8em; height: 1.2em; background: #3783cb url(../images/date_month.gif) right repeat-y; border: 1px solid #215f85; font: 1em tahoma; font-weight: bold; text-align: center; color: #fff; }
+.date .day { width: 2.4em; height: 1.8em; background: #fcfdfc url(../images/date_day.gif) bottom right no-repeat; border: 1px solid #c6c6c6; border-top-width: 0; font: 2em verdana; line-height: 1.8em; font-weight: bold; text-align: center; color: #947e7a; }
+.meta a.title { float: left; font: 2.4em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 2em; font-weight: bold; text-indent: 1em; text-decoration: none; color: #6480a8; }
+.meta .commnets { float: right; padding: .4em; background: #f8f8f8 url(../images/comment_bubble.gif) .4em center no-repeat; border: 1px solid #ececec; font: 1em verdana; font-weight: bold; text-indent: 1.6em; color: #868686; }
+.body a { color: #215f85; }
+.body a:hover { color: #64a869; }
+.body a:visited { color: #a44e4e; }
+.body blockquote { padding: .5em; background: #f6f6f6; border-top: 1px dotted #6480a8; border-bottom: 1px dotted #6480a8; font: 1em Lucida Sans Unicode, Trebuchet MS, Sans; }
+.body h1 { font: 1.6em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 2em; font-weight: bold; color: #6480a8; }
+.body h2 { font: 1.4em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 2em; font-weight: bold; color: #a44e4e; }
+.body h3 { font: 1.2em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 2em; font-weight: bold; color: #64a869; }
+.body p { margin: .5em 0 .5em 0; font: 1.2em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 1.5em; color: #7e7e7e; }
+.comments h2 { margin-bottom: 1em; border-bottom: 1px solid #f0f0f0; font: 1.8em verdana; line-height: 2.2em; color: #656565; }
+.comment { margin-top: .2em; padding: .9em; background: #edf3fa; border: 1px solid #dfdfdf; }
+.comment.alt { background: #fafafa; }
+.comment .meta { margin-bottom: .8em; padding-bottom: 0; border-bottom-width: 0; }
+.comment .meta span { float: left; }
+.comment .meta span a { font: 1.3em verdana; font-weight: bold; text-decoration: none; color: #b45b4a; }
+.comment .meta span a:hover { text-decoration: underline; color: #a44e4e; }
+.comment .meta span a:visited { color: #64a869; }
+.comment .meta span small { font: 1em verdana; font-weight: bold; color: #666; }
+.comment .meta .datetime { float: right; font: .9em verdana; color: #b45b4a; }
+.comment p { font: 1.2em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 1.5em; color: #5e5e5e; }
+.comment a { font-size: 1em; color: #b45b4a; }
+.comment a:hover { color: #a44e4e; }
+.comment a:visited { color: #64a869; }
+#col_right { float: right; width: 24.6em; background: #ecf1f9; }
+#search_box { padding: 2em 1em 2em 1em; background: #e5ecf8; border-left: 1px solid #fff; }
+#search_box input { float: left; width: 11em; margin-top: .3em; }
+#search_box .button_wrapper { float: left; width: 6em !important; margin-left: .5em; }
+#sidebar { padding: 1em 1em 2em 1em; background: #ecf1f9; border-top: 1px solid #fff; border-left: 1px solid #fff; }
+#sidebar h2 { font: 1.8em verdana; line-height: 2.2em; color: #656565; }
+#sidebar ul { border-top: 1px solid #e5e5e5; list-style-position: inside; list-style-type: none; }
+#sidebar ul li { padding-left: 2em; background: url(../images/folder.gif) left center no-repeat; border-bottom: 1px solid #e5e5e5; }
+#sidebar ul li a { display: block; font: 1.1em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 2em; text-decoration: none; color: #5d5d5d; }
+#sidebar ul li a:hover { background: #e5ecf8; }
+#footer { padding: 2em 1em 2em 1em; background: #0f1921 url(../images/footer_bg.gif) bottom repeat-x; }
+#footer_left { float: left; width: 50.5em; }
+#footer_right { float: right; width: 23.6em; }
+#footer .header { border-top: 1px solid #1f3444; border-bottom: 1px solid #1f3444; }
+#footer h3 { margin: .1em 0 .1em 0; padding-left: .5em; background: #1f3444; font: 1em verdana; line-height: 1.6em; font-weight: bold; color: #fff; }
+#footer ul { margin-top: 2em; background: url(../images/footer_li_trim.gif) top repeat-x; list-style-position: inside; list-style-type: none; }
+#footer ul li { background: url(../images/footer_li_trim.gif) bottom repeat-x; }
+#footer ul li a { display: block; padding-left: 2em; background: url(../images/bullet.gif) .5em center no-repeat; font: 1.1em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 2em; text-decoration: none; color: #fff; }
+#footer ul li:hover { background: #1a2f3f; }
+#footer p { margin-top: 1.6em; font: 1.2em Lucida Sans Unicode, Trebuchet MS, Sans; line-height: 1.5em; color: #fff; }
+#footer .credit { text-align: center; }
+#footer .credit a { color: #fff; text-decoration: none; }
+#footer .credit a:hover { text-decoration: underline; }
+
+/*WIDTHS*/
+.s49 { width: 49%; }
+
+/*CLASSES*/
+.button_wrapper { width: 15em; border: 1px solid #bfbfbf; }
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+.underline { text-decoration: underline; }
