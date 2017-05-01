@@ -10,6 +10,7 @@
         <module name="ch02" />
         <module name="ch03" />
         <module name="ch04" />
+        <module name="ch05" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="ch02" target="1.5" />
       <module name="ch03" target="1.5" />
       <module name="ch04" target="1.5" />
+      <module name="ch05" target="1.5" />
       <module name="JavaWeb" target="1.5" />
     </bytecodeTargetLevel>
   </component>
