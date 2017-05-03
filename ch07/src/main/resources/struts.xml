@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+    <!-- 与spring集成 -->
+	<constant name="struts.objectFactory" value="spring"/>
+	<!-- 处理编码问题 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<package name="sanqing" extends="struts-default">
+		<action name="addCommodityClass" class="commodityClassAddAction">
+			<result type="chain">findAllCommodityClass</result>
+		</action>
+		
+		<action name="findAllCommodityClass" class="commodityClassListAction">
+			<result>/admin/include/commodityClass/commodityClassList.jsp</result>
+		</action>
+		
+		<action name="addCommodityPage" class="commodityAddtAction" method="addBefore">
+			<result name="success">/admin/include/commodity/commodityAdd.jsp</result>
+		</action>
+		
+		<action name="addCommodity" class="commodityAddtAction">
+			<result name="success" type="chain">findAllCommodity</result>
+		</action>
+		
+		<action name="findAllCommodity" class="commodityListAction">
+			<result name="success">/admin/include/commodity/commodityList.jsp</result>
+		</action>
+		
+		<action name="deleteCommodity" class="commodityDeleteAction">
+			<result name="success" type="chain">findAllCommodity</result>
+		</action>
+		
+		<action name="goIndex" class="goIndexAction">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="showImg" class="showImgAction">
+			<result type="stream"><!--处理结果类型为流-->
+				<param name="contentType">image/jpeg</param><!--文件类型为jpg图片--> 
+				<param name="inputName">inputStream</param><!--设置其输入流-->   
+			</result>  
+		</action>
+		
+		<action name="showByClass" class="ShowByClassAction">
+			<result name="success">/showByClass.jsp</result>
+		</action>
+		
+		<action name="showCommodity" class="ShowCommodityAction">
+			<result name="success">/showdetails.jsp</result>
+		</action>
+		
+		<action name="addToCar" class="AddToCarAction">
+			<result name="success">/showCar.jsp</result>
+		</action>
+		
+		<action name="deleteFromCar" class="DeleteFromCar">
+			<result name="success">/showCar.jsp</result>
+		</action>
+	</package>
+</struts>

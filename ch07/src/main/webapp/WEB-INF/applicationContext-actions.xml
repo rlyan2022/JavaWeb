@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xmlns:aop="http://www.springframework.org/schema/aop"
+	     xmlns:tx="http://www.springframework.org/schema/tx"
+	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+           
+    <bean name="commodityClassAddAction" class="com.sanqing.action.CommodityClassAddAction" scope="prototype">
+    	<property name="commodityClassService" ref="commodityClassService"/>
+    </bean>
+    
+    <bean name="commodityClassListAction" class="com.sanqing.action.CommodityClassListAction" scope="prototype">
+    	<property name="commodityClassService" ref="commodityClassService"/>
+    </bean>
+    
+	<bean name="commodityAddtAction" class="com.sanqing.action.CommodityAddAction" scope="prototype">
+		<property name="commodityClassService" ref="commodityClassService"/>
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+    
+   <bean name="commodityListAction" class="com.sanqing.action.CommodityListAction" scope="prototype">
+    	<property name="commodityService" ref="commodityService"/>
+    </bean>
+    
+	<bean name="commodityDeleteAction" class="com.sanqing.action.CommodityDeleteAction" scope="prototype">
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+	
+	<bean name="goIndexAction" class="com.sanqing.action.GoIndex" scope="prototype">
+		<property name="commodityClassService" ref="commodityClassService"/>
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+	
+	<bean name="showImgAction" class="com.sanqing.action.ShowImg" scope="prototype">
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+	
+	<bean name="ShowByClassAction" class="com.sanqing.action.ShowByClass" scope="prototype">
+		<property name="commodityClassService" ref="commodityClassService"/>
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+	
+	<bean name="ShowCommodityAction" class="com.sanqing.action.ShowCommodity" scope="prototype">
+		<property name="commodityClassService" ref="commodityClassService"/>
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+	
+	<bean name="AddToCarAction" class="com.sanqing.action.AddToCarAction" scope="prototype">
+		<property name="commodityClassService" ref="commodityClassService"/>
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+	
+	<bean name="DeleteFromCar" class="com.sanqing.action.DeleteFromCar" scope="prototype">
+		<property name="commodityClassService" ref="commodityClassService"/>
+		<property name="commodityService" ref="commodityService"/>
+	</bean>
+</beans>
