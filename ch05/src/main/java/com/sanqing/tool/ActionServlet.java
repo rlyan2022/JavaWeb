@@ -15,7 +15,7 @@ public class ActionServlet extends org.apache.struts.action.ActionServlet {
     private void setCharset(HttpServletRequest httpservletrequest) {
         String s = getServletConfig().getInitParameter("charset");//获得初始化参数
         if (s == null || s.length() == 0) {//如果参数为空，或者为null
-            s = "UTF-8";                        //设置参数值为GBK
+            s = "UTF-8";                        //设置参数值为UTF-8
         }
         try {
             httpservletrequest.setCharacterEncoding(s);//设置请求编码格式

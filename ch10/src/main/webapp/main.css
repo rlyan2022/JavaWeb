@@ -1,0 +1,64 @@
+.node {
+	background-image: url(images/node.jpg) !important
+}
+
+.manage {
+	background-image: url(images/man.gif) !important
+}
+
+.index {
+	background-image: url(images/grid.png) !important
+}
+
+.add {
+	background-image: url(images/fileadd.gif) !important;
+}
+
+.modify {
+	background-image: url(images/bt_edit.gif) !important;
+}
+
+.del {
+	background-image: url(images/bt_del.gif) !important;
+}
+
+.refresh {
+	background-image: url(images/refresh.png) !important;
+}
+
+.search {
+	background-image: url(images/application_go.png) !important;
+}
+
+.modifyPwd {
+	background-image: url(images/key.gif) !important;
+}
+
+.logout {
+	background-image: url(images/man.gif) !important;
+}
+
+.register {
+	background-image: url(images/user_add.gif) !important;
+}
+
+.help {
+	background-image: url(images/help.jpg) !important;
+}
+
+html,body {
+	font: normal 12px verdana;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	overflow: hidden;
+	height: 100%;
+}
+
+.empty .x-panel-body {
+	padding-top: 20px;
+	text-align: center;
+	font-style: italic;
+	color: gray;
+	font-size: 11px;
+}

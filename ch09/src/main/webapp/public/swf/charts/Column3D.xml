@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="GBK"?>
-<chart caption='2009Äê×¡ËÞÂÊ' xAxisName='×´Ì¬' 
-baseFont='ËÎÌå' baseFontSize ='11.5' yAxisName='¿Í»§Êý' showValues='0' decimals='0' formatNumberScale='0'>
-<set label='Ò»ÔÂ'  value='256' />
-<set label='¶þÔÂ'  value='156' />
-<set label='ÈýÔÂ'  value='100' />
-<set label='ËÄÔÂ'  value='200' />
-<set label='ÎåÔÂ'  value='305' />
-<set label='ÁùÔÂ'  value='501' />
-<set label='ÆßÔÂ'  value='300' />
-<set label='°ËÔÂ'  value='200' />
-<set label='¾ÅÔÂ'  value='420' />
-<set label='Ê®ÔÂ'  value='235' />
-<set label='Ê®Ò»ÔÂ'  value='267' />
-<set label='Ê®¶þÔÂ'  value='321' />
+<?xml version="1.0" encoding="UTF-8"?>
+<chart caption='2009å¹´ä½å®¿çŽ‡' xAxisName='çŠ¶æ€' 
+baseFont='å®‹ä½“' baseFontSize ='11.5' yAxisName='å®¢æˆ·æ•°' showValues='0' decimals='0' formatNumberScale='0'>
+<set label='ä¸€æœˆ'  value='256' />
+<set label='äºŒæœˆ'  value='156' />
+<set label='ä¸‰æœˆ'  value='100' />
+<set label='å››æœˆ'  value='200' />
+<set label='äº”æœˆ'  value='305' />
+<set label='å…­æœˆ'  value='501' />
+<set label='ä¸ƒæœˆ'  value='300' />
+<set label='å…«æœˆ'  value='200' />
+<set label='ä¹æœˆ'  value='420' />
+<set label='åæœˆ'  value='235' />
+<set label='åä¸€æœˆ'  value='267' />
+<set label='åäºŒæœˆ'  value='321' />
 </chart>	

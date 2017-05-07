@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+	<!-- FormBean -->
+	<form-beans>
+		<form-bean name="customerForm" type="com.sanqing.struts.form.CustomerForm" />
+		<form-bean name="cstLostForm" type="com.sanqing.struts.form.CstLostForm" />
+		<form-bean name="chanceForm" type="com.sanqing.struts.form.ChanceForm" />
+		<form-bean name="planForm"  type="com.sanqing.struts.form.PlanForm" />
+		<form-bean name="basdictForm" type="com.sanqing.struts.form.BasDictForm" />
+		<form-bean name="productForm" type="com.sanqing.struts.form.ProductForm" />
+		<form-bean name="storageForm" type="com.sanqing.struts.form.StorageForm" />
+		<form-bean name="cstServiceForm" type="com.sanqing.struts.form.CstServiceForm" />
+		 <form-bean name="userinfoForm" type="com.sanqing.struts.form.UserinfoForm" />
+		 <form-bean name="roleForm" type="com.sanqing.struts.form.RoleForm"></form-bean>
+		 <form-bean name="rightForm" type="com.sanqing.struts.form.RightForm" />
+	</form-beans>
+
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+		<action 
+		name="customerForm" 
+		input="/main.jsp"
+		parameter="actionType" 
+		path="/customer" 
+		scope="request"
+		type="org.springframework.web.struts.DelegatingActionProxy" />
+
+		<action 
+		name="cstLostForm" 
+		input="/main.jsp"
+		parameter="actionType" 
+		path="/cstLost" 
+		scope="request"
+		type="org.springframework.web.struts.DelegatingActionProxy" />
+
+
+		<action 
+		input="/main.jsp" 
+		name="chanceForm"
+		parameter="actionType"
+		path="/sale" 
+		scope="request"
+		type="org.springframework.web.struts.DelegatingActionProxy" />
+
+		<action 
+		path="/plan" 
+		input="/main.jsp" 
+		name="planForm"
+		parameter="actionType" 
+		scope="request"
+		type="org.springframework.web.struts.DelegatingActionProxy" />
+
+
+        <!-- 统计报表 -->
+        <action 
+		input="/main.jsp" 
+		parameter="actionType" 
+		path="/report"	
+		scope="request"
+		type="org.springframework.web.struts.DelegatingActionProxy" />
+        
+		<!--基础数据-->
+		<action 
+		name="basdictForm" 
+		input="/main.jsp"
+		parameter="actionType" 
+		path="/basdict"
+		type="org.springframework.web.struts.DelegatingActionProxy">
+		</action>
+
+		<action 
+		name="productForm" 
+		input="/main.jsp"
+		parameter="actionType" 
+		path="/product"
+		type="org.springframework.web.struts.DelegatingActionProxy">
+		</action>
+		
+        <action 
+		name="storageForm" 
+		input="/main.jsp"
+		parameter="actionType" 
+		path="/storage"
+		type="org.springframework.web.struts.DelegatingActionProxy">
+		</action>
+
+         <!--服务管理-->
+		<action 
+		name="cstServiceForm" 
+		input="/main.jsp"
+		parameter="actionType" 
+		path="/cstService" 
+		scope="request"
+		type="org.springframework.web.struts.DelegatingActionProxy" />
+        
+        <action
+        input="/index.jsp"
+        parameter="actionType"
+        path="/login"
+        type="org.springframework.web.struts.DelegatingActionProxy">
+        </action>
+
+		<action
+     	input="/main.jsp"
+      	name="userinfoForm"
+      	parameter="actionType"
+      	path="/userinfo"
+      	scope="request"
+      	type="org.springframework.web.struts.DelegatingActionProxy" />
+      	
+      	<!--用户、权限、角色管理-->
+    	<action
+     	name="roleForm"
+     	input = "/main.jsp"
+     	parameter="actionType"
+     	path="/role"
+      	scope="request"
+     	type="org.springframework.web.struts.DelegatingActionProxy" />
+     	<action 
+     	path="/right"
+     	input="/main.jsp"
+     	name="rightForm"
+     	parameter="actionType"
+     	scope="request"
+     	type="org.springframework.web.struts.DelegatingActionProxy" />
+    	<action
+      	parameter="actionType"
+      	path="/myRight"
+     	type="org.springframework.web.struts.DelegatingActionProxy" /> 
+		</action-mappings>
+
+	<message-resources
+		parameter="com.sanqing.struts.action.ApplicationResources" />
+	<!-- action交给spring去管理，这个是spring 的plug-in 的配置 -->
+	<plug-in
+		className="org.springframework.web.struts.ContextLoaderPlugIn">
+		<set-property property="contextConfigLocation"
+			value="classpath:applicationContext.xml" />
+	</plug-in>
+</struts-config>
+

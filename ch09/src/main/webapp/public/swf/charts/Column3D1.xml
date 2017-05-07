@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="GBK"?>
-<chart caption='µ¥ÈÕÔ¤¶¨×´Ì¬Í¼' xAxisName='×´Ì¬' 
-baseFont='ËÎÌå' baseFontSize ='11.5' yAxisName='ÊýÁ¿' showValues='0' decimals='0' formatNumberScale='0'>
-<set label='¿ÉÔ¤¶¨'  value='256' />
-<set label='ÒÑÔ¤¶¨'  value='156' />
-<set label='ÒÑµÇ¼Ç'  value='100' />
+<?xml version="1.0" encoding="UTF-8"?>
+<chart caption='å•æ—¥é¢„å®šçŠ¶æ€å›¾' xAxisName='çŠ¶æ€' 
+baseFont='å®‹ä½“' baseFontSize ='11.5' yAxisName='æ•°é‡' showValues='0' decimals='0' formatNumberScale='0'>
+<set label='å¯é¢„å®š'  value='256' />
+<set label='å·²é¢„å®š'  value='156' />
+<set label='å·²ç™»è®°'  value='100' />
 </chart>	

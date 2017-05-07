@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ 	http://www.springframework.org/schema/beans/spring-beans-2.0.xsd 
+ 	http://www.springframework.org/schema/tx 
+  	http://www.springframework.org/schema/tx/spring-tx-2.0.xsd 
+	http://www.springframework.org/schema/aop 
+  	http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="configLocation"
+			value="classpath:hibernate.cfg.xml">
+		</property>
+	</bean>
+	<!-- 事务(处理增、删、改) -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<!-- 2.0的配置 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="do*" propagation="REQUIRED" />
+			<tx:method name="*" propagation="SUPPORTS" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+	<aop:config>
+		<aop:pointcut id="bizMethods"
+			expression="execution(* com.sanqing.service.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="bizMethods" />
+	</aop:config>
+	
+	<bean id="CstServiceDAO"
+		class="com.sanqing.dao.impl.CstServiceDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="cstcustomer">
+			<ref bean="CstCustomerDAO" />
+		</property>
+	</bean>
+	<bean id="SalChanceDAO"
+		class="com.sanqing.dao.impl.SalChanceDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="SysRightDAO"
+		class="com.sanqing.dao.impl.SysRightDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="SysRoleDAO"
+		class="com.sanqing.dao.impl.SysRoleDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CstLostDAO"
+		class="com.sanqing.dao.impl.CstLostDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="cstDao" ref="CstCustomerDAO"></property>
+		<property name="cstLostService" ref="CstLostService"></property>
+	</bean>
+	<bean id="CstManagerDAO"
+		class="com.sanqing.dao.impl.CstManagerDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="SalPlanDAO"
+		class="com.sanqing.dao.impl.SalPlanDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="BasDictDAO"
+		class="com.sanqing.dao.impl.BasDictDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="SysUserDAO"
+		class="com.sanqing.dao.impl.SysUserDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="sysRoleDao">
+			<ref bean="SysRoleDAO" />
+		</property>
+		<property name="roleRDao" ref="SysRoleRightDAO"></property>
+	</bean>
+	<bean id="CstCustomerDAO"
+		class="com.sanqing.dao.impl.CstCustomerDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="cstManDao" ref="CstManagerDAO" />
+	</bean>
+	<bean id="SysRoleRightDAO"
+		class="com.sanqing.dao.impl.SysRoleRightDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CstLinkmanDAO"
+		class="com.sanqing.dao.impl.CstLinkmanDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="CstActivityDAO"
+		class="com.sanqing.dao.impl.CstActivityDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="StorageDAO" class="com.sanqing.dao.impl.StorageDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="prodDao">
+			<ref bean="ProductDAO" />
+		</property>
+	</bean>
+	<bean id="OrdersDAO" class="com.sanqing.dao.impl.OrdersDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="OrdersLineDAO"
+		class="com.sanqing.dao.impl.OrdersLineDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+		<property name="ordersDao">
+			<ref bean="OrdersDAO" />
+		</property>
+		<property name="customerDao" ref="CstCustomerDAO" />
+	</bean>
+	<bean id="ProductDAO" class="com.sanqing.dao.impl.ProductDAO">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+
+
+	<bean id="ChanceService" class="com.sanqing.service.ChanceService">
+		<property name="chanceDao">
+			<ref bean="SalChanceDAO" />
+		</property>
+	</bean>
+	<bean id="PlanService" class="com.sanqing.service.PlanService">
+		<property name="planDao">
+			<ref bean="SalPlanDAO" />
+		</property>
+		<property name="salchanceDao" ref="SalChanceDAO"></property>
+	</bean>
+
+	<bean id="RoleService" class="com.sanqing.service.RoleService">
+		<property name="roleDao" ref="SysRoleDAO"></property>
+		<property name="rightDao" ref="SysRightDAO"></property>
+		<property name="srrDao" ref="SysRoleRightDAO"></property>
+	</bean>
+
+	<bean id="CustomerService"
+		class="com.sanqing.service.CustomerService">
+		<property name="custDao" ref="CstCustomerDAO" />
+	</bean>
+	<bean id="CstLinkmanService"
+		class="com.sanqing.service.CstLinkmanService">
+		<property name="cstLinkmanDao" ref="CstLinkmanDAO" />
+	</bean>
+	<bean id="CstActivityService"
+		class="com.sanqing.service.CstActivityService">
+		<property name="cstActivityDao" ref="CstActivityDAO" />
+	</bean>
+	<bean id="OrdersService" class="com.sanqing.service.OrdersService">
+		<property name="ordersService" ref="OrdersDAO" />
+		<property name="ordersLineService" ref="OrdersLineDAO" />
+	</bean>
+	<bean id="CstLostService" class="com.sanqing.service.CstLostService">
+		<property name="cstLostDao" ref="CstLostDAO" />
+	</bean>
+
+	<bean id="CstServiceService"
+		class="com.sanqing.service.CstServiceService">
+		<property name="cstServiceDao" ref="CstServiceDAO" />
+	</bean>
+
+	<bean id="ReportService" class="com.sanqing.service.ReportService">
+		<property name="ordersLineDao" ref="OrdersLineDAO" />
+		<property name="customerDao" ref="CstCustomerDAO" />
+		<property name="cstLostDao" ref="CstLostDAO" />
+		<property name="cstServiceDao" ref="CstServiceDAO"></property>
+	</bean>
+
+	<bean id="BasDictService" class="com.sanqing.service.BasDictService">
+		<property name="bdoo">
+			<ref bean="BasDictDAO" />
+		</property>
+	</bean>
+	<bean id="ProductService" class="com.sanqing.service.ProductService">
+		<property name="duct">
+			<ref bean="ProductDAO" />
+		</property>
+	</bean>
+	<bean id="StroageService" class="com.sanqing.service.StorageService">
+		<property name="storage">
+			<ref bean="StorageDAO" />
+		</property>
+	</bean>
+	<bean id="LoginService" class="com.sanqing.service.LoginService">
+		<property name="sysUserDao" ref="SysUserDAO" />
+	</bean>
+	<bean id="RightService" class="com.sanqing.service.RightService">
+		<property name="rightDao" ref="SysRightDAO" />
+		<property name="roleRightDao" ref="SysRoleRightDAO" />
+	</bean>
+
+	<bean id="CstManagerService"
+		class="com.sanqing.service.CstManagerService">
+		<property name="cstManagerDao" ref="CstManagerDAO"></property>
+	</bean>
+
+
+
+
+	<bean name="/sale" class="com.sanqing.struts.action.ChanceAction">
+		<property name="chanceService" ref="ChanceService"></property>
+		<property name="cstManService" ref="CstManagerService"></property>
+		<property name="cstService" ref="CustomerService"></property>
+	</bean>
+
+	<bean name="/plan" class="com.sanqing.struts.action.PlanAction">
+		<property name="planService" ref="PlanService"></property>
+	</bean>
+
+	<bean id="UserinfoService"
+		class="com.sanqing.service.UserinfoService">
+		<property name="userDao">
+			<ref bean="SysUserDAO" />
+		</property>
+		<property name="roleDao" ref="SysRoleDAO"></property>
+		<property name="rightDao" ref="SysRightDAO"></property>
+	</bean>
+
+	<bean name="/customer"
+		class="com.sanqing.struts.action.CustomerAction">
+		<property name="custService" ref="CustomerService" />
+		<property name="cstLinkmanService" ref="CstLinkmanService" />
+		<property name="cstActivityService" ref="CstActivityService" />
+		<property name="ordersService" ref="OrdersService" />
+		<property name="cstManService" ref="CstManagerService"></property>
+	</bean>
+	<bean name="/cstLost"
+		class="com.sanqing.struts.action.CstLostAction">
+		<property name="cstLostService" ref="CstLostService" />
+		<property name="custService" ref="CustomerService" />
+	</bean>
+
+	<bean name="/cstService"
+		class="com.sanqing.struts.action.CstServiceAction">
+		<property name="custService" ref="CustomerService"></property>
+		<property name="cstServiceService" ref="CstServiceService"></property>
+	</bean>
+
+	<bean name="/report" class="com.sanqing.struts.action.ReportAction">
+		<property name="reptService" ref="ReportService" />
+	</bean>
+
+	<bean name="/basdict"
+		class="com.sanqing.struts.action.BasDictAction">
+		<property name="dictService" ref="BasDictService"></property>
+	</bean>
+	<bean name="/product"
+		class="com.sanqing.struts.action.ProductAction">
+		<property name="productService" ref="ProductService"></property>
+	</bean>
+	<bean name="/storage"
+		class="com.sanqing.struts.action.StorageAction">
+		<property name="stroageservice" ref="StroageService"></property>
+	</bean>
+	<!--用户、权限、角色管理-->
+	<bean name="/role" class="com.sanqing.struts.action.RoleAction">
+		<property name="roleService" ref="RoleService"></property>
+	</bean>
+
+	<!-- 用户登录 -->
+	<bean name="/login" class="com.sanqing.struts.action.LoginAction">
+		<property name="loginService" ref="LoginService"></property>
+		<property name="rightService" ref="RightService"></property>
+	</bean>
+	<bean name="/userinfo"
+		class="com.sanqing.struts.action.UserinfoAction">
+		<property name="userinfoService" ref="UserinfoService"></property>
+	</bean>
+	<bean name="/myRight"
+		class="com.sanqing.struts.action.MyRightAction">
+		<property name="roleService" ref="RoleService"></property>
+	</bean>
+	<!-- 权限管理 -->
+	<bean name="/right" class="com.sanqing.struts.action.RightAction">
+		<property name="rightService" ref="RightService"></property>
+	</bean>
+</beans>
