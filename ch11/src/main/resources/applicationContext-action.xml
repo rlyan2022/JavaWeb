@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<bean id="songAction" class="edu.jlu.fuliang.action.SongAction" scope="prototype">
+		<property name="songManageService">
+			<ref bean="songManageService"/>
+		</property>
+	</bean>
+	
+	<bean id="uploadSongAction" class="edu.jlu.fuliang.action.UploadSongAction" scope="prototype">
+	    <property name="singerManageService">
+			<ref bean="singerManageService"/>
+		</property>
+	</bean>
+	
+	<bean id="playSongAction" class="edu.jlu.fuliang.action.PlaySongAction" scope="prototype">
+	    <property name="songManageService">
+			<ref bean="songManageService"/>
+		</property>
+	</bean>
+	
+	<bean id="loginAction" class="edu.jlu.fuliang.action.LoginAction" scope="prototype">
+		<property name="userManageService">
+			<ref bean="userManageService"/>
+		</property>
+	</bean>
+	
+	<bean id="registerAction" class="edu.jlu.fuliang.action.RegisterAction" scope="prototype">
+		<property name="userManageService">
+			<ref bean="userManageService"/>
+		</property>
+	</bean>
+	
+	<bean id="listSongByRegionAction" class="edu.jlu.fuliang.action.ListSongByRegionAction">
+	     <property name="songManageService">
+			<ref bean="songManageService"/>
+		</property>
+	</bean>
+	
+	<bean id="searchSong" class="edu.jlu.fuliang.action.SearchSongAction">
+		  <property name="songManageService">
+			<ref bean="songManageService"/>
+		 </property>
+	</bean>
+</beans>

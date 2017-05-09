@@ -1,0 +1,49 @@
+#main{
+ withd: 100%;
+ text-align: center;
+}
+#content{
+	 width: 1040px;
+	 text-align: left;
+}
+
+.seperator{
+  width: 720px;
+  height: 30;
+}
+
+.rightWrapper{
+   float: right;
+   width: 720px;
+   margin-left:10px;
+}
+.leftContainer{
+    float:left;
+    width:300px;
+ 	border: 1px solid #A9A9A9;
+ 	
+}
+.leftContainer ul li,.centerContainer  ul li,.rightContainer ul li{
+    list-style: none;
+    cursor: pointer;
+    padding-right:2px;
+    margin-left:2px;
+    display: block;
+}
+.title{
+    text-align: center;
+    background:url(images/headlog_bg.gif) repeat-x;
+}
+
+.centerContainer{
+	 float: left;
+     width: 400px;
+ 	 border: 1px solid #A9A9A9;
+ 	 margin-right:10px;
+}
+
+.rightContainer{
+   float: right;
+   width: 300px;
+   border: 1px solid #A9A9A9;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+	
+	
+	<bean id="songManageService" class="edu.jlu.fuliang.Service.impl.SongManageServiceImpl">
+		<property name="songDAO">
+			<ref bean="songDAO"/>
+		</property>
+	</bean>
+	
+	<bean id="userManageService" class="edu.jlu.fuliang.Service.impl.UserManageServiceImpl">
+		<property name="userDAO">
+			<ref bean="userDAO"/>
+		</property>
+	</bean>
+	
+	<bean id="singerManageService" class="edu.jlu.fuliang.Service.impl.SingerManageServiceImpl">
+		<property name="singerDAO">
+		   <ref bean="singerDAO"/>
+		</property>
+	</bean>
+	
+	<aop:config>
+		<aop:pointcut id="serviceOperation" expression="execution(* edu.jlu.fuliang.Service.impl.*ServiceImpl.*(..))"/>
+		<aop:advisor pointcut-ref="serviceOperation" advice-ref="txAdvice"/>
+	</aop:config>	
+	
+	<tx:advice id="txAdvice">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true"/>
+			<tx:method name="*"/>
+		</tx:attributes>
+	</tx:advice>
+	
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<!--<bean id="songManageService" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager"/>
+		</property>
+		<property name="target">
+			<ref bean="songManageServiceTarget"/>
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>-->
+</beans>

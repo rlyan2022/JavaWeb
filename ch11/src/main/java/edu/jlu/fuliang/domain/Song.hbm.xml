@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.jlu.fuliang.domain">
+    <class name="Song" table="SONG" schema="music">
+        <id name="id" type="java.lang.Long">
+            <column name="SONG_ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" not-null="true"/>
+        </property>
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" not-null="true"/>
+        </property>
+        <many-to-one name="singer" class="Singer" column="SINGER_ID" lazy="false"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,51 @@
+#top{
+	 width:100%;
+	 font-size: 12px;
+	 text-align: center;
+}
+#head{
+    border: 1px solid #A9A9A9;
+    padding: 0px;
+    height: 28px;
+    background-image: url(images/headlog_bg.gif) repeat-x;
+    text-valign: middle;
+    height:36px;
+    clear:both;
+}
+#title{
+    padding: 0px;
+    margin-top: 5px;
+    height: 28px;
+    text-valign: middle;
+}
+#mainMenu{
+    background:url(images/headmenu_bg.gif) repeat-x;
+    clear:both;
+    height:36px;
+}
+#menu{
+   padding: 0px;
+   border: 1px solid #A9A9A9;
+   height:26px;
+   font-size: 14px;
+   margin-bottom: 16px;
+   background-image: url(images/channelmenu_bg.gif) repeat-x;
+   text-valign: middle;
+   clear:both;
+}
+#menu a{
+  text-decoration:none;
+}
+#menu a:hover {text-decoration:underline;}
+#menu a:visited{
+ color:#2968B2;
+}
+
+.copyright{
+  font-size:12px;
+  text-align: center;
+}
+.info{
+   font-size:12px;
+   text-align: center;
+}

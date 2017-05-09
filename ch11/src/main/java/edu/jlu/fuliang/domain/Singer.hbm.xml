@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.jlu.fuliang.domain">
+    <class name="Singer" table="SINGER">
+        <id name="id" type="java.lang.Long">
+            <column name="SINGER_ID"/>
+            <generator class="identity"/>
+        </id>
+
+        <discriminator column="TYPE" type="string"/>
+
+        <property name="region" type="java.lang.String">
+            <column name="REGION"/>
+        </property>
+
+        <set name="songs" table="SONG" inverse="true" cascade="save-update">
+            <key column="SINGER_ID"/>
+            <one-to-many class="Song"/>
+        </set>
+
+        <subclass name="SingleSinger" discriminator-value="1">
+            <property name="name" type="java.lang.String">
+                <column name="NAME"/>
+            </property>
+            <property name="sex" type="java.lang.Character">
+                <column name="SEX"/>
+            </property>
+        </subclass>
+
+        <subclass name="CompositeSinger" discriminator-value="2">
+            <set name="singleSingers" table="SINGER" cascade="save-update" lazy="false">
+                <key column="COMPSITESINGER_ID"/>
+                <one-to-many class="SingleSinger"/>
+            </set>
+        </subclass>
+
+        <subclass name="Band" discriminator-value="3">
+            <set name="singleSingers" table="SINGER" cascade="save-update">
+                <key column="BAND_ID"/>
+                <one-to-many class="SingleSinger"/>
+            </set>
+        </subclass>
+    </class>
+</hibernate-mapping>
