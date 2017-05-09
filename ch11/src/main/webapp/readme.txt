@@ -1,7 +1,7 @@
-ĞèÒªµÄ½¨±ísqlÔÚmysql/music.sqlÖĞ
-ĞèÒªlibÁĞ±í£º(Ê¹ÓÃmyeclipseÖ§³ÖµÄspring¡¢hibernate£¬×Ô¶¯µ¼ÈëµÄ.jar£¬
-ÁíÍâÌí¼Óstruts2ÒÔ¼°struts2¶ÔspringÖ§³ÖµÄ²å¼ş£¬Á¬½Ó³Øcommons-pool-1.3.jar£¬
- sitemeshÒÔ¼°struts2¶ÔsitemeshÖ§³ÖµÄ²å¼şjar):
+éœ€è¦çš„å»ºè¡¨sqlåœ¨mysql/music.sqlä¸­
+éœ€è¦libåˆ—è¡¨ï¼š(ä½¿ç”¨myeclipseæ”¯æŒçš„springã€hibernateï¼Œè‡ªåŠ¨å¯¼å…¥çš„.jarï¼Œ
+å¦å¤–æ·»åŠ struts2ä»¥åŠstruts2å¯¹springæ”¯æŒçš„æ’ä»¶ï¼Œè¿æ¥æ± commons-pool-1.3.jarï¼Œ
+ sitemeshä»¥åŠstruts2å¯¹sitemeshæ”¯æŒçš„æ’ä»¶jar):
  antlr-2.7.6.jar
  aopalliance.jar
  asm-attrs.jar
