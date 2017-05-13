@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts2" extends="json-default">
+		<interceptors>
+			<interceptor name="loginInterceptor" class="com.ibeifeng.interceptor.LoginInterceptor"></interceptor>
+			
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="loginInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<action name="login" class="loginAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO</param>
+			</result>
+		</action>
+		
+		<action name="commodityAdd" class="commodityAddAction">
+			<result type="json">
+				<param name="excludeProperties">commodityDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+		<action name="commodityQuery" class="commodityQueryAction">
+			<result type="json">
+				<param name="excludeProperties">commodityDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+		<action name="vipAdd" class="vipAddAction">
+			<result type="json">
+				<param name="excludeProperties">vipDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+		<action name="vipQuery" class="vipQueryAction">
+			<result type="json">
+				<param name="excludeProperties">vipDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+		<action name="getVip" class="getVipAction">
+			<result type="json">
+				<param name="excludeProperties">vipDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+		<action name="getCommodity" class="getCommodityAction">
+			<result type="json">
+				<param name="excludeProperties">commodityDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+		
+		<action name="consumeAdd" class="consumeAddAction">
+			<result type="json">
+				<param name="excludeProperties">consumeDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+		
+		<action name="consumeQuery" class="consumeQueryAction">
+			<result type="json">
+				<param name="excludeProperties">consumeDAO</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>

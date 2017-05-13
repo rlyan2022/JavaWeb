@@ -68,7 +68,7 @@ INSERT INTO `tb_message` VALUES (16,'开会通知','<p><span style=\"color: #336
 INSERT INTO `tb_message` VALUES (17,'研发部会议通知','<p><span style=\"color: #ff0000\"><span style=\"font-size: 20px\">请研发部的所有人员于8月30日的下午2点到三楼会议室，会议重要，请勿缺席！！</span></span></p>',3052,'2009-08-25 14:33:51');
 INSERT INTO `tb_message` VALUES (18,'关于国庆放假的通知','<p><span style=\"font-size: 20px\">按国家规定国庆放假七天，8月8日正常上班。</span></p>',3052,'2009-08-25 14:35:35');
 INSERT INTO `tb_message` VALUES (19,'请假一天，望领导能批准','<p>由于家里有事情，急需处理，现请假一天，忘领导能批准。</p>',3052,'2009-08-25 14:37:02');
-INSERT INTO `tb_message` VALUES (20,'测试一下发布！','<p><img alt=\"\" src=\"http://localhost:8080/JavaPrj_1/fckeditor/editor/images/smiley/qq/004.gif\" />测试一下！</p>',3052,'2010-01-26 20:53:57');
+INSERT INTO `tb_message` VALUES (20,'测试一下发布！','<p><img alt=\"\" src=\"http://localhost:8081/ch01/fckeditor/editor/images/smiley/qq/004.gif\" />测试一下！</p>',3052,'2010-01-26 20:53:57');
 
 #
 # Table structure for table tb_reply

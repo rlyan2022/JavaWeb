@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3308/bfvipshopping</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>1016</value>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/ibeifeng/po/User.hbm.xml</value>
+				<value>com/ibeifeng/po/Commodity.hbm.xml</value>
+				<value>com/ibeifeng/po/Vip.hbm.xml</value>
+				<value>com/ibeifeng/po/Consume.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<!-- 声明一个 Hibernate 3 的事务管理器供代理类自动管理事务用 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="userDAO" class="com.ibeifeng.dao.UserDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+	
+	<bean id="userDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref bean="userDAO" />
+		</property>
+
+		<property name="transactionAttributes">
+			<props>
+				<!-- 这里的方法签名可以精确到方法全配置上 -->
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="loginAction" class="com.ibeifeng.action.LoginAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="commodityDAO" class="com.ibeifeng.dao.CommodityDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+	
+	<bean id="commodityDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref bean="commodityDAO" />
+		</property>
+
+		<property name="transactionAttributes">
+			<props>
+				<!-- 这里的方法签名可以精确到方法全配置上 -->
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="commodityAddAction" class="com.ibeifeng.action.CommodityAddAction">
+		<property name="commodityDAO">
+			<ref bean="commodityDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="commodityQueryAction" class="com.ibeifeng.action.CommodityQueryAction">
+		<property name="commodityDAO">
+			<ref bean="commodityDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="vipDAO" class="com.ibeifeng.dao.VipDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+	
+	<bean id="vipDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref bean="vipDAO" />
+		</property>
+
+		<property name="transactionAttributes">
+			<props>
+				<!-- 这里的方法签名可以精确到方法全配置上 -->
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="vipAddAction" class="com.ibeifeng.action.VipAddAction">
+		<property name="vipDAO">
+			<ref bean="vipDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="vipQueryAction" class="com.ibeifeng.action.VipQueryAction">
+		<property name="vipDAO">
+			<ref bean="vipDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="getVipAction" class="com.ibeifeng.action.GetVipAction">
+		<property name="vipDAO">
+			<ref bean="vipDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="getCommodityAction" class="com.ibeifeng.action.GetCommodityAction">
+		<property name="commodityDAO">
+			<ref bean="commodityDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="consumeDAO" class="com.ibeifeng.dao.ConsumeDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+	
+	<bean id="consumeDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref bean="consumeDAO" />
+		</property>
+
+		<property name="transactionAttributes">
+			<props>
+				<!-- 这里的方法签名可以精确到方法全配置上 -->
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="consumeAddAction" class="com.ibeifeng.action.ConsumeAddAction">
+		<property name="consumeDAO">
+			<ref bean="consumeDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="consumeQueryAction" class="com.ibeifeng.action.ConsumeQueryAction">
+		<property name="consumeDAO">
+			<ref bean="consumeDAOProxy"/>
+		</property>
+	</bean>
+</beans>
