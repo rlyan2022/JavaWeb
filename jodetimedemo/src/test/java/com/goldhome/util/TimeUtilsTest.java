@@ -36,8 +36,8 @@ public class TimeUtilsTest
     public void dateToUtcTest()
     {
         String format = "yyyy-MM-dd HH:mm";
-        long utc = TimeUtils.dateToUtc("2017-05-13 23:00", format);
-        System.out.println(String.valueOf(utc));
+        System.out.println(TimeUtils.dateToUtc("2017-05-13 23:00", format));
+        System.out.println(TimeUtils.dateToUtc("2017-04-13 23:00", format));
         //2017-05-13 23:00(DST) ---- 1494727200
         //2017-05-14 00:00 ---- 1494734400
     }
@@ -49,6 +49,7 @@ public class TimeUtilsTest
         long utc = TimeUtils.dateToUtc("2017-05-13 23:00", format);
         String dateStr = TimeUtils.utcToDate(utc, format);
         System.out.println(dateStr);
+        System.out.println( TimeUtils.utcToDate(1495347300, format));
     }
 
     @Test
@@ -69,7 +70,7 @@ public class TimeUtilsTest
     public void getTimeZoneOffsetTest()
     {
         System.out.println(TimeUtils.getTimeZoneOffset(1494727200L));
-        System.out.println(TimeUtils.getTimeZoneOffset(1494734400L));
+        System.out.println(TimeUtils.getTimeZoneOffset(1494734400L));;
     }
 
     @Test
@@ -85,6 +86,13 @@ public class TimeUtilsTest
     {
         System.out.println(TimeUtils.getDaySuff(1494727200L));
         System.out.println(TimeUtils.getDaySuff(1494734400L));
+    }
+
+    @Test
+    public void getMonthSuffTest()
+    {
+        System.out.println(TimeUtils.getMonthSuff(1492135200L));
+        System.out.println(TimeUtils.getMonthSuff(1494734400L));
     }
 
 }
