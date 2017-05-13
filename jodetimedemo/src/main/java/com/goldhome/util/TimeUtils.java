@@ -106,8 +106,8 @@ public class TimeUtils {
      * 获取天表后缀
      * 当前时间距离19700101有多少天
      *
-     * @param utc
-     * @return
+     * @param utc UTC时间
+     * @return days 返回天数
      */
     public static int getDaySuff(long utc) {
         DateTime dateTime = new DateTime(utc * 1000);
@@ -130,8 +130,8 @@ public class TimeUtils {
      * 获取月表后缀
      * 当前时间距离19700101有多少个月
      *
-     * @param utc
-     * @return
+     * @param utc UTC时间
+     * @return months 返回月份
      */
     public static int getMonthSuff(long utc) {
 
