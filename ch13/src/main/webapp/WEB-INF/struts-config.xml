@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="Login" type="">
+      <form-property name="password" type="java.lang.String" />
+      <form-property name="username" type="java.lang.String" />
+    </form-bean>
+    <form-bean name="loginForm" type="com.sanqing.struts.form.LoginForm" />
+    <form-bean name="userEditorForm" type="com.sanqing.struts.form.UserEditorForm" />
+    <form-bean name="userRoleEditorForm" type="com.sanqing.struts.form.UserRoleEditorForm" />
+    <form-bean name="actionEditorForm" type="com.sanqing.struts.form.ActionEditorForm" />
+    <form-bean name="roleEditorForm" type="com.sanqing.struts.form.RoleEditorForm" />
+    <form-bean name="classCodeEditorForm" type="com.sanqing.struts.form.ClassCodeEditorForm" />
+    <form-bean name="currencyEditorForm" type="com.sanqing.struts.form.CurrencyEditorForm" />
+    <form-bean name="shipvinEditorForm" type="com.sanqing.struts.form.ShipvinEditorForm" />
+    <form-bean name="ummasterForm" type="com.sanqing.struts.form.UmmasterForm" />
+    <form-bean name="venderEditorForm" type="com.sanqing.struts.form.VenderEditorForm" />
+    <form-bean name="eceiptwinForm" type="com.sanqing.struts.form.EceiptwinForm" />
+    <form-bean name="iussefailForm" type="com.sanqing.struts.form.IussefailForm" />
+    <form-bean name="locationeditorForm" type="com.sanqing.struts.form.LocationeditorForm" />
+    <form-bean name="itemeditorForm" type="com.sanqing.struts.form.ItemeditorForm" />
+    <form-bean name="warehouseForm" type="com.sanqing.struts.form.WarehouseForm" />
+    <form-bean name="venderTypeEditorForm" type="com.sanqing.struts.form.VenderTypeEditorForm" />
+    <form-bean name="roleActionForm" type="com.sanqing.struts.form.RoleActionForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    
+
+  </global-forwards>
+
+  <action-mappings >
+    <action
+      attribute="loginForm"
+      input="/form/login.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="com.sanqing.struts.action.LoginAction">
+      <forward name="loginsuccess" path="/Frame.html" />
+      <forward name="loginfail" path="/form/login.jsp" />
+    </action>
+    <action
+      attribute="userEditorForm"
+      input="/form/employee/userEditor.jsp"
+      name="userEditorForm"
+      path="/userEditor"
+      scope="request"
+      type="com.sanqing.struts.action.UserEditorAction">
+      <forward name="success" path="/form/employee/employeelist.jsp" />
+    </action>
+    <action
+      attribute="userRoleEditorForm"
+      input="/form/employee/userRoleEditor.jsp"
+      name="userRoleEditorForm"
+      path="/userRoleEditor"
+      scope="request"
+      type="com.sanqing.struts.action.UserRoleEditorAction">
+      <forward name="success" path="/form/employee/employeelist.jsp" />
+    </action>
+    <action
+      attribute="actionEditorForm"
+      input="/form/systemManage/actionEditor.jsp"
+      name="actionEditorForm"
+      path="/actionEditor"
+      scope="request"
+      type="com.sanqing.struts.action.ActionEditorAction">
+      <forward name="success" path="/form/systemManage/actionlist.jsp" />
+    </action>
+    <action
+      attribute="roleEditorForm"
+      input="/form/systemManage/roleEditor.jsp"
+      name="roleEditorForm"
+      path="/roleEditor"
+      scope="request"
+      type="com.sanqing.struts.action.RoleEditorAction" />
+    <action
+      attribute="classCodeEditorForm"
+      input="/form/systemManage/classCodeEditor.jsp"
+      name="classCodeEditorForm"
+      path="/classCodeEditor"
+      scope="request"
+      type="com.sanqing.struts.action.ClassCodeEditorAction" />
+    <action
+      attribute="currencyEditorForm"
+      input="/form/systemManage/currencyEditor.jsp"
+      name="currencyEditorForm"
+      path="/currencyEditor"
+      scope="request"
+      type="com.sanqing.struts.action.CurrencyEditorAction" />
+    <action
+      attribute="shipvinEditorForm"
+      input="/form/systemManage/shipvinEditor.jsp"
+      name="shipvinEditorForm"
+      path="/shipvinEditor"
+      scope="request"
+      type="com.sanqing.struts.action.ShipvinEditorAction" />
+    <action
+      attribute="ummasterForm"
+      input="/form/systemManage/ummaster.jsp"
+      name="ummasterForm"
+      path="/ummaster"
+      scope="request"
+      type="com.sanqing.struts.action.UmmasterAction" />
+    <action
+      attribute="venderEditorForm"
+      input="/form/vender/venderEditor.jsp"
+      name="venderEditorForm"
+      path="/venderEditor"
+      scope="request"
+      type="com.sanqing.struts.action.VenderEditorAction" />
+    <action
+      attribute="eceiptwinForm"
+      input="/form/storage/eceiptwin.jsp"
+      name="eceiptwinForm"
+      path="/eceiptwin"
+      scope="request"
+      type="com.sanqing.struts.action.EceiptwinAction" />
+    <action
+      attribute="iussefailForm"
+      input="/form/storage/iussefail.jsp"
+      name="iussefailForm"
+      path="/iussefail"
+      scope="request"
+      type="com.sanqing.struts.action.IussefailAction" />
+    <action
+      attribute="locationeditorForm"
+      input="/form/storage/locationeditor.jsp"
+      name="locationeditorForm"
+      path="/locationeditor"
+      scope="request"
+      type="com.sanqing.struts.action.LocationeditorAction" />
+    <action
+      attribute="itemeditorForm"
+      input="/form/storage/itemeditor.jsp"
+      name="itemeditorForm"
+      path="/itemeditor"
+      scope="request"
+      type="com.sanqing.struts.action.ItemeditorAction" />
+    <action
+      attribute="warehouseForm"
+      input="/form/storage/warehouse.jsp"
+      name="warehouseForm"
+      path="/warehouse"
+      scope="request"
+      type="com.sanqing.struts.action.WarehouseAction" />
+    <action
+      attribute="venderTypeEditorForm"
+      input="/form/vender/venderTypeEditor.jsp"
+      name="venderTypeEditorForm"
+      path="/venderTypeEditor"
+      scope="request"
+      type="com.sanqing.struts.action.VenderTypeEditorAction" />
+    <action
+      attribute="roleActionForm"
+      input="/form/systemManage/roleAction.jsp"
+      name="roleActionForm"
+      path="/roleAction"
+      scope="request"
+      type="com.sanqing.struts.action.RoleActionAction" />
+  </action-mappings>
+
+  <message-resources parameter="com.sanqing.struts.ApplicationResources" />
+</struts-config>
+

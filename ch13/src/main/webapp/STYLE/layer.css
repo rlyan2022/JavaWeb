@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+.DL dl{
+}
+.DL dl dt{
+	clear:both;
+	display:inline;
+	width:50px;
+	float:left;
+	height: 18px;
+	line-height: 120%
+}
+.DL dl dd{
+	width: 120px;
+	float:right;
+	text-align:center;
+	display:inline;
+	margin-left:6px;
+	height: 18px;
+	line-height: 120%
+}

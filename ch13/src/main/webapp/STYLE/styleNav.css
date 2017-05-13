@@ -1,0 +1,86 @@
+body, td, th, a, p, div, input, textarea, select, button
+{
+	font-size: 12px;
+	font-family: "宋体" , "Verdana" , "Arial" , "Helvetica" , "sans-serif";
+}
+body
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+ 	margin-bottom: 0px;
+ /*	background:url(../Images/toptitle01.png) repeat-x left top;*/
+}
+A
+{
+	text-decoration: none;
+}
+A:link
+{
+	color: #FFFFFF;
+}
+A:visited
+{
+	color:#FFFFFF;
+}
+A:hover
+{
+	color: #0066ff;
+}
+A:active
+{
+	color: #ff9900;
+}
+ul,li
+{
+	padding:0px;
+	margin:0px;
+}
+
+/* 解决UL在IE中显示不正确问题 */
+* html ul li { height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+ul.Nav
+{
+	background:#FFFFFF;
+	border:none;
+	list-style:none;
+	width:170px;
+}
+ul.Nav li.Header
+{
+	height:25px;
+	width:170px;
+	background:url(../IMAGES/nv_link_bg.jpg) repeat-x left top;
+}
+ul.Nav li.Header a
+{
+	height:25px;
+	line-height:25px;
+	display:inline;
+	background:url(../IMAGES/nv_link_bg.jpg) repeat-x left top;
+}
+ul.Nav li.body
+{
+	padding-top:0px;
+	margin-top:0px;
+	display:none;
+}
+ul.Nav li.body ul
+{
+	margin-left:10px;
+	list-style:none;
+	margin-top:0px;
+	padding-top:0px;
+}
+ul.Nav li.body ul li
+{
+	height:23px;
+	line-height:23px;
+	display:block;
+}
+ul.Nav li.body ul li a
+{
+	color:#003366;
+}

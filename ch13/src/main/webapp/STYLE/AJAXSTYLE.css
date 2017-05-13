@@ -1,0 +1,13 @@
+.wait{
+	border-top:#0099FF 2px solid;
+	border-bottom:#CCCCCC 1px solid;
+	border-left:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;
+	position:absolute;
+	z-index:1000;
+	font-size:12px;
+	color:#999999;
+	padding:10px;
+	cursor:move;
+	background:url(../IMAGES/FangBG.png) right bottom no-repeat #FFFFFF;
+}

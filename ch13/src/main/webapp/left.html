@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>left.html</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+  	<link rel="stylesheet" href="STYLE/styleNav.css" type="text/css"></link>
+	  <script type="text/javascript" src="JS/jquery.js"></script>
+	  <script type="text/javascript" src="JS/iutil.js"></script>
+	  <script type="text/javascript" src="JS/JSForNav.js"></script>
+	  <script type="text/javascript">
+	  $(
+	  	function(){
+	  		$(".Header").each(
+	  			function(i){
+	  				$(this).bind("click",
+	  				function(){
+	  					var MyUl = $(this).next("li");
+					    if(MyUl.css("display")=="none")
+					    {
+					        MyUl.slideDown("fast");
+					    }
+					    else
+					    {
+					        MyUl.slideUp("fast");
+					    }
+					}
+	  				);
+	  			}
+	  		);
+	  	}
+	  );
+	  </script>
+	  </head>
+  
+  <body>
+  <ul class="Nav">
+  <li class="Header"><img align="middle" src="IMAGES/Navbar/inserttable.gif" border="0"></img><a href="javascript:void(0)">系统设置</a></li>
+  <li class="body">
+  	<ul>
+  		<li><a href="form/systemManage/ummaster.jsp" target="mainFrame">计量单位管理</a></li>
+  		<li><a href="form/systemManage/currencyEditor.jsp" target="mainFrame">货币管理</a></li>
+  		<li><a href="form/systemManage/classCodeEditor.jsp" target="mainFrame">分类管理</a></li>
+  		<li><a href="form/systemManage/shipvinEditor.jsp" target="mainFrame">运输途径管理</a></li>
+  		<li><a href="form/systemManage/roleEditor.jsp" target="mainFrame">角色信息管理</a></li>
+  		<li><a href="form/systemManage/actionEditor.jsp" target="mainFrame">权限信息管理</a></li>
+  		<li><a href="form/systemManage/roleAction.jsp" target="mainFrame">角色权限管理</a></li>
+  	</ul>
+  </li>
+  </ul> 
+  <ul class="Nav">
+  <li class="Header"><img align="middle" src="IMAGES/Navbar/inserttable.gif" border="0"></img><a href="javascript:void(0)">人事管理</a></li>
+  <li class="body">
+  	<ul>
+  		<li><a href="form/employee/userEditor.jsp" target="mainFrame">人事信息维护</a></li>
+  	</ul>
+  </li>
+  </ul>
+  <ul class="Nav">
+  <li class="Header"><img align="middle" src="IMAGES/Navbar/inserttable.gif" border="0"></img><a href="javascript:void(0)">供应商管理</a></li>
+  <li class="body">
+  	<ul>
+  		<li><a href="form/vender/venderTypeEditor.jsp" target="mainFrame">供应商类型维护</a></li>
+  		<li><a href="form/vender/venderEditor.jsp" target="mainFrame">供应商信息维护</a></li>
+  	</ul>
+  </li>
+  </ul>
+  <ul class="Nav">
+  <li class="Header"><img align="middle" src="IMAGES/Navbar/inserttable.gif" border="0"></img><a href="javascript:void(0)">仓库管理</a></li>
+  <li class="body">
+  	<ul>
+  		<li><a href="form/vender/venderTypeEditor.jsp" target="mainFrame">盘赢入库</a></li>
+  		<li><a href="form/vender/venderEditor.jsp" target="mainFrame">盘亏出库</a></li>
+  		<li><a href="form/vender/venderEditor.jsp" target="mainFrame">普通入库</a></li>
+  		<li><a href="form/vender/venderEditor.jsp" target="mainFrame">普通出库</a></li>
+  		<li><a href="form/vender/venderEditor.jsp" target="mainFrame">仓库补货</a></li>
+  		<li><a href="form/vender/venderEditor.jsp" target="mainFrame">成本计算</a></li>
+  		<li><a href="form/storage/itemeditor.jsp" target="mainFrame">物料信息维护</a></li>
+  		<li><a href="form/storage/warehouse.jsp" target="mainFrame">仓库信息维护</a></li>
+  		<li><a href="form/storage/locationeditor.jsp" target="mainFrame">仓位信息维护</a></li>
+  	</ul>
+  </li>
+  <li class="Header"><img align="middle" src="IMAGES/Navbar/inserttable.gif" border="0"></img><a href="form/login.jsp" target="_top">退出系统</a></li>
+  </ul> 
+  </body>
+</html>

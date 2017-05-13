@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/login.do" location="-45,-15" dimension="151,84" />
+  <StrutsActivity path="/userEditor.do" location="165,180" dimension="211,84" />
+  <StrutsActivity path="/userRoleEditor.do" location="165,285" dimension="211,84" />
+  <StrutsActivity path="/actionEditor.do" location="165,390" dimension="211,84" />
+  <StrutsActivity path="/roleEditor.do" location="735,-15" dimension="151,84" />
+  <StrutsActivity path="/classCodeEditor.do" location="735,75" dimension="166,84" />
+  <StrutsActivity path="/currencyEditor.do" location="735,195" dimension="241,91" />
+  <StrutsActivity path="/shipvinEditor.do" location="735,330" dimension="226,84" />
+  <StrutsActivity path="/ummaster.do" location="465,435" dimension="181,84" />
+  <StrutsActivity path="/venderEditor.do" location="735,510" dimension="226,84" />
+  <StrutsActivity path="/eceiptwin.do" location="735,615" dimension="226,84" />
+  <StrutsActivity path="/iussefail.do" location="735,720" dimension="274,84" />
+  <StrutsActivity path="/locationeditor.do" location="1250,550" dimension="304,84" />
+  <StrutsActivity path="/itemeditor.do" location="765,855" dimension="280,84" />
+  <StrutsActivity path="/warehouse.do" location="1250,750" dimension="274,84" />
+  <StrutsActivity path="/venderTypeEditor.do" location="50,950" dimension="316,84" />
+  <StrutsActivity path="/Frame.html" location="-45,105" dimension="151,48" />
+  <StrutsActivity path="/form/login.jsp" location="165,-15" dimension="211,48" />
+  <StrutsActivity path="/form/employee/employeelist.jsp" location="-45,180" dimension="150,100" />
+  <StrutsActivity path="/form/employee/userEditor.jsp" location="165,75" dimension="214,48" />
+  <StrutsActivity path="/form/employee/userRoleEditor.jsp" location="-45,300" dimension="151,48" />
+  <StrutsActivity path="/form/systemManage/actionlist.jsp" location="-45,510" dimension="151,100" />
+  <StrutsActivity path="/form/systemManage/actionEditor.jsp" location="-45,390" dimension="150,100" />
+  <StrutsActivity path="/form/systemManage/roleEditor.jsp" location="465,-15" dimension="181,61" />
+  <StrutsActivity path="/form/systemManage/classCodeEditor.jsp" location="465,75" dimension="181,76" />
+  <StrutsActivity path="/form/systemManage/currencyEditor.jsp" location="465,195" dimension="181,48" />
+  <StrutsActivity path="/form/systemManage/shipvinEditor.jsp" location="465,330" dimension="181,76" />
+  <StrutsActivity path="/form/systemManage/ummaster.jsp" location="735,435" dimension="226,48" />
+  <StrutsActivity path="/form/vender/venderEditor.jsp" location="465,540" dimension="181,48" />
+  <StrutsActivity path="/form/storage/eceiptwin.jsp" location="465,630" dimension="181,48" />
+  <StrutsActivity path="/form/storage/iussefail.jsp" location="450,750" dimension="202,48" />
+  <StrutsActivity path="/form/storage/locationeditor.jsp" location="135,720" dimension="232,48" />
+  <StrutsActivity path="/form/storage/itemeditor.jsp" location="480,855" dimension="208,48" />
+  <StrutsActivity path="/form/storage/warehouse.jsp" location="50,850" dimension="202,48" />
+  <StrutsActivity path="/form/vender/venderTypeEditor.jsp" location="1250,950" dimension="238,48" />
+  <StrutsActivity path="/roleAction.do" location="1550,950" dimension="280,84" />
+  <StrutsActivity path="/form/systemManage/roleAction.jsp" location="650,1050" dimension="238,48" />
+  <StrutsTransition id="/form/systemManage/ummaster.jsp,null,/ummaster.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="735,459" />
+      <AbsolutePoint location="646,459" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,loginsuccess,/Frame.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="30,69" />
+      <AbsolutePoint location="30,105" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/employee/userEditor.jsp,null,/userEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="272,123" />
+      <AbsolutePoint location="272,180" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/storage/locationeditor.jsp,null,/locationeditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="237,768" />
+      <AbsolutePoint location="237,819" />
+      <AbsolutePoint location="1150,819" />
+      <AbsolutePoint location="1150,579" />
+      <AbsolutePoint location="1250,579" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/actionEditor.do,success,/form/systemManage/actionlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="270,474" />
+      <AbsolutePoint location="270,560" />
+      <AbsolutePoint location="106,560" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/vender/venderTypeEditor.jsp,null,/venderTypeEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,974" />
+      <AbsolutePoint location="366,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/vender/venderEditor.jsp,null,/venderEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,564" />
+      <AbsolutePoint location="735,564" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/storage/warehouse.jsp,null,/warehouse.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="252,874" />
+      <AbsolutePoint location="424,874" />
+      <AbsolutePoint location="424,1109" />
+      <AbsolutePoint location="1503,1109" />
+      <AbsolutePoint location="1503,834" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userEditor.do,success,/form/employee/employeelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,222" />
+      <AbsolutePoint location="105,222" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/systemManage/roleEditor.jsp,null,/roleEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,15" />
+      <AbsolutePoint location="735,15" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/systemManage/actionEditor.jsp,null,/actionEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="105,440" />
+      <AbsolutePoint location="165,440" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/systemManage/roleAction.jsp,null,/roleAction.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="888,1074" />
+      <AbsolutePoint location="1690,1074" />
+      <AbsolutePoint location="1690,1034" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/systemManage/currencyEditor.jsp,null,/currencyEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,219" />
+      <AbsolutePoint location="735,219" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/storage/iussefail.jsp,null,/iussefail.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="652,774" />
+      <AbsolutePoint location="735,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,loginfail,/form/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="106,18" />
+      <AbsolutePoint location="165,18" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/storage/itemeditor.jsp,null,/itemeditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="688,879" />
+      <AbsolutePoint location="765,879" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userRoleEditor.do,success,/form/employee/employeelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,327" />
+      <AbsolutePoint location="121,327" />
+      <AbsolutePoint location="121,252" />
+      <AbsolutePoint location="105,252" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/login.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,-12" />
+      <AbsolutePoint location="106,-12" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/systemManage/shipvinEditor.jsp,null,/shipvinEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,368" />
+      <AbsolutePoint location="735,368" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/employee/userRoleEditor.jsp,null,/userRoleEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="30,348" />
+      <AbsolutePoint location="30,363" />
+      <AbsolutePoint location="165,363" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/storage/eceiptwin.jsp,null,/eceiptwin.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,654" />
+      <AbsolutePoint location="735,654" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/form/systemManage/classCodeEditor.jsp,null,/classCodeEditor.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="646,113" />
+      <AbsolutePoint location="735,113" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

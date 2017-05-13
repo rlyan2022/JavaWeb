@@ -1,0 +1,354 @@
+FORM
+{
+    FONT-SIZE: 12px;
+}
+
+FORM INPUT 
+{
+	FONT-SIZE: 12px;
+
+}
+BODY
+{
+	overflow:hidden;
+	margin: 0px;
+	maigin-left:auto;
+	maigin-right:auto;
+	text-align:center;
+	font-size:12px
+}
+.hand {
+	cursor: hand;
+}
+
+TABLE
+{
+    FONT-SIZE: 12px;
+
+}
+.deleteRowBG
+{
+	background-color:#ff3366;
+	color:Black;
+	cursor:no-drop;
+}
+TABLE TD
+{
+	font-size: 12px;
+}
+
+.tdright
+{
+	text-align: right;
+}
+SPAN
+{
+	font-family:Arial; 
+}
+img
+{
+	border-width:0px;
+}
+.table1
+{
+	vertical-align: middle;
+	list-style-type: none;
+	background-color: #eeeeee;	
+	border-collapse:collapse;
+	border-color: #F0F1F5;
+	border-bottom-width:1px;
+}
+.totalTD
+{	
+	font-weight:bold;
+	font-family:Arial;
+	font-size:14px;
+}
+A:link
+{
+	color: #333366;
+	text-decoration:none;
+	font-size:12px;
+}
+A:hover
+{
+	
+	text-decoration:underline|overline;
+	font-size:12px;
+}
+
+a:link {	color: #3C80F2;	text-decoration: none;}
+a:visited {	color: #3C80F2;	text-decoration: none;}
+a:hover {	color: #FF6600;	text-decoration: underline;}
+a:active {	color: #3C80F2;	text-decoration: none;}
+
+.table1 TD
+{
+	border: #D5D4DA 1px solid;
+	padding: 0px;
+	font-size: 12px;
+	height:16px
+}
+.table1SearchTD
+{
+	background-color : #e1e1e1;
+	color:#000000;
+}
+.tableSub
+{
+	vertical-align: middle;
+	list-style-type: none;
+	border-collapse:collapse;
+	border-color: #F0F1F5;
+	border-bottom-width:1px;
+	
+}
+.tableSub TD
+{
+	border: #D5D4DA 0px solid;
+	padding: 0px;
+	font-size: 12px;
+}
+.dgdhead
+{
+	background-color : #336699;
+	color : White;
+}
+
+.table2
+{
+	border-right: 0px solid;
+	border-top: 0px solid;
+	border-left: 0px solid;
+	border-bottom: 0px solid;
+	font-family: Arial;
+	word-break:break-all; 
+	word-wrap:break-word;
+}
+
+.table2 TD
+{
+	border-bottom:#D5D4DA 1px solid;
+	border-Right:#D5D4DA 1px solid;
+	font-size: 12px;
+	margin: 0px;
+	font-family: Arial;
+	height:16px;
+}
+.table2 TH
+{
+	border-bottom:#D5D4DA 1px solid;
+}
+
+.dataTitle
+{
+	background-color:#ffffff;
+	background-image:url(../images/table1_bg2.jpg);
+	background-repeat: repeat-x;
+	color:#000000;
+	font-size:9pt;	
+	font-weight:bold;
+	height:20px
+}
+.dataTitle  A
+{
+	color:#000000;
+	font-size:12px;	
+	font-weight:bold;
+}
+.dataTitle_whiteBorder
+{
+	font-family: Arial;
+	border-color:White;
+	background-color:#7987AA;
+	color:#ffffff;
+	font-size:12px;	
+	font-weight:bold;
+}
+
+
+.HeaderStyle
+{
+    FONT-WEIGHT: bold;
+    BACKGROUND-COLOR: #cccc99
+}
+
+
+FORM TEXTAREA 
+{
+	font-family: Arial;
+	FONT-SIZE: 12px;
+}
+FORM SELECT
+{
+	FONT-SIZE: 12px;
+	background-color: #Fafafa;
+	line-height: 14px; 
+    border-style: none;
+    border-width: 0px; 
+}
+
+LABEL
+{
+	font-size :12px;
+}
+
+.table2_table
+{
+	border-right: 0px solid;
+	border-top: 0px solid;
+	border-left: 0px solid;
+	border-bottom: 0px solid;
+	background-color: #999999;
+}
+
+.table2_table TR
+{
+	background-color: white;
+}
+
+.table2_table TD
+{
+	border-right:  0px solid;
+	border-top:  0px solid;
+	font-size: 12px;
+	margin: 0px;
+	border-left:  0px solid;
+	border-bottom:  0px solid;
+}
+
+.table2_title
+{
+	font-weight: bold;
+	background-color: #cccc99;
+}
+.hand
+{
+	cursor:hand;
+
+}
+
+.fixedHeaderTr
+{
+	font-weight:bold;
+	font-size:9pt; 
+	background-image:url(../IMAGES/table1_bg2.jpg);
+	background-repeat: repeat-x;
+	POSITION: relative ;
+	border-top:#666666 1px solid;
+	height:20px;
+	TOP: expression(this.offsetParent.scrollTop-1);
+}
+.fixedHeaderTr A
+{
+	color:#000000;
+	font-size:9pt;
+	POSITION: relative ; 
+}
+.AlterItem
+{
+	background-color:#f8f8f8;
+}
+.selectTr 
+{
+	background-color:#C8E3F8;
+	color:#5959B9;
+}
+.selectTrsub
+{
+	background-color:#E8E6F3;
+	color:#5959B9;
+}
+.tdColor
+{
+	background-color:#ffffff;
+}
+.DelColor
+{ 
+	background-color:#ff3366;
+	
+}
+.bordernone
+{
+	border:#ffffff 0px solid;	
+}
+.GridViewRow
+{
+	cursor:hand;
+	background-color:#ffffff;	
+}
+.GridViewRowMouseClick
+{
+	cursor:text;
+	background-color:#C8E3F8;
+	color:#5959B9;
+}
+.hide
+{
+	display:none;
+}
+.GridViewRowMouseOver
+{
+	background-color:#eeeeee;	
+}
+
+.sman_selectedStyle
+{
+	background-Color:#102681;color:#FFFFFF
+}
+.button
+{
+	border-color:#7B9EDB;
+	border-width:1px;
+	border-style:Solid;
+	FILTER:alpha(opacity=88,enabled=0) progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=White, EndColorStr=#CECFDE);
+	padding-Top:3px;
+	CURSOR:hand;
+}
+	
+.txtNone
+{
+	border-style:None;
+	background-color:transparent;	
+	color:Blue;
+}
+.FileUpload
+{
+	font-size:9pt;
+}
+.subTextBox {
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #A5A5A5;
+}
+.txtNoneBorderUnderLine
+{
+	background-color:transparent;	
+	color:Blue;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #A5A5A5;
+}
+
+.tableList
+{
+	vertical-align: middle;
+	background-color: #eeeeee;	
+	border-width:0px;
+
+}
+.command {
+	background-image: url(../IMAGES/CommandBarBG.gif);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 26px;
+	line-height:26px;
+	text-align:right;
+	width: 100%;
+}
