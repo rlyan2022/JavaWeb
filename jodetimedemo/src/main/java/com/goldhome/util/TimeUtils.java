@@ -11,13 +11,15 @@ import org.joda.time.format.DateTimeFormatter;
  * 时间处理共同类
  * Created by yanruilin on 2017/5/13.
  */
-public class TimeUtils {
+public class TimeUtils
+{
     /**
      * 设置系统时区
      *
      * @param zone 时区
      */
-    public static void setSystemTimeZone(String zone) {
+    public static void setSystemTimeZone(String zone)
+    {
         //设置系统时区
         DateTimeZone.setDefault(DateTimeZone.forID(zone));
     }
@@ -28,7 +30,8 @@ public class TimeUtils {
      * @param utc UTC时间
      * @return
      */
-    public static boolean isDaylightTime(long utc) {
+    public static boolean isDaylightTime(long utc)
+    {
         DateTimeZone zone = DateTimeZone.getDefault();
         boolean isStandardOffset = zone.isStandardOffset(utc * 1000);
         return !isStandardOffset;
@@ -40,7 +43,8 @@ public class TimeUtils {
      * @param date 日期
      * @return utc时间
      */
-    public static long dateToUtc(String date, String pattern) {
+    public static long dateToUtc(String date, String pattern)
+    {
         long utc;
 
         DateTimeFormatter format = DateTimeFormat.forPattern(pattern);
@@ -57,7 +61,8 @@ public class TimeUtils {
      * @param pattern 格式化
      * @return 日期
      */
-    public static String utcToDate(long utc, String pattern) {
+    public static String utcToDate(long utc, String pattern)
+    {
         DateTime dateTime = new DateTime(utc * 1000);
         return dateTime.toString(pattern);
     }
@@ -69,7 +74,8 @@ public class TimeUtils {
      * @param pattern 格式化
      * @return 当前日期
      */
-    public static String getCurrentDate(String pattern) {
+    public static String getCurrentDate(String pattern)
+    {
         return Instant.now().toDateTime().toString(pattern);
     }
 
@@ -79,7 +85,8 @@ public class TimeUtils {
      * @param utc UTC时间
      * @return
      */
-    public static int getTimeZoneOffset(long utc) {
+    public static int getTimeZoneOffset(long utc)
+    {
         DateTimeZone zone = DateTimeZone.getDefault();
 
         int offset = zone.getOffset(utc * 1000);
@@ -93,7 +100,8 @@ public class TimeUtils {
      * @param pattern 格式化
      * @return 返回修改后的日期
      */
-    public static String dateAddDst(String dateStr, String pattern) {
+    public static String dateAddDst(String dateStr, String pattern)
+    {
         long utc = dateToUtc(dateStr, pattern);
         if (isDaylightTime(utc)) {
             dateStr += "(DST)";
@@ -109,7 +117,8 @@ public class TimeUtils {
      * @param utc UTC时间
      * @return days 返回天数
      */
-    public static int getDaySuff(long utc) {
+    public static int getDaySuff(long utc)
+    {
         DateTime dateTime = new DateTime(utc * 1000);
 
         int hour = dateTime.getHourOfDay();
@@ -133,7 +142,8 @@ public class TimeUtils {
      * @param utc UTC时间
      * @return months 返回月份
      */
-    public static int getMonthSuff(long utc) {
+    public static int getMonthSuff(long utc)
+    {
 
         DateTime startTime = new DateTime(0L);
         DateTime endTime  = new DateTime(utc * 1000);
