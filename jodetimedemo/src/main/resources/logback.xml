@@ -1,0 +1,87 @@
+<!--   
+    configuration为根元素，包含三个属性:  
+    debug,指是否开启logback内部日志，没有设置此属性或设置其值为空、null或false时，表示不开启，否则，开启；  
+    scan,设置是否定时扫描配置文件  
+    scanPeriod,设置扫描周期，与scan属性配合使用，默认是60000毫秒，如果该属性值没有带单位，则单位为毫秒，可带的单位有milli/millisecond/second/seconde/minute/hour/day，可忽略大小写  
+-->  
+<configuration debug="true" scan="true" scanPeriod="600 seconds">  
+
+   <!--   
+        appender表示日志输出的方式，该元素必须包含name、classs属性;  
+        name，表示appender的唯一标识  
+        class一般常见有ch.qos.logback.core.FileAppender、ch.qos.logback.core.rolling.RollingFileAppender、ch.qos.logback.core.ConsoleAppender  
+    -->
+    <!-- 下面appender表示输出到控制台 -->  
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 设置级别过滤器 -->  
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">  
+            <!-- level级别的日志才会被处理，其他级别不处理 -->  
+            <level>INFO</level>
+            <!-- 用于配置符合条件的操作 -->  
+            <onMatch>ACCEPT</onMatch>  
+            <!-- 用于配置不符合条件的操作 -->  
+            <onMismatch>DENY</onMismatch>  
+        </filter>  
+        <!-- encoder指定编码格式，并根据指定的pattern输出日志信息 -->  
+        <encoder charset="UTF-8">  
+            <!-- pattern指定日志的输出格式 -->  
+            <pattern>%d{HH:mm:ss.SSS}[%-5level][%logger{80}]-%msg%n</pattern>  
+        </encoder>  
+    </appender>
+    
+     <appender name="jodatime-application"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 下面是设置的临界值过滤器 -->  
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">  
+            <!-- 小于level级别的日志会被过滤掉 -->  
+            <level>INFO</level>  
+        </filter>  
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 如果用TimeBasedRollingPolicy，则fileNamePattern元素必须包含，指定日志的名称 --> 
+            <!--<FileNamePattern>\home\app\logs\csmis\application.%d{yyyy-MM-dd}.log</FileNamePattern>-->
+             <FileNamePattern>d:\logs\application.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!-- 文件的最大保留数，超过此数字会自动删除 -->  
+            <MaxHistory>180</MaxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%d{HH:mm:ss.SSS} %-5level %logger{80} - %msg%n</pattern>
+        </layout>
+    </appender>
+    
+         <appender name="jodatime-catalina"
+        class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 下面是设置的临界值过滤器 -->  
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">  
+            <!-- 小于level级别的日志会被过滤掉 -->  
+            <level>DEBUG</level>  
+        </filter>  
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 如果用TimeBasedRollingPolicy，则fileNamePattern元素必须包含，指定日志的名称 --> 
+            <!--<FileNamePattern>\home\app\logs\csmis\catalina.%d{yyyy-MM-dd}.log</FileNamePattern>-->
+             <FileNamePattern>d:\logs\catalina.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!-- 文件的最大保留数，超过此数字会自动删除 -->  
+            <MaxHistory>180</MaxHistory>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <!--<pattern>%d{HH:mm:ss.SSS} %-5level %logger{80} - %msg%n</pattern>-->
+            <pattern>%msg%n</pattern>
+        </layout>
+    </appender>
+    
+     <!-- root与logger类似，它表示根logger，只有大于等于level级别的日志才交由appender处理，level默认为DEBUG -->  
+    <root level="INFO">
+        <appender-ref ref="stdout" />
+        <appender-ref ref="jodatime-application" />
+        <appender-ref ref="jodatime-catalina" />
+    </root>  
+    
+<!--   
+        logger元素用来设置某包或者类的日志输出级别  
+        name:表示某包或类名称  
+        level:表示日志级别，如果没有此属性，那么当前的logger会继承上级的日志级别  
+    -->
+    <logger name="com.goldhome" level="INFO" />
+    <logger name="com.opensymphony" level="ERROR" />
+    <logger name="org" level="ERROR" />
+    <logger name="jdbc" level="ERROR"/>
+</configuration> 
