@@ -19,7 +19,7 @@
         <spring.version>2.5.5</spring.version>
         <hibernate.version>3.6.9.Final</hibernate.version>
         <servlet.version>2.5</servlet.version>
-        <xwork.version>2.2.1.1</xwork.version>
+        <xwork.version>2.3.31</xwork.version>
         <struts2.version>2.1.6</struts2.version>
         <mysql.version>5.1.25</mysql.version>
         <slf4j.version>1.7.8</slf4j.version>
@@ -113,6 +113,16 @@
             <groupId>opensymphony</groupId>
             <artifactId>sitemesh</artifactId>
             <version>2.4.2</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.googlecode</groupId>-->
+            <!--<artifactId>jsonplugin</artifactId>-->
+            <!--<version>0.33</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>opensymphony</groupId>
+            <artifactId>ognl</artifactId>
+            <version>2.6.11</version>
         </dependency>
     </dependencies>
 
