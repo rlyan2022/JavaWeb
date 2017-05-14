@@ -37,7 +37,7 @@
       <module name="ch12" target="1.5" />
       <module name="ch13" target="1.5" />
       <module name="JavaWeb" target="1.5" />
-      <module name="jodetimedemo" target="1.5" />
+      <module name="jodetimedemo" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,16 +1,12 @@
 package com.goldhome.util;
 
 import org.junit.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created by Administrator on 2017/5/13.
  */
 public class TimeUtilsTest
 {
-    private static Logger logger = LoggerFactory.getLogger(TimeUtilsTest.class);
-
     @BeforeClass
     public static void globalInit()
     {
@@ -49,7 +45,7 @@ public class TimeUtilsTest
         long utc = TimeUtils.dateToUtc("2017-05-13 23:00", format);
         String dateStr = TimeUtils.utcToDate(utc, format);
         System.out.println(dateStr);
-        System.out.println( TimeUtils.utcToDate(1495347300, format));
+        System.out.println( TimeUtils.utcToDate(1492135200L, format));
     }
 
     @Test
@@ -70,7 +66,7 @@ public class TimeUtilsTest
     public void getTimeZoneOffsetTest()
     {
         System.out.println(TimeUtils.getTimeZoneOffset(1494727200L));
-        System.out.println(TimeUtils.getTimeZoneOffset(1494734400L));;
+        System.out.println(TimeUtils.getTimeZoneOffset(1494734400L));
     }
 
     @Test
