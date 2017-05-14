@@ -11,7 +11,7 @@
 # Server version 5.0.67-community-nt
 
 DROP DATABASE IF EXISTS `db_votemanage`;
-CREATE DATABASE `db_votemanage` /*!40100 DEFAULT CHARACTER SET gb2312 */;
+CREATE DATABASE `db_votemanage` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `db_votemanage`;
 
 #
@@ -22,7 +22,7 @@ CREATE TABLE `tb_channel` (
   `channelID` int(11) NOT NULL auto_increment,
   `channelName` varchar(255) default NULL,
   PRIMARY KEY  (`channelID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=gb2312 COMMENT='投票频道表';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='投票频道表';
 INSERT INTO `tb_channel` VALUES (1,'NBA');
 INSERT INTO `tb_channel` VALUES (2,'CBA');
 INSERT INTO `tb_channel` VALUES (3,'足球世界杯');
@@ -40,7 +40,7 @@ CREATE TABLE `tb_vote` (
   `channelID` int(11) default NULL,
   PRIMARY KEY  (`voteID`),
   KEY `channelID` (`channelID`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=gb2312 COMMENT='投票表';
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='投票表';
 INSERT INTO `tb_vote` VALUES (13,'请选择你最喜欢的CBA球员',2);
 
 #
@@ -54,7 +54,7 @@ CREATE TABLE `tb_voteoption` (
   `ticketNum` int(11) default '0',
   PRIMARY KEY  (`voteOptionID`),
   KEY `voteID` (`voteID`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=gb2312 COMMENT='投票选项表';
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 COMMENT='投票选项表';
 INSERT INTO `tb_voteoption` VALUES (51,13,'朱芳宇',0);
 INSERT INTO `tb_voteoption` VALUES (52,13,'王治郅',1);
 INSERT INTO `tb_voteoption` VALUES (53,13,'姚明',0);

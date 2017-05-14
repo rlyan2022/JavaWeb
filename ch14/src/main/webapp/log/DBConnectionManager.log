@@ -1,0 +1,3588 @@
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 03:26:46 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 03:27:13 --- Debug Starts No 21 ************
+
+
+2003-11-09 03:27:13
+
+
+On 20031109 at 04:06:26 --- Debug Starts No 22 ************
+
+
+2003-11-09 04:06:26
+
+
+On 20031109 at 04:06:26 --- Debug Starts No 23 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Column not found: Unknown column 'newsTime' in 'field list'
+
+
+On 20031109 at 04:07:08 --- Debug Starts No 24 ************
+
+
+2003-11-09 04:07:08
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 20 ************
+
+
+无法创建下列URL的连接: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 21 ************
+
+
+DBConnectionPool getConnection(), The Returned Con is null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 22 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 23 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 24 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 25 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 26 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 27 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 28 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 29 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 30 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 31 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 32 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 33 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 34 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 35 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 36 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 37 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:18:53 --- Debug Starts No 38 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:26 --- Debug Starts No 39 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:26 --- Debug Starts No 40 ************
+
+
+In setInt(int index,int value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:26 --- Debug Starts No 41 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:26 --- Debug Starts No 42 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:26 --- Debug Starts No 43 ************
+
+
+In setInt(int index,int value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:26 --- Debug Starts No 44 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:30 --- Debug Starts No 45 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:30 --- Debug Starts No 46 ************
+
+
+In setInt(int index,int value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:30 --- Debug Starts No 47 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:30 --- Debug Starts No 48 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:30 --- Debug Starts No 49 ************
+
+
+In setInt(int index,int value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:30 --- Debug Starts No 50 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:34 --- Debug Starts No 51 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:34 --- Debug Starts No 52 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:34 --- Debug Starts No 53 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:34 --- Debug Starts No 54 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:34 --- Debug Starts No 55 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:34 --- Debug Starts No 56 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 57 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 58 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 59 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 60 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 61 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 62 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 63 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 64 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 65 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 66 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:19:35 --- Debug Starts No 67 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 68 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 69 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 70 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 71 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 72 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 73 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 74 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 75 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 76 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 77 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 78 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 79 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 80 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 81 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 82 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 83 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:55 --- Debug Starts No 84 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 85 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 86 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 87 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 88 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 89 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 90 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 91 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 92 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 93 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 94 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 95 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 96 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 97 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 98 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 99 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 100 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 101 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 102 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 103 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 104 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 105 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 106 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 107 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 108 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 109 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 110 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 111 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 112 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 113 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 114 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 115 ************
+
+
+In prepareStatement(String strSql), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 116 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 117 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 14:20:57 --- Debug Starts No 118 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 14:41:48 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 14:41:49 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 14:42:23 --- Debug Starts No 21 ************
+
+
+2003-11-09 14:42:23
+
+
+On 20031109 at 14:46:59 --- Debug Starts No 1 ************
+
+
+DOServlet responseUrl(), Exception Occured ! Info :Can't sendRedirect() after data has committed to the client.
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 2 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 3 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 10 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 11 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 12 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 13 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 14 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 15 ************
+
+
+password: abc
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 16 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 17 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 19 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 20 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 21 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 14:47:17 --- Debug Starts No 22 ************
+
+
+2003-11-09 14:47:17
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 14:53:35 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 14:53:42 --- Debug Starts No 21 ************
+
+
+2003-11-09 14:53:42
+
+
+On 20031109 at 15:36:35 --- Debug Starts No 22 ************
+
+
+2003-11-09 15:36:35
+
+
+On 20031109 at 15:37:58 --- Debug Starts No 23 ************
+
+
+2003-11-09 15:37:58
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 15:41:46 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 15:42:07 --- Debug Starts No 21 ************
+
+
+2003-11-09 15:42:07
+
+
+On 20031109 at 15:42:25 --- Debug Starts No 22 ************
+
+
+2003-11-09 15:42:25
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 15:44:06 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 15:44:12 --- Debug Starts No 21 ************
+
+
+2003-11-09 15:44:12
+
+
+On 20031109 at 15:44:27 --- Debug Starts No 22 ************
+
+
+2003-11-09 15:44:27
+
+
+On 20031109 at 15:45:38 --- Debug Starts No 23 ************
+
+
+2003-11-09 15:45:38
+
+
+On 20031109 at 15:46:40 --- Debug Starts No 24 ************
+
+
+2003-11-09 15:46:40
+
+
+On 20031109 at 15:46:53 --- Debug Starts No 25 ************
+
+
+2003-11-09 15:46:53
+
+
+On 20031109 at 15:47:27 --- Debug Starts No 26 ************
+
+
+2003-11-09 15:47:27
+
+
+On 20031109 at 15:47:43 --- Debug Starts No 27 ************
+
+
+2003-11-09 15:47:43
+
+
+On 20031109 at 15:48:29 --- Debug Starts No 28 ************
+
+
+2003-11-09 15:48:29
+
+
+On 20031109 at 15:48:54 --- Debug Starts No 29 ************
+
+
+2003-11-09 15:48:54
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 15:50:27 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 15:50:33 --- Debug Starts No 21 ************
+
+
+2003-11-09 15:50:33
+
+
+On 20031109 at 15:51:01 --- Debug Starts No 22 ************
+
+
+2003-11-09 15:51:01
+
+
+On 20031109 at 15:51:48 --- Debug Starts No 23 ************
+
+
+2003-11-09 15:51:48
+
+
+On 20031109 at 15:52:50 --- Debug Starts No 24 ************
+
+
+2003-11-09 15:52:50
+
+
+On 20031109 at 16:24:34 --- Debug Starts No 25 ************
+
+
+2003-11-09 16:24:34
+
+
+On 20031109 at 16:24:52 --- Debug Starts No 26 ************
+
+
+2003-11-09 16:24:52
+
+
+On 20031109 at 16:25:28 --- Debug Starts No 27 ************
+
+
+2003-11-09 16:25:28
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 16:28:42 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 16:28:50 --- Debug Starts No 21 ************
+
+
+2003-11-09 16:28:50
+
+
+On 20031109 at 16:29:20 --- Debug Starts No 22 ************
+
+
+2003-11-09 16:29:20
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 16:34:55 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 16:35:06 --- Debug Starts No 21 ************
+
+
+2003-11-09 16:35:06
+
+
+On 20031109 at 16:35:35 --- Debug Starts No 22 ************
+
+
+2003-11-09 16:35:35
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 17:07:24 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 17:07:25 --- Debug Starts No 21 ************
+
+
+2003-11-09 17:07:25
+
+
+On 20031109 at 17:14:40 --- Debug Starts No 22 ************
+
+
+2003-11-09 17:14:40
+
+
+On 20031109 at 17:14:52 --- Debug Starts No 23 ************
+
+
+2003-11-09 17:14:52
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 21 ************
+
+
+In setString(int index,String value), Exception Occured ! Info :null
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 22 ************
+
+
+In executeQuery(String), Exception Occured ! Info :null
+
+
+On 20031109 at 18:54:18 --- Debug Starts No 23 ************
+
+
+UserManage listPersonal(), Exception Occured ! Info :null
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 20:32:01 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 21 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 22 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 23 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 24 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 25 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 26 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 27 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 28 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 29 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:52 --- Debug Starts No 30 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:47:53 --- Debug Starts No 31 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:53 --- Debug Starts No 32 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:47:53 --- Debug Starts No 33 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:53 --- Debug Starts No 34 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:47:53 --- Debug Starts No 35 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:11 --- Debug Starts No 36 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:11 --- Debug Starts No 37 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:11 --- Debug Starts No 38 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:11 --- Debug Starts No 39 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:11 --- Debug Starts No 40 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:11 --- Debug Starts No 41 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:53 --- Debug Starts No 42 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:53 --- Debug Starts No 43 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:53 --- Debug Starts No 44 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:53 --- Debug Starts No 45 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:53 --- Debug Starts No 46 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:53 --- Debug Starts No 47 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:55 --- Debug Starts No 48 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:55 --- Debug Starts No 49 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:55 --- Debug Starts No 50 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:55 --- Debug Starts No 51 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:55 --- Debug Starts No 52 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:55 --- Debug Starts No 53 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:55 --- Debug Starts No 54 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 55 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 56 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 57 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 58 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 59 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 60 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 61 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:56 --- Debug Starts No 62 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 63 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 64 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 65 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 66 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 67 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 68 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 69 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 70 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 71 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 72 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 73 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 74 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 75 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 76 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:49:59 --- Debug Starts No 77 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 78 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 79 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 80 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 81 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 82 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 83 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 84 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 85 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 86 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 87 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 88 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 89 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 90 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 91 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:00 --- Debug Starts No 92 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 93 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 94 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 95 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 96 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 97 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 98 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 99 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 100 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 101 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 102 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 103 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 104 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 105 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 106 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:13 --- Debug Starts No 107 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 108 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 109 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 110 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 111 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 112 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 113 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 114 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 115 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 116 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 117 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 118 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 119 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 120 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 121 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:50:25 --- Debug Starts No 122 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:47 --- Debug Starts No 123 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:47 --- Debug Starts No 124 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 125 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 126 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 127 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 128 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 129 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 130 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 131 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 132 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 133 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 134 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 135 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 136 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:48 --- Debug Starts No 137 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 138 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 139 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 140 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 141 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 142 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 143 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 144 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 145 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 146 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 147 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 148 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 149 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 150 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 151 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:50 --- Debug Starts No 152 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 153 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 154 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 155 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 156 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 157 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 158 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 159 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 160 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 161 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 162 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 163 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 164 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 165 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 166 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 167 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 168 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 169 ************
+
+
+NewsShow isTime(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 170 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 171 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 172 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 173 ************
+
+
+NewsShow isTopNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 174 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 175 ************
+
+
+NewsShow sumNews(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 176 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 177 ************
+
+
+NewsShow sumUser(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 178 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:51 --- Debug Starts No 179 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:51:52 --- Debug Starts No 180 ************
+
+
+In executeUpdate(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:52 --- Debug Starts No 181 ************
+
+
+In executeQuery(String), Exception Occured ! Info :Communication link failure: java.net.SocketException
+
+
+On 20031109 at 23:51:52 --- Debug Starts No 182 ************
+
+
+Counter isIp(), Exception Occured ! Info :null
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031109 at 23:53:36 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 1 ************
+
+
+Load Driver Success !
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 2 ************
+
+
+成功注册JDBC驱动程序org.gjt.mm.mysql.Driver
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 3 ************
+
+
+createPools(Properties), name is:  isLog
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 4 ************
+
+
+createPools(Properties), name is:  drivers
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 5 ************
+
+
+createPools(Properties), name is:  logFile
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 6 ************
+
+
+createPools(Properties), name is:  Connection.password
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 7 ************
+
+
+createPools(Properties), name is:  logPath
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 8 ************
+
+
+createPools(Properties), name is:  Connection.url
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 9 ************
+
+
+createPools(Properties), name end with url
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 10 ************
+
+
+createPools(Properties), url is jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 11 ************
+
+
+poolnameConnection
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 12 ************
+
+
+URL: jdbc:mysql://127.0.0.1:3306/sanqing
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 13 ************
+
+
+user: skyyjl
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 14 ************
+
+
+password: abc
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 15 ************
+
+
+maxConn: 0
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 16 ************
+
+
+成功创建连接池Connection
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 17 ************
+
+
+createPools(Properties), name is:  Connection.user
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 18 ************
+
+
+createPools(Properties), name is:  Connection.maxconn
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 19 ************
+
+
+DBConnectionManager getConnection(String) ! pool is not null !
+
+
+On 20031110 at 00:12:17 --- Debug Starts No 20 ************
+
+
+连接池Connection创建一个新的连接

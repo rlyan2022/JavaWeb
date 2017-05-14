@@ -1,0 +1,13 @@
+BODY { FONT-SIZE: 12px; BACKGROUND: #799ae1; COLOR: #000000 }
+DIV { FONT-SIZE: 12px; COLOR: #333333 }
+TD { FONT-SIZE: 12px }
+P {	FONT-SIZE: 12px }
+LI { FONT-SIZE: 12px }
+INPUT {	FONT-SIZE: 12px }
+SELECT { FONT-SIZE: 12px }
+A:link { COLOR: #00007f;TEXT-DECORATION:none;}
+A:visited {	COLOR: #65038e;TEXT-DECORATION:none}
+A:active { COLOR: #ff0000;TEXT-DECORATION:none}
+A:hover { COLOR: #ff0000;TEXT-DECORATION:none}
+.article { font-size: 14.8px; line-height: 150%} 
+.title { FONT-SIZE : 13px ו; COLOR: #FF0000 }

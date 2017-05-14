@@ -11,7 +11,7 @@
 # Server version 5.0.67-community-nt
 
 DROP DATABASE IF EXISTS `db_examsystem`;
-CREATE DATABASE `db_examsystem` /*!40100 DEFAULT CHARACTER SET gb2312 */;
+CREATE DATABASE `db_examsystem` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `db_examsystem`;
 
 #
@@ -25,7 +25,7 @@ CREATE TABLE `tb_student` (
   `result` int(11) default NULL,
   `sclass` varchar(20) default NULL,
   PRIMARY KEY  (`studentID`)
-) ENGINE=InnoDB DEFAULT CHARSET=gb2312 COMMENT='学生信息表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='学生信息表';
 INSERT INTO `tb_student` VALUES ('0509302*21','student','李明华',20,'0509302');
 INSERT INTO `tb_student` VALUES ('05099301*21','fsdfsdf','洪林',100,'0509301');
 
@@ -43,7 +43,7 @@ CREATE TABLE `tb_subject` (
   `subjectAnswer` varchar(1) default NULL,
   `subjectParse` text,
   PRIMARY KEY  (`subjectID`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=gb2312 COMMENT='试题信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COMMENT='试题信息表';
 INSERT INTO `tb_subject` VALUES (2,'下列各进制数中最大的数是( )。','227O','1FFH','1010001B','789D','D',NULL);
 INSERT INTO `tb_subject` VALUES (3,'( )不是微型计算机必须的工作环境。','恒温','良好的接地线路','远离强磁场','稳定的电源电压','A',NULL);
 INSERT INTO `tb_subject` VALUES (4,'( )不是文件。','设备','文档','应用程序','窗口','D','窗口不是文件');
@@ -79,7 +79,7 @@ CREATE TABLE `tb_teacher` (
   `teacherID` varchar(20) NOT NULL default '',
   `password` varchar(20) default NULL,
   PRIMARY KEY  (`teacherID`)
-) ENGINE=InnoDB DEFAULT CHARSET=gb2312 COMMENT='老师信息表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='老师信息表';
 INSERT INTO `tb_teacher` VALUES ('teacher','teacher');
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

@@ -1,0 +1,14 @@
+╭══════════════════════════════════════════╮
+║                                  中国源码下载站                                    ║
+║                                                                                    ║
+║              源码下载:www.downcode.com  源码论坛:www.downcode.net                  ║
+║                                                                                    ║
+║                       如有转载请勿删除以上信息，谢谢合作                           ║
+╰══════════════════════════════════════════╯
+╭══════════════════════════════════════════╮
+║ 　　　　　　　　　　　　　　　　程序相关使用说明　　　　　　　　　　  　　　　　　 ║
+╰══════════════════════════════════════════╯
+
+
+
+本系统分两部分管理,前台用于新闻发布，在前台还增加用户文章发表这一个模块，用户可以自行发表文章,后台有本站相关的文章操作的管理以及用户文章的审核和功能强大的角色管理,具有高稳定性和安全性。整个站的全部数据逻辑运算完全由beans封装, 具有界面简洁、功能强大、操作方便等特点。

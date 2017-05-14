@@ -1,0 +1,31 @@
+BODY { FONT-SIZE: 12px; COLOR: #000000; font-family: "ו"}
+DIV { FONT-SIZE: 12px; COLOR: #333333 }
+TD { FONT-SIZE: 12px; COLOR: #333333 ; font-family: "ו"}
+A:link { COLOR: #3366CC; TEXT-DECORATION: none ; font-family: "ו"}
+A:visited { COLOR: #3366CC ; TEXT-DECORATION: none }
+A:active { COLOR: #6699ff; TEXT-DECORATION: none }
+A:hover { COLOR: #FF4400; TEXT-DECORATION: none }
+.kbhide { DISPLAY: none }
+#floater { Z-INDEX: -1; LEFT: 0px; VISIBILITY: visible; WIDTH: 5px; POSITION: absolute; TOP: 0px }
+.sfont { LINE-HEIGHT: 20px } .greenb { FONT-WEIGHT: bold; COLOR: #308080 }
+.title { font-size: 14.8px; font-weight: bold ; line-height: 144%; color: #009933}
+.pt9 { FONT-SIZE: 12px } .tch { color: #FF0000}
+.article { font-size: 14.8px; line-height: 150%}
+.underline { text-decoration: underline}
+.spanclass { VISIBILITY: hidden;width: 760px;height:1px;POSITION: absolute; left:1px;top:1px}
+a.p1 { color: #000000}
+a.p1:visited { color: #000000}
+a.p1:hover { color: #FF4400}
+a.p1:active { color: #FF6600}
+.dh { font-size: 12px; color: #eeeeee; font-family: "ו"; line-height: 19px}
+.bodyright { BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #FFDDA2 1px solid} 
+.bodyleft { BORDER-LEFT: #FFDDA2 1px solid; BORDER-RIGHT: #000000 1px solid} 
+.leftbottom { BORDER-BOTTOM: #FFDDA2 1px solid; BORDER-LEFT: #FFDDA2 1px solid}
+.topbottom { BORDER-BOTTOM: #FFDDA2 1px solid; BORDER-TOP: #000000 1px solid }
+.rightbottom { BORDER-BOTTOM: #FFDDA2 1px solid; BORDER-RIGHT: #FFDDA2 1px solid}
+.bottom { BORDER-BOTTOM: #444444 1px solid}
+.allborder { BORDER-BOTTOM: #dddddd 1px solid;BORDER-TOP: 
+#dddddd 1px solid;BORDER-LEFT: #dddddd 1px solid; BORDER-RIGHT: #dddddd 1px solid}
+.dingwei {  position: relative; clip:  rect(   )}
+.cdfont { FILTER: dropshadow(color=#ffffff,offx=1,offy=1) }
+.yao{BACKGROUND-COLOR: #ffffff; BORDER-BOTTOM: #99BB99 1px solid; BORDER-LEFT: #99BB99 1px solid; BORDER-RIGHT: #99BB99 1px solid; BORDER-TOP: #99BB99 1px solid}

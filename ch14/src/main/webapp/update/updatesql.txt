@@ -1,0 +1,12 @@
+update newsusr set purview=1;
+update news set kindId=kindId+2;
+update news set kindId=2 where kindId=17;
+update news set kindId=1 where kindId=16;
+update news set tag=1 where tag=0;
+update news set tag=0 where tag=1;
+update newscommon set counter=2061;
+
+create database sanqing;
+create database nt;
+drop database nt;
+drop database sanqing;

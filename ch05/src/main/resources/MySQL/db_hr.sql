@@ -11,7 +11,7 @@
 # Server version 5.0.67-community-nt
 
 DROP DATABASE IF EXISTS `db_hr`;
-CREATE DATABASE `db_hr` /*!40100 DEFAULT CHARACTER SET gb2312 */;
+CREATE DATABASE `db_hr` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `db_hr`;
 
 #
@@ -32,7 +32,7 @@ CREATE TABLE `educate` (
   `effect` varchar(500) default NULL,
   `summarize` text,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=gb2312 COMMENT='培训信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='培训信息表';
 INSERT INTO `educate` VALUES (2,'Swing课程培训','提高员工Swing开发的能力','2009-09-10','2009-10-30','《Swing从入门到精通》、《零基础学Swing》','方威','所有Java程序员','2009-10-26 11:47:05',b'1','很好','在这次培训中，大家都学会了如何进行Swing开发');
 INSERT INTO `educate` VALUES (3,'JavaWeb项目培训','增强员工的动手能力','2010-01-05','2010-01-09','Java编程思想。','SUN','所有Java程序员','2010-01-28 14:49:49',b'1','效果很好','效果不错');
 
@@ -47,7 +47,7 @@ CREATE TABLE `institution` (
   `explains` text,
   `createtime` datetime default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=gb2312 COMMENT='奖惩信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='奖惩信息表';
 INSERT INTO `institution` VALUES (1,'小李罚款100元','迟到1小时','凡是上班时间迟到者一律罚款50元，超过1小时罚款100元！','2009-10-22 14:11:39');
 INSERT INTO `institution` VALUES (2,'杨明奖励100元','连续加班3天','','2009-10-26 14:25:22');
 
@@ -71,7 +71,7 @@ CREATE TABLE `job` (
   `content` text,
   `isstock` bit(1) default '\0',
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=gb2312 COMMENT='应聘人员信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='应聘人员信息表';
 INSERT INTO `job` VALUES (2,'刘笑笑',b'1',30,'技术员','信息与计算科学','2','本科','湖南城市学院','123456789','928968880@qq.com','2009-10-21 16:49:23','ddddd',b'1');
 INSERT INTO `job` VALUES (3,'张振华',b'1',30,'技术员','信息与计算科学','2','本科','湖南城市学院','123456789','eggpeijun@qq.com','2009-10-21 10:23:17','',b'1');
 INSERT INTO `job` VALUES (4,'李东阳',b'1',25,'Web程序员','信息与计算科学','1','本科','中南大学','123456789','123456@qq.com','2009-10-22 20:10:05','本人在校期间曾经参加过学校教务处网站的编写。',b'1');
@@ -94,7 +94,7 @@ CREATE TABLE `stipend` (
   `granttime` datetime default NULL,
   `totalize` float default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=gb2312 COMMENT='薪金信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='薪金信息表';
 INSERT INTO `stipend` VALUES (2,'张敏',1111,300,300,300,200,0,600,'2009-02-03',2411);
 INSERT INTO `stipend` VALUES (3,'李明',2523,300,300,300,200,100,200,'2009-02-03',3323);
 INSERT INTO `stipend` VALUES (4,'徐翔',2800,300,300,200,200,200,200,'2009-02-03',3400);
@@ -115,7 +115,7 @@ CREATE TABLE `users` (
   `isadmin` bit(1) default '\0',
   `content` text,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=gb2312 COMMENT='人员信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='人员信息表';
 INSERT INTO `users` VALUES (1,'admin','admin',b'1','1988-01-03','2005-05-09',b'1','超级管理员');
 INSERT INTO `users` VALUES (4,'sanqing','1234567',b'1','1988-01-04','2009-10-21 10:21:33',b'1','管理员');
 

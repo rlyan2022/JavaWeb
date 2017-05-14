@@ -1,0 +1,16 @@
+BODY { FONT-SIZE: 12px; COLOR: #000000; font-family: "ו"}
+DIV { FONT-SIZE: 12px; COLOR: #333333 }
+TD { FONT-SIZE: 12px; COLOR: #333333 ; font-family: "ו"}
+P {	FONT-SIZE: 12px }
+LI { FONT-SIZE: 12px }
+INPUT {	FONT-SIZE: 12px }
+SELECT { FONT-SIZE: 12px }
+A:link { COLOR: #3366CC; TEXT-DECORATION: none ; font-family: "ו"}
+A:visited { COLOR: #3366cc; TEXT-DECORATION: none }
+A:active { COLOR: #6699ff; TEXT-DECORATION: none }
+A:hover { COLOR: #FF4400; TEXT-DECORATION: none }
+.cdfont { FILTER: dropshadow(color=#ffffff,offx=1,offy=1) }
+.show { FONT-SIZE: 12px; COLOR: #FF0000}
+.title { font-size: 14.8px; line-height: 144%; color: #009933}
+.article { font-size: 14.8px; line-height: 150%}
+.text {	BORDER-RIGHT: #5973a8 1px solid; BORDER-TOP: #5973a8 1px solid; BORDER-LEFT: #5973a8 1px solid; BORDER-BOTTOM: #5973a8 1px solid; BACKGROUND-COLOR: #FFFFFF; font-style: normal; color: #3366CC; font-family: "ו" }

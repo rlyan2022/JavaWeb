@@ -27,7 +27,7 @@ CREATE TABLE `commodity` (
   `price` decimal(10,2) default NULL,
   `agio` decimal(4,3) default NULL,
   PRIMARY KEY  (`commodityId`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=gb2312;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 INSERT INTO `commodity` VALUES (1,'伊利纯牛奶',2.3,1);
 INSERT INTO `commodity` VALUES (2,'蒙牛纯牛奶',2.5,1);
 INSERT INTO `commodity` VALUES (3,'三元纯牛奶',2.1,0.9);
@@ -53,7 +53,7 @@ CREATE TABLE `consume` (
   PRIMARY KEY  (`consumeId`),
   KEY `vipId` (`vipId`),
   KEY `commodityId` (`commodityId`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=gb2312;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 INSERT INTO `consume` VALUES (1,1,'刘爱明',1,'伊利纯牛奶',2.3,2.3);
 INSERT INTO `consume` VALUES (2,1,'刘爱明',2,'蒙牛纯牛奶',2.5,2.5);
 INSERT INTO `consume` VALUES (3,1,'刘爱明',3,'三元纯牛奶',2.1,1.89);
@@ -79,7 +79,7 @@ CREATE TABLE `user` (
   `password` varchar(20) default NULL,
   `quanxian` int(11) default NULL,
   PRIMARY KEY  (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=gb2312;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 INSERT INTO `user` VALUES ('admin','admin',1);
 INSERT INTO `user` VALUES ('ibeifeng','123',0);
 INSERT INTO `user` VALUES ('lifengxing','123',0);
@@ -96,7 +96,7 @@ CREATE TABLE `vip` (
   `age` int(11) default NULL,
   `profession` varchar(20) default NULL,
   PRIMARY KEY  (`vipId`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=gb2312;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 INSERT INTO `vip` VALUES (1,'2009-12-15','刘爱明',30,'工程师');
 INSERT INTO `vip` VALUES (2,'2009-12-15','张力',50,'评论员');
 INSERT INTO `vip` VALUES (3,'2009-12-01','秦华',21,'职业玩家');
