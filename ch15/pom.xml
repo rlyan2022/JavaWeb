@@ -73,11 +73,11 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.googlecode</groupId>
-            <artifactId>jsonplugin</artifactId>
-            <version>0.33</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.googlecode</groupId>-->
+            <!--<artifactId>jsonplugin</artifactId>-->
+            <!--<version>0.33</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>opensymphony</groupId>
             <artifactId>ognl</artifactId>
