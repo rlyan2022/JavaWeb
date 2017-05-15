@@ -20,6 +20,7 @@
         <module name="ch12" />
         <module name="ch13" />
         <module name="ch14" />
+        <module name="ch15" />
         <module name="jodetimedemo" />
       </profile>
     </annotationProcessing>
@@ -38,6 +39,7 @@
       <module name="ch12" target="1.5" />
       <module name="ch13" target="1.5" />
       <module name="ch14" target="1.7" />
+      <module name="ch15" target="1.7" />
       <module name="JavaWeb" target="1.5" />
       <module name="jodetimedemo" target="1.7" />
     </bytecodeTargetLevel>

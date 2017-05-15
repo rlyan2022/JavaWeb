@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="struts2" extends="json-default">
+		<action name="login" class="loginAction">
+			<result type="json"/>
+		</action>
+		<action name="userAdd" class="userAddAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO</param>
+			</result>
+		</action>
+		<action name="getUsers" class="getUserAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO</param>
+			</result>
+		</action>
+		<action name="deleteUser" class="deleteUserAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO,payOutDAO</param>
+			</result>
+		</action>
+		<action name="updateUser" class="updateUserAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO</param>
+			</result>
+		</action>
+		<action name="queryUser" class="queryUserAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO</param>
+			</result>
+		</action>
+		
+		<action name="addPayOut" class="addPayOutAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO,payOutDAO</param>
+			</result>
+		</action>
+		
+		<action name="getPayOut" class="getPayOutAction">
+			<result type="json">
+				<param name="excludeProperties">userDAO,payOutDAO</param>
+			</result>
+		</action>
+		
+		<action name="deletePayOut" class="deletePayOutAction">
+			<result type="json">
+				<param name="excludeProperties">payOutDAO</param>
+			</result>
+		</action>
+		<action name="updatePayOut" class="updatePayOutAction">
+			<result type="json">
+				<param name="excludeProperties">payOutDAO</param>
+			</result>
+		</action>
+		
+		<action name="queryPayOut" class="queryPayOutAction">
+			<result type="json">
+				<param name="excludeProperties">payOutDAO,userDAO</param>
+			</result>
+		</action>
+	</package>
+</struts>

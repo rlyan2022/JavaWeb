@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3308/pfms</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>1016</value>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/sanqing/po/User.hbm.xml</value>
+				<value>com/sanqing/po/PayOut.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<!-- 声明一个 Hibernate 3 的事务管理器供代理类自动管理事务用 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="userDAO" class="com.sanqing.dao.UserDAOImp">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+	
+	<bean id="userDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref bean="userDAO" />
+		</property>
+
+		<property name="transactionAttributes">
+			<props>
+				<!-- 这里的方法签名可以精确到方法全配置上 -->
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="loginAction" class="com.sanqing.action.LoginAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="userAddAction" class="com.sanqing.action.UserAddAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="getUserAction" class="com.sanqing.action.GetUserAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="deleteUserAction" class="com.sanqing.action.DeleteUserAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+		<property name="payOutDAO">
+			<ref bean="payOutDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="updateUserAction" class="com.sanqing.action.UpdateUserAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="queryUserAction" class="com.sanqing.action.QueryUserAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="payOutDAO" class="com.sanqing.dao.PayOutDAOImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate"/>
+		</property>
+	</bean>
+	
+	<bean id="payOutDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref bean="payOutDAO" />
+		</property>
+
+		<property name="transactionAttributes">
+			<props>
+				<!-- 这里的方法签名可以精确到方法全配置上 -->
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="addPayOutAction" class="com.sanqing.action.AddPayOutAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+		<property name="payOutDAO">
+			<ref bean="payOutDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="getPayOutAction" class="com.sanqing.action.GetPayOutAction">
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+		<property name="payOutDAO">
+			<ref bean="payOutDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="deletePayOutAction" class="com.sanqing.action.DeletePayOutAction">
+		<property name="payOutDAO">
+			<ref bean="payOutDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="updatePayOutAction" class="com.sanqing.action.UpdatePayOutAction">
+		<property name="payOutDAO">
+			<ref bean="payOutDAOProxy"/>
+		</property>
+	</bean>
+	
+	<bean id="queryPayOutAction" class="com.sanqing.action.QueryPayOutAction">
+		<property name="payOutDAO">
+			<ref bean="payOutDAOProxy"/>
+		</property>
+		<property name="userDAO">
+			<ref bean="userDAOProxy"/>
+		</property>
+	</bean>
+
+</beans>
