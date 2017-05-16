@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <form-beans>
+    <form-bean name="bookCaseForm" type="com.actionForm.BookCaseForm" />
+    <form-bean name="managerForm" type="com.actionForm.ManagerForm" />
+    <form-bean name="libraryForm" type="com.actionForm.LibraryForm" />
+    <form-bean name="ParameterForm" type="com.actionForm.ParameterForm" />
+    <form-bean name="readerTypeForm" type="com.actionForm.ReaderTypeForm" />
+    <form-bean name="bookTypeForm" type="com.actionForm.BookTypeForm" />
+    <form-bean name="readerForm" type="com.actionForm.ReaderForm" />
+    <form-bean name="bookForm" type="com.actionForm.BookForm" />
+    <form-bean name="publishingForm" type="com.actionForm.PublishingForm" />
+    <form-bean name="borrowForm" type="com.actionForm.BorrowForm" />
+  </form-beans>
+  <action-mappings type="org.apache.struts.action.ActionMapping">
+    <action name="bookCaseForm" path="/bookCase" scope="request" type="com.action.BookCase" validate="true">
+      <forward name="bookcaseQuery" path="/bookcase.jsp" />
+      <forward name="bookcaseAdd" path="/bookcase_ok.jsp?para=1" />
+      <forward name="bookCaseQueryModify" path="/bookCase_Modify.jsp" />
+      <forward name="bookCaseModify" path="/bookcase_ok.jsp?para=2" />
+      <forward name="bookCaseDel" path="/bookcase_ok.jsp?para=3" />
+      <forward name="error" path="/error.jsp" />
+    </action>
+    <action name="managerForm" path="/manager" scope="request" type="com.action.Manager" validate="true">
+      <forward name="managerQuery" path="/manager.jsp" />
+      <forward name="managerLoginok" path="/main.jsp" />
+      <forward name="managerAdd" path="/manager_ok.jsp?para=1" />
+      <forward name="managerQueryModify" path="/manager_Modify.jsp" />
+      <forward name="managerModify" path="/manager_ok.jsp?para=2" />
+      <forward name="pwdQueryModify" path="/pwd_Modify.jsp" />
+      <forward name="pwdModify" path="/pwd_ok.jsp" />
+      <forward name="managerDel" path="/manager_ok.jsp?para=3" />
+      <forward name="modifypwd" path="/main.jsp" />
+      <forward name="error" path="/error.jsp" />
+    </action>
+    <action name="libraryForm" path="/library" scope="request" type="com.action.Library" validate="true">
+      <forward name="error" path="/error.jsp" />
+      <forward name="librarymodify" path="/library_ok.jsp?para=2" />
+      <forward name="librarymodifyQuery" path="/library_modify.jsp" />
+    </action>
+    <action name="ParameterForm" path="/parameter" scope="request" type="com.action.Parameter" validate="true">
+      <forward name="error" path="/error.jsp" />
+      <forward name="parametermodify" path="/parameter_ok.jsp?para=2" />
+      <forward name="parametermodifyQuery" path="/parameter_modify.jsp" />
+    </action>
+    <action name="readerTypeForm" path="/readerType" scope="request" type="com.action.ReaderType" validate="true">
+      <forward name="readerTypeQuery" path="/readerType.jsp" />
+      <forward name="readerTypeAdd" path="/readerType_ok.jsp?para=1" />
+      <forward name="readerTypeQueryModify" path="/readerType_Modify.jsp" />
+      <forward name="readerTypeModify" path="/readerType_ok.jsp?para=2" />
+      <forward name="readerTypeDel" path="/readerType_ok.jsp?para=3" />
+      <forward name="error" path="/error.jsp" />
+    </action>
+    <action name="bookTypeForm" path="/bookType" scope="request" type="com.action.BookType" validate="true">
+      <forward name="bookTypeQuery" path="/bookType.jsp" />
+      <forward name="bookTypeAdd" path="/bookType_ok.jsp?para=1" />
+      <forward name="bookTypeQueryModify" path="/bookType_Modify.jsp" />
+      <forward name="bookTypeModify" path="/bookType_ok.jsp?para=2" />
+      <forward name="bookTypeDel" path="/bookType_ok.jsp?para=3" />
+      <forward name="error" path="/error.jsp" />
+    </action>
+    <action name="readerForm" path="/reader" scope="request" type="com.action.Reader" validate="true">
+      <forward name="readerQuery" path="/reader.jsp" />
+      <forward name="readerAdd" path="/reader_ok.jsp?para=1" />
+      <forward name="readerQueryModify" path="/reader_Modify.jsp" />
+      <forward name="readerDeatil" path="/reader_detail.jsp" />
+      <forward name="readerModify" path="/reader_ok.jsp?para=2" />
+      <forward name="readerDel" path="/reader_ok.jsp?para=3" />
+      <forward name="error" path="/error.jsp" />
+    </action>
+    <action name="bookForm" path="/book" scope="request" type="com.action.Book" validate="true">
+      <forward name="bookQuery" path="/book.jsp" />
+      <forward name="bookifQuery" path="/bookQuery.jsp" />
+      <forward name="bookAdd" path="/book_ok.jsp?para=1" />
+      <forward name="bookQueryModify" path="/book_Modify.jsp" />
+      <forward name="bookDeatil" path="/book_detail.jsp" />
+      <forward name="bookModify" path="/book_ok.jsp?para=2" />
+      <forward name="bookDel" path="/book_ok.jsp?para=3" />
+      <forward name="error" path="/error.jsp" />
+    </action>
+    <action name="publishingForm" path="/publishing" scope="request" type="com.action.Publishing" validate="true" />
+    <action name="borrowForm" path="/borrow" scope="request" type="com.action.Borrow" validate="true">
+      <forward name="bookBorrowSort" path="/bookBorrowSort.jsp" />
+      <forward name="readerBorrowSort" path="/readerBorrowSort.jsp" />
+      <forward name="bookborrow" path="/bookBorrow.jsp" />
+      <forward name="borrowQuery" path="/borrowQuery.jsp" />
+      <forward name="bookborrowok" path="/bookBorrow_ok.jsp" />
+      <forward name="bookrenew" path="/bookRenew.jsp" />
+      <forward name="bookrenewok" path="/bookRenew_ok.jsp" />
+      <forward name="bookback" path="/bookBack.jsp" />
+      <forward name="bookbackok" path="/bookBack_ok.jsp" />
+      <forward name="Bremind" path="/bremind.jsp" />
+      <forward name="error" path="/error.jsp" />
+    </action>
+  </action-mappings>
+  <message-resources parameter="com.wgh.struts.ApplicationResources" />
+</struts-config>
+
