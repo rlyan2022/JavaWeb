@@ -1,11 +1,14 @@
 package com.goldhome.util;
 
+import com.google.common.collect.Lists;
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.Instant;
 import org.joda.time.Months;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
+
+import java.util.List;
 
 /**
  * 时间处理共同类
@@ -28,12 +31,58 @@ public final class TimeUtils {
      * 1天中的秒数.
      */
     public static final int DAY_SECOND = 86400;
+    /**
+     * 日期格式转换
+     */
+    private static List<String> dateFormatList = Lists.newArrayList();
 
     /**
      * 构造方法.
+     *
      * @throws Exception 抛出异常
      */
     private TimeUtils() throws Exception {
+    }
+
+    static {
+        dateFormatList.add("yyyy-MM-dd HH:mm:ss");
+        dateFormatList.add("yyyy-MM-dd HH:mm");
+        dateFormatList.add("yyyy-MM-dd HH");
+        dateFormatList.add("yyyy-MM-dd");
+        dateFormatList.add("yyyyMMdd");
+        dateFormatList.add("yyyyMMddHH");
+        dateFormatList.add("yyyyMMddHHmm");
+        dateFormatList.add("yyyyMMddHHmmss");
+    }
+
+    /**
+     * 将字符串转换为日期："yyyy-MM-dd"、"yyyy-MM-dd HH:mm"
+     * 等格式的时间转换为DateTime类型的日期
+     *
+     * @param dateStr 时间字符串
+     * @return DateTime类型的日期
+     */
+    public static DateTime formatToDate(String dateStr) {
+        if (null == dateStr || "".equals(dateStr)) {
+            return null;
+        }
+
+        dateStr = dateStr.replaceAll("/", "-");
+        DateTime dateTime = null;
+        DateTimeFormatter formatter;
+
+        //匹配日期的多种格式，所以循环中嵌套了异常捕获
+        for (String pattern : dateFormatList) {
+            try {
+                formatter = DateTimeFormat.forPattern(pattern);
+                dateTime = DateTime.parse(dateStr, formatter);
+                break;
+            } catch (IllegalArgumentException ex) {
+
+            }
+        }
+
+        return dateTime;
     }
 
     /**
@@ -62,14 +111,12 @@ public final class TimeUtils {
      * 日期转换为UTC时间.
      *
      * @param date    日期
-     * @param pattern 日期格式
      * @return utc时间
      */
-    public static long dateToUtc(final String date, final String pattern) {
+    public static long dateToUtc(final String date) {
         long utc;
 
-        DateTimeFormatter format = DateTimeFormat.forPattern(pattern);
-        DateTime dateTime = DateTime.parse(date, format);
+        DateTime dateTime = formatToDate(date);
 
         utc = dateTime.getMillis() / SECOND;
         return utc;
@@ -115,12 +162,10 @@ public final class TimeUtils {
      * 如果是夏令时时间，添加上(DST).
      *
      * @param dateStr 日期
-     * @param pattern 格式化
      * @return 返回修改后的日期
      */
-    public static String dateAddDst(final String dateStr,
-                                    final String pattern) {
-        long utc = dateToUtc(dateStr, pattern);
+    public static String dateAddDst(final String dateStr) {
+        long utc = dateToUtc(dateStr);
         String date = dateStr;
         if (isDaylightTime(utc)) {
             date += "(DST)";
