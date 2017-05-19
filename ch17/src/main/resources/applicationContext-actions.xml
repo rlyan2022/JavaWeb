@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xmlns:aop="http://www.springframework.org/schema/aop"
+	     xmlns:tx="http://www.springframework.org/schema/tx"
+	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+    
+    <bean name="/user" class="com.sanqing.course.action.UserAction">
+    	<property name="userDao" ref="userDao"/>
+    	<property name="teacherDao" ref="teacherDao"/>
+    	<!-- 
+    	<property name="uploadPath">
+    		<value>C:\\Program Files\\Apache Software Foundation\\Tomcat 5.5\\webapps\\ssh_model\\images\\item\\</value>
+    	</property>
+    	 -->
+    </bean>
+    
+    <bean name="/teacher" class="com.sanqing.course.action.TeacherAction">
+    	<property name="teacherDao" ref="teacherDao"/>
+    	<property name="courseDao" ref="courseDao"/>
+    	<property name="teamDao" ref="teamDao"/>
+    	<property name="courseScheduleDao" ref="courseScheduleDao"/>
+    </bean>
+    
+    <bean name="/student" class="com.sanqing.course.action.StudentAction">
+    	<property name="studentDao" ref="studentDao"/>
+    	<property name="teamDao" ref="teamDao"/>
+    	<property name="teacherDao" ref="teacherDao"/>
+    	<property name="courseDao" ref="courseDao"/>
+    </bean>
+    
+    <bean name="/mark" class="com.sanqing.course.action.MarkAction">
+    	<property name="markDao" ref="markDao"/>
+    	<property name="courseDao" ref="courseDao"/>
+    	<property name="studentDao" ref="studentDao"/>
+    	<property name="teamDao" ref="teamDao"/>
+    	<property name="courseScheduleDao" ref="courseScheduleDao"/>
+    </bean>
+    
+    <bean name="/team" class="com.sanqing.course.action.TeamAction">
+    	<property name="teamDao" ref="teamDao"/>
+    	<property name="courseScheduleDao" ref="courseScheduleDao"/>
+    </bean>
+    
+    <bean name="/course" class="com.sanqing.course.action.CourseAction">
+    	<property name="courseDao" ref="courseDao"/>
+    	<property name="courseScheduleDao" ref="courseScheduleDao"/>
+    </bean>
+    
+    <bean name="/courseSchedule" class="com.sanqing.course.action.CourseScheduleAction">
+    	<property name="teacherDao" ref="teacherDao"/>
+    	<property name="teamDao" ref="teamDao"/>
+    	<property name="courseDao" ref="courseDao"/>
+    	<property name="courseScheduleDao" ref="courseScheduleDao"/>
+    </bean>
+    
+</beans>

@@ -1,0 +1,133 @@
+body {
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* Header */
+div#header {
+	padding: 10px 0 10px 30px;
+	text-align: left;
+	margin: 0;
+	background: white url( images/background.gif ) top left repeat-x;
+}
+
+div#header h1 {
+	font-size: 36px;
+	color: #3e9ade;
+	margin: 0;
+}
+
+/* END Header */
+
+/* Content */
+#content h1 {
+	font-size: 27px;
+	color: #b4c24b;
+}
+
+/* FORMS */
+#content form.form {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid #ccc;
+}
+
+#content form input.text {
+	border: 1px solid #ddd;
+	padding: 4px;
+	margin: 5px 0 10px 0;
+}
+
+#content form textarea {
+	border: 1px solid #ddd;
+	padding: 4px;
+	margin: 5px 0 10px 0;
+}
+
+#content input.button, button.button {
+	width: 5em;
+	padding: 4px 4px 0 0;
+}
+
+#content  button.viewbutton {
+	width: 20px;
+	padding: 2px 2px 0 0;
+	margin: 4px 0 7px 4px;
+}
+
+#content form label {
+	margin: 4px 20px 3px 0;
+	border: 0;
+	color: #444;
+	display: block;
+	font-weight: bold;
+}
+
+.req {
+	color: #f90;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#content #viewTable {
+	border-collapse: collapse;
+}
+
+#content #viewTable td {
+	border: 1px solid #ccc;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* END Content */
+
+/* Menu */
+#menu ul {
+	list-style: none;
+	width: 150px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+#menu li {
+	margin-bottom: 4px;
+}
+
+#menu li a {
+	font-weight: bold;
+	height: 20px;
+	text-decoration: none;
+	color: #505050;
+	display: block;
+	padding: 6px 0 3px 10px;
+	background: #f4f4f4;
+	border-left: 4px solid #cccccc;
+}
+
+#menu li a:hover {
+	background: #eaeaea;
+	color: #286ea0;
+	border-left: 4px solid #286ea0;
+}
+
+/* End Menu */
+
+/* Messages */
+div.error, div.message {
+	border: 1px solid black;
+	padding: 4px;
+}
+
+div.error {
+/* use a different color for the errors */
+	border: 2px solid red;
+}
+
+span.fieldError {
+	color: maroon !important;
+}
+
+/* END Messages */

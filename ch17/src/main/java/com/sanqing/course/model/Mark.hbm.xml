@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sanqing.course.model">
+	
+	<class name="Mark" table="Mark" lazy="false">
+		
+		<id name="id" unsaved-value="null">
+			<generator class="uuid.hex"/>
+		</id>
+		
+		<property name="score" not-null="false"/>
+		
+		<!-- 级联学生 -->	
+		<many-to-one name="student" column="studentId" class="Student" />
+			
+		<!-- 级联课程 -->		
+		<many-to-one name="course" column="courseId" class="Course" />
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xmlns:aop="http://www.springframework.org/schema/aop"
+	     xmlns:tx="http://www.springframework.org/schema/tx"
+	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+	<bean id="userDao" class="com.sanqing.course.daoImpl.UserDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="courseDao" class="com.sanqing.course.daoImpl.CourseDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="markDao" class="com.sanqing.course.daoImpl.MarkDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="studentDao" class="com.sanqing.course.daoImpl.StudentDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="teacherDao" class="com.sanqing.course.daoImpl.TeacherDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="teamDao" class="com.sanqing.course.daoImpl.TeamDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="courseScheduleDao" class="com.sanqing.course.daoImpl.CourseScheduleDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	
+	<bean id="myfunction" class="com.sanqing.course.util.Functions">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+</beans>

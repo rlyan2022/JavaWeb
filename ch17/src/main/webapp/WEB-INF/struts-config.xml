@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>   
+
+	<!-- 注册ActionForm -->
+	<form-beans>
+		<form-bean name="userForm" type="com.sanqing.course.form.UserForm"/>
+		<form-bean name="courseForm" type="com.sanqing.course.form.CourseForm"/>
+		<form-bean name="markForm" type="com.sanqing.course.form.MarkForm"/>
+		<form-bean name="studentForm" type="com.sanqing.course.form.StudentForm"/>
+		<form-bean name="teacherForm" type="com.sanqing.course.form.TeacherForm"/>
+		<form-bean name="teamForm" type="com.sanqing.course.form.TeamForm"/>
+		<form-bean name="courseScheduleForm" type="com.sanqing.course.form.CourseScheduleForm"/>
+	</form-beans>
+	
+	<!-- 注册ActionMapping -->
+	<action-mappings>
+	
+		<action path="/user" 
+				name="userForm" 
+		 		type="org.springframework.web.struts.DelegatingActionProxy" 
+		 		parameter="p" 
+		 		scope="request"
+		 		validate="false">
+		 	<forward name="edit" path="/user_edit.jsp"/>
+		 	<forward name="list" path="/user_list.jsp"/>
+		 	<forward name="logonSuccess" path="/admin/index.jsp"/>
+		 	<forward name="logoffSuccess" path="/logon.jsp"/>
+		 	<forward name="logonFailure" path="/logon.jsp"/>
+		</action>
+		
+	    <action path="/course" 
+				name="courseForm" 
+		 		type="org.springframework.web.struts.DelegatingActionProxy" 
+		 		parameter="p" 
+		 		scope="request"
+		 		validate="false">	
+		 	<forward name="edit" path="/course_edit.jsp"/>
+		 	<forward name="detail" path="/course_detail.jsp"/>
+		 	<forward name="list" path="/course_list.jsp"/> 	
+		</action>
+		
+		<action path="/courseSchedule" 
+				name="courseScheduleForm" 
+		 		type="org.springframework.web.struts.DelegatingActionProxy" 
+		 		parameter="p" 
+		 		scope="request"
+		 		validate="false">
+		 	<forward name="input" path="/mark_input.jsp"/>	
+		 	<forward name="edit" path="/team_detail_edit.jsp"/>
+		 	<forward name="list" path="/courseSchedule_list.jsp"/> 	
+		</action>
+		
+		<action path="/mark" 
+				name="markForm" 
+		 		type="org.springframework.web.struts.DelegatingActionProxy" 
+		 		parameter="p" 
+		 		scope="request"
+		 		validate="false">	
+		 	<forward name="edit" path="/mark_edit.jsp"/> 
+		 	<forward name="list" path="/mark_list.jsp"/> 
+		 	<forward name="confirm" path="/mark_confirm.jsp"/> 
+		 	<forward name="analyse" path="/mark_analyse.jsp"/> 	
+		</action>
+		
+		<action path="/student" 
+				name="studentForm" 
+		 		type="org.springframework.web.struts.DelegatingActionProxy" 
+		 		parameter="p" 
+		 		scope="request"
+		 		validate="false">	
+		 	<forward name="edit" path="/student_edit.jsp"/>
+		 	<forward name="count" path="/student_count.jsp"/>
+		 	<forward name="list" path="/student_list.jsp"/> 	
+		</action>
+		
+		<action path="/teacher" 
+				name="teacherForm" 
+		 		type="org.springframework.web.struts.DelegatingActionProxy" 
+		 		parameter="p" 
+		 		scope="request"
+		 		validate="false">	
+		 	<forward name="edit" path="/teacher_edit.jsp"/>
+		 	<forward name="list" path="/teacher_list.jsp"/> 	
+		 	<forward name="detail" path="/teacher_detail.jsp"/> 
+		 	<forward name="editCourse" path="/teacher_detail_edit.jsp"/> 
+		 	
+		</action>
+		
+		<action path="/team" 
+				name="teamForm" 
+		 		type="org.springframework.web.struts.DelegatingActionProxy" 
+		 		parameter="p" 
+		 		scope="request"
+		 		validate="false">	
+		 	<forward name="edit" path="/team_edit.jsp"/>
+		 	<forward name="list" path="/team_list.jsp"/> 
+		 	<forward name="detail" path="/team_detail.jsp"/> 
+		 	<forward name="editDetail" path="/team_detail_edit.jsp"/> 	
+		</action>
+		
+	</action-mappings>
+	
+	<message-resources parameter="resources.ApplicationResources" />
+	
+</struts-config>
+
+

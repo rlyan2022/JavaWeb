@@ -1,0 +1,86 @@
+body {
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: white url( images/background.gif ) top left repeat-x;
+}
+
+div#page {
+	width: 780px;
+}
+
+/* Header */
+div#header {
+	padding: 10px 0 10px 30px;
+	text-align: left;
+	margin: 0;
+}
+
+div#header h1 {
+	font-size: 36px;
+	color: #3e9ade;
+	margin: 0;
+}
+
+/* END Header */
+
+/* Content */
+#content h1 {
+	font-size: 27px;
+	color: #b4c24b;
+}
+
+/* FORMS */
+#content form.form {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid #ccc;
+}
+
+#content form input.text {
+	border: 1px solid #ddd;
+}
+
+#content form textarea {
+	border: 1px solid #ddd;
+}
+
+#content input.button, button {
+	width: 6em;
+	padding: 4px 4px 0 0;
+}
+
+#content form label {
+	margin: 4px 20px 3px 0;
+	border: 0;
+	color: #333666;
+	display: block;
+	font-weight: bold;
+	font-size: 9pt;
+}
+
+.req {
+	color: #f90;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+/* END Content */
+
+/* Messages */
+div.error, div.message {
+	border: 1px solid black;
+	padding: 4px;
+}
+
+div.error {
+/* use a different color for the errors */
+	border: 2px solid red;
+}
+
+span.fieldError {
+	color: maroon !important;
+}
+
+/* END Messages */

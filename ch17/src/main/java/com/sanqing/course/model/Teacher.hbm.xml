@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sanqing.course.model">
+	
+	<class name="Teacher" table="Teacher" lazy="false">
+		
+		<id name="id" unsaved-value="null">
+			<generator class="uuid.hex"/>
+		</id>
+		
+		<property name="name" not-null="false"/>
+		
+		<one-to-one name="user" class="User" fetch="join" cascade="all" />
+		
+		<!-- 级联Course -->
+		<set name="courses" table="teacher_course" cascade="none" lazy="true">
+			<key column="teacherId"></key>
+			<many-to-many class="Course" column="courseId"/>
+		</set>
+		
+	</class>
+</hibernate-mapping>

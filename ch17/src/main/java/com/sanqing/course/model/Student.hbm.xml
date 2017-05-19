@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sanqing.course.model">
+	
+	<class name="Student" table="Student" lazy="false">
+		
+		<id name="id" unsaved-value="null">
+			<generator class="uuid.hex"/>
+		</id>
+		
+		<property name="code" not-null="false"/>
+		<property name="name" not-null="false"/>
+		<property name="enrollDate" not-null="false"/>
+		<property name="birthday" not-null="false"/>
+		<property name="sex" not-null="false"/>
+					
+		<!-- 级联班级 -->	
+		<many-to-one name="team" column="teamId" class="Team" />
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,421 @@
+<style type="text/css">  <!--
+
+/* ---------- 文字链接 － 链接的普通状态 ---------- */
+A:link {
+color: #0000FF;
+TEXT-DECORATION: none;}
+
+/* ---------- 文字链接 － 已被访问链接 ---------- */
+A:visited {
+COLOR: #0000FF;
+TEXT-DECORATION: none}
+
+/* ---------- 文字链接 － 处于活动状态链接 ---------- */
+A:active  {
+COLOR: #3333ff;
+TEXT-DECORATION: none}
+
+/* ---------- 文字链接 － 指针在链接上 ---------- */
+A:hover   {
+COLOR: #ff0000;
+text-decoration: underline;}
+
+/* ---------- 页面样式定义 ---------- */
+body {
+font-size: 10pt;                             /* 字体大小                  */
+font-family:Verdana;                         /* 字体名称                  */
+scrollbar-face-color: #DEE3E7;               /* 滚动条凸出部分的颜色      */
+scrollbar-highlight-color: #FFFFFF;          /* 滚动条空白部分的颜色      */
+scrollbar-shadow-color: #DEE3E7;             /* 立体滚动条阴影的颜色      */
+scrollbar-3dlight-color: #D1D7DC;            /* 滚动条亮边的颜色          */
+scrollbar-arrow-color: #006699;              /* 上下按钮上三角箭头的颜色  */
+scrollbar-track-color: #EFEFEF;              /* 滚动条的背景颜色          */
+scrollbar-darkshadow-color: #98AAB1;}        /* 动条强阴影的颜色          */
+
+/* ---------- 文字标题分割线 ---------- */
+.hr1 {
+color: #EFEFEF;                              /* 线颜色               */
+width: 99%;                                  /* 线宽度               */
+text-align:left;                             /* 线位置               */
+height:3px;  }                               /* 线厚度（高度）       */
+
+/* ---------- 文字标题分割线 ---------- */
+.hr2 {
+color: #EFEFEF;                              /* 线颜色               */
+width: 99%;                                  /* 线宽度               */
+text-align:left;                             /* 线位置               */
+height:3px;  }                               /* 线厚度（高度）       */
+
+/* ---------- 内容页背景定义 ---------- */
+.bodycolor {
+BACKGROUND: #ffffff; }                                          /*  背景演示 */
+
+/* ---------- 主操作区分页背景定义 ---------- */
+.bodycolor2 {
+BACKGROUND: #ffffff; }                                          /*  背景 */
+
+/* ---------- 面板背景样式 ---------- */
+.panel {
+BACKGROUND: #F3F8FD;  }
+
+/* ---------- 选中状态正常颜色 ---------- */
+.menu_top_mouse1 {
+background-color: #9BC9EA; }
+
+/* ---------- 未选中正常颜色颜色 ---------- */
+.menu_top_mouse2 {
+background-color: #ffffff; }
+
+/* ---------- 鼠标进入颜色 ---------- */
+.menu_top_mouse3 {
+background-color: #eeeeee; }
+
+/* ---------- 菜单选项－选中状态正常颜色 ---------- */
+.menu_operation_1 {
+background-color: #B3D1FF; }
+
+/* ---------- 菜单选项－未选中正常颜色颜色 ---------- */
+.menu_operation_2 {
+background-color: ; }
+
+/* ---------- 菜单选项－鼠标进入颜色 ---------- */
+.menu_operation_3 {
+background-color: #D9E8FF; }
+
+/* ---------- 内容页标题文字 ---------- */
+.title1 {
+font-size: 9pt;
+COLOR: #333666;}
+
+/* ---------- 通用大号字样式 ---------- */
+.big {
+COLOR: #333666;
+font-size: 9pt;}
+
+/* ---------- 通用大号字样式，黑色 ---------- */
+.big1   {
+COLOR: #333666;
+font-size: 9pt;               }
+
+/* ---------- 内容页标题栏文字 ---------- */
+.big2   {
+COLOR: #333666;
+font-size: 9pt}
+
+/* ---------- 内容页标题栏文字 ---------- */
+.big3   {
+font-size: 9pt;
+COLOR: #333666;
+FONT-WEIGHT: bold;}
+
+/* ---------- 内容页标题栏文字 ---------- */
+.big4   {
+COLOR: #333666;}
+
+/* ---------- 消息框样式 ---------- */
+.Message {
+font-size:10pt;                                 /* 字体大小   */
+COLOR:#ff3300;                                  /* 字颜色颜色 */
+BACKGROUND:#F4F3EE;
+margin:10px;
+border:1px                                      /* 周围虚线宽度 */
+dotted #3399CC;                                 /* 周围虚线颜色 */
+font-weight:bold;
+padding:9px; }
+
+/* ---------- 状态栏 中间文字 ---------- */
+.sb_center_text {
+cursor:hand;
+color:#000000; }
+
+/* ---------- 状态栏 在线人数文字 ---------- */
+.sb_online_text {
+color: #0066CC;
+WIDTH: 100%;
+text-decoration: none; }
+
+/* ---------- 状态栏 在线人数数字 ---------- */
+.sb_online_num {
+border:0;
+width:24pt;
+height:12pt;
+color:#0066CC;
+cursor:hand;
+text-align:center;
+FONT-WEIGHT: bold;
+background-color:transparent; }
+
+.small  { font-size: 9pt;}                   /* 通用小号字样式        */
+.small1  { font-size: 9pt;               }   /* 通用小号字样式，黑色  */
+.verybig{ font-size: 24pt}                   /* 特大号字样式          */
+
+/* ---------- 按键样式定义 ---------- */
+input.SmallButton{
+BORDER-RIGHT: #666666 1px solid;
+BORDER-TOP: #666666 1px solid;
+FONT-SIZE: 12px;
+BACKGROUND-IMAGE: url("./images/button_bg.gif");
+BORDER-LEFT: #666666 1px solid;
+BORDER-BOTTOM: #666666 1px solid;
+HEIGHT: 20px;
+BACKGROUND-COLOR: #ffffff }
+
+/* ---------- 按键样式定义 ---------- */
+input.BigButton{
+BORDER-RIGHT: #666666 1px solid;
+BORDER-TOP: #666666 1px solid;
+FONT-SIZE: 12px;
+BACKGROUND-IMAGE: url("./images/button_bg.gif");
+BORDER-LEFT: #666666 1px solid;
+BORDER-BOTTOM: #666666 1px solid;
+HEIGHT: 20px;
+BACKGROUND-COLOR: #ffffff }
+
+/* ----------小输入框样式定义 ---------- */
+input.SmallInput {
+COLOR: #000066;
+BACKGROUND: #F8F8F8;
+border:1 solid black;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+input.SmallInput1{
+COLOR: #000066;
+BACKGROUND: #F8F8F8;
+border:1 solid black;
+BORDER-RIGHT:0;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+/* ----------大输入框样式定义 ---------- */
+input.BigInput   {
+COLOR: #000066;
+BACKGROUND: #F8F8F8;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+input.BigInput1   {
+COLOR: #000000;
+BACKGROUND: #EFF7FF;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: bold;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+input.BigInputMoney{
+COLOR:#000066;
+BACKGROUND: #F8F8F8;
+text-align: RIGHT;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+input.SmallStatic{
+COLOR: #000066;
+BACKGROUND: #E0E0E0;
+border:1 solid black;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+input.BigStatic  {
+COLOR: #000066;
+BACKGROUND: #E0E0E0;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+/* ---------- 按键样式定义 ---------- */
+select.BigSelect{
+COLOR: #000066;
+BACKGROUND: #F8F8F8;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+/* ---------- 按键样式定义 ---------- */
+select.SmallSelect{
+COLOR: #000066;
+BACKGROUND: #F8F8F8;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+select.BigStatic  {
+COLOR: #000066;
+BACKGROUND: #E0E0E0;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+select.SmallStatic{
+COLOR: #000066;
+BACKGROUND: #E0E0E0;
+border:1 solid black;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+HEIGHT: 18px;
+LINE-HEIGHT: normal}
+
+
+textarea.BigInput {
+COLOR: #000066;
+BACKGROUND: #F8F8F8;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+LINE-HEIGHT: normal;}
+
+textarea.BigStatic{
+COLOR: #000066;
+BACKGROUND: #E0E0E0;
+border:1 solid black;
+BORDER-BOTTOM:1px double;
+FONT-SIZE: 9pt;
+FONT-STYLE: normal;
+FONT-VARIANT: normal;
+FONT-WEIGHT: normal;
+LINE-HEIGHT: normal;}
+
+.TableControl{
+BACKGROUND: #D3E5FA;}
+
+.TableButton{
+BACKGROUND: #3a95c2;}
+
+/* ---------- 表格分隔行样式 ---------- */
+.TableSeparator {
+BACKGROUND: #3a95c2;
+color: #FFFFFF;
+font-weight: bold }
+
+/* ---------- 表格标题样式 ---------- */
+.TableHeader {
+BACKGROUND: #D3E5FA;
+color: #FFFFFF;
+font-weight: bold;
+background-image: url("./images/header_bg.gif") }
+
+/* ---------- 表格标题样式 按键 ---------- */
+.TableHeader1 {
+BACKGROUND: #D3E5FA;
+background-image: url("./images/header_bg.gif");
+CURSOR: hand;
+COLOR: #ffffff;} /* ---------- 字体颜色 ---------- */
+
+
+.TableContent{
+BACKGROUND: #E2E8FA;}
+
+.TableData   {
+BACKGROUND: #FFFFFF;
+FONT-SIZE: 10pt;}
+
+.TableLabel   {
+BACKGROUND: #EFF7FF;
+FONT-SIZE: 10pt;}
+
+.TableLabel1   {
+BACKGROUND: #CCCCFF;
+FONT-SIZE: 10pt;}
+
+.TableLine1  {
+BACKGROUND: #F3F3F3;}
+
+.TableLine2  {
+BACKGROUND: #FFFFFF;}
+
+
+
+/* ---------- 其它样式定义 ---------- */
+.deletebg {
+font-family: "宋体";
+font-size: 12px;
+border-color: black black #000000;
+border-style: solid;
+border-top-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+text-align:center; }
+
+
+.querybg {
+font-family: "宋体";
+font-size: 12px; 
+border-color: black black #000000; 
+border-style: solid; 
+border-top-width: 0px; 
+border-right-width: 0px; 
+border-bottom-width: 1px; 
+border-left-width: 0px; }
+
+
+.toolbutton { 
+BORDER-RIGHT: #104a7b 1px solid;    
+BORDER-TOP: #afc4d5 1px solid;    
+BACKGROUND: #d6e7ef;    
+BORDER-LEFT: #afc4d5 1px solid;    
+CURSOR: hand;   
+COLOR: #000066;    
+BORDER-BOTTOM: #104a7b 1px solid; 
+margin: 0pt; 
+width: 60pt;  
+HEIGHT: 18px;    
+FONT-SIZE: 10pt;    
+TEXT-DECORATION: none;
+background-image: url("/images/button_back.gif"); }
+
+
+-->  </style>  
