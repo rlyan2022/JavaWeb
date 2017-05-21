@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+
+	<!--  配置数据源 -->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost:3308/db_oa?useUnicode=true&amp;characterEncoding=utf-8</value>
+		</property>
+		<property name="username">
+			<value>root</value>
+		</property>
+		<property name="password">
+			<value>1016</value>
+		</property>
+	</bean>
+
+
+	<!-- 配置Hibernate -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/demo/hibernate/beans/User.hbm.xml</value>
+				<value>com/demo/hibernate/beans/Address.hbm.xml</value>
+				<value>com/demo/hibernate/beans/Schedule.hbm.xml</value>
+				<value>com/demo/hibernate/beans/Worklog.hbm.xml</value>
+				<value>com/demo/hibernate/beans/Sms.hbm.xml</value>
+				<value>com/demo/hibernate/beans/Notice.hbm.xml</value>
+				<value>com/demo/hibernate/beans/Meeting.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- 配置事务 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+
+	<!-- 定义DAO -->
+	<bean id="userDAO" class="com.demo.hibernate.dao.UserDAO">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="addressDAO" class="com.demo.hibernate.dao.AddressDAO">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="scheduleDAO" class="com.demo.hibernate.dao.ScheduleDAO">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="worklogDAO" class="com.demo.hibernate.dao.WorklogDAO">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="smsDAO" class="com.demo.hibernate.dao.SmsDAO">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="noticeDAO" class="com.demo.hibernate.dao.NoticeDAO">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="meetingDAO" class="com.demo.hibernate.dao.MeetingDAO">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+
+	<!-- 定义DAO代理 -->
+	<bean id="UserDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="userDAO" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="addressDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="addressDAO" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="scheduleDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="scheduleDAO" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="worklogDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="worklogDAO" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="smsDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="smsDAO" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="noticeDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="noticeDAO" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="meetingDAOProxy"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="target">
+			<ref local="meetingDAO" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="insert*">PROPAGATION_REQUIRED</prop>
+				<prop key="update*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED</prop>
+				<prop key="*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- 定义Struts配置 -->
+	<bean name="/login" class="com.demo.struts.actions.LoginAction">
+		<property name="userDAO">
+			<ref local="userDAO" />
+		</property>
+	</bean>
+	<bean name="/logout" class="com.demo.struts.actions.LogoutAction">
+		<property name="userDAO">
+			<ref local="userDAO" />
+		</property>
+	</bean>
+	<bean name="/register"
+		class="com.demo.struts.actions.RegisterAction">
+		<property name="userDAO">
+			<ref local="userDAO" />
+		</property>
+	</bean>
+
+	<!-- 定义Struts配置：address -->
+	<bean name="/address"
+		class="com.demo.struts.actions.AddressAction">
+		<property name="addressDAO">
+			<ref local="addressDAO" />
+		</property>
+	</bean>
+	<bean name="/address_add"
+		class="com.demo.struts.actions.AddressAction">
+		<property name="addressDAO">
+			<ref local="addressDAO" />
+		</property>
+	</bean>
+	<bean name="/address_edit"
+		class="com.demo.struts.actions.AddressAction">
+		<property name="addressDAO">
+			<ref local="addressDAO" />
+		</property>
+	</bean>
+
+
+	<!-- 定义Struts配置：schedule -->
+	<bean name="/schedule"
+		class="com.demo.struts.actions.ScheduleAction">
+		<property name="scheduleDAO">
+			<ref local="scheduleDAO" />
+		</property>
+	</bean>
+	<bean name="/schedule_add"
+		class="com.demo.struts.actions.ScheduleAction">
+		<property name="scheduleDAO">
+			<ref local="scheduleDAO" />
+		</property>
+	</bean>
+	<bean name="/schedule_edit"
+		class="com.demo.struts.actions.ScheduleAction">
+		<property name="scheduleDAO">
+			<ref local="scheduleDAO" />
+		</property>
+	</bean>
+
+	<!-- 定义Struts配置：worklog -->
+	<bean name="/worklog"
+		class="com.demo.struts.actions.WorklogAction">
+		<property name="worklogDAO">
+			<ref local="worklogDAO" />
+		</property>
+	</bean>
+	<bean name="/worklog_add"
+		class="com.demo.struts.actions.WorklogAction">
+		<property name="worklogDAO">
+			<ref local="worklogDAO" />
+		</property>
+	</bean>
+	<bean name="/worklog_edit"
+		class="com.demo.struts.actions.WorklogAction">
+		<property name="worklogDAO">
+			<ref local="worklogDAO" />
+		</property>
+	</bean>
+
+	<!-- 定义Struts配置：sms -->
+	<bean name="/sms" class="com.demo.struts.actions.SmsAction">
+		<property name="smsDAO">
+			<ref local="smsDAO" />
+		</property>
+	</bean>
+	<bean name="/sms_add" class="com.demo.struts.actions.SmsAction">
+		<property name="smsDAO">
+			<ref local="smsDAO" />
+		</property>
+	</bean>
+
+	<!-- 定义Struts配置：notice -->
+	<bean name="/notice" class="com.demo.struts.actions.NoticeAction">
+		<property name="noticeDAO">
+			<ref local="noticeDAO" />
+		</property>
+	</bean>
+	<bean name="/notice_add"
+		class="com.demo.struts.actions.NoticeAction">
+		<property name="noticeDAO">
+			<ref local="noticeDAO" />
+		</property>
+	</bean>
+	<bean name="/notice_edit"
+		class="com.demo.struts.actions.NoticeAction">
+		<property name="noticeDAO">
+			<ref local="noticeDAO" />
+		</property>
+	</bean>
+
+	<!-- 定义Struts配置：meeting -->
+	<bean name="/meeting"
+		class="com.demo.struts.actions.MeetingAction">
+		<property name="meetingDAO">
+			<ref local="meetingDAO" />
+		</property>
+	</bean>
+	<bean name="/meeting_add"
+		class="com.demo.struts.actions.MeetingAction">
+		<property name="meetingDAO">
+			<ref local="meetingDAO" />
+		</property>
+	</bean>
+	<bean name="/meeting_edit"
+		class="com.demo.struts.actions.MeetingAction">
+		<property name="meetingDAO">
+			<ref local="meetingDAO" />
+		</property>
+	</bean>
+
+
+	<!-- 配置拦截器 -->
+	<bean name="logger" class="com.demo.spring.aop.LoggingInterceptor" />
+
+	<!-- 配置拦截器代理 -->
+	<bean name="loggingAutoProxy"
+		class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+		<property name="beanNames">
+			<list>
+				<value>/login</value>
+				<value>/register</value>
+				<value>/address</value>
+				<value>/address_add</value>
+				<value>/address_edit</value>
+				<value>/schedule</value>
+				<value>/schedule_add</value>
+				<value>/schedule_edit</value>
+				<value>/worklog</value>
+				<value>/worklog_add</value>
+				<value>/worklog_edit</value>
+				<value>/sms</value>
+				<value>/sms_add</value>
+				<value>/notice</value>
+				<value>/notice_add</value>
+				<value>/notice_edit</value>
+				<value>/meeting</value>
+				<value>/meeting_add</value>
+				<value>/meeting_edit</value>
+			</list>
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>logger</value>
+			</list>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,53 @@
+/**基本信息：font-size：字体大小*/
+html{margin:0; padding:0;}
+body {
+	font-size: 10pt;
+	background-color:#FCFCFC;
+	border-top:2px #b8c9d6 solid;
+	margin:0; padding-top:10px; padding-left:10px;
+}
+/**link:连接平常的状态,active:连接被按下的时候,visited:连接被访问过之后,hover:鼠标放到连接上的时候*/
+a:link,a:visited,a:active,a:hover {
+	color: #4d87ce;
+}
+/**margin-top：上边界, margin-right: 右边界, margin-bottom: 下边界, margin-left: 左边界*/
+div#listContent,div#footer {
+	margin-top:10px
+}
+/**表格 border-collapse : separate | collapse ;separate:默认值。边框独立(标准HTML),collapse:相邻边被合并 */
+div#listContent table {
+	border-collapse: collapse;
+	border: none;
+}
+/**solid:实线边框*/
+div#listContent th,div#listContent td {
+	border: solid #999 1px;
+}
+/**
+font-weight : normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 
+normal   :　 默认值。正常的字体。相当于 400 。声明此值将取消之前任何设置 
+bold     :　 粗体。相当于 700 。也相当于 b 对象的作用 
+bolder   :　 比 normal 粗 
+lighter  :　 比 normal 细 
+100      :　 字体至少像 200 那样细 
+200      :　 字体至少像 100 那样粗，像 300 那样细 
+300      :　 字体至少像 200 那样粗，像 400 那样细 
+400      :　 相当于 normal  
+500      :　 字体至少像 400 那样粗，像 600 那样细 
+600      :　 字体至少像 500 那样粗，像 700 那样细 
+700      :　 相当于 bold  
+800      :　 字体至少像 700 那样粗，像 900 那样细 
+900      :　 字体至少像 800 那样粗 
+*/
+.actionMessage {
+	font-weight: bold;
+	color:red;
+}
+
+div#comment {
+	margin-top:20px
+}
+.listView{
+	width:100%;
+	color: #4f6b72;	
+}

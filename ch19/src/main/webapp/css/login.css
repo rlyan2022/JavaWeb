@@ -1,0 +1,35 @@
+body{ margin:0;}
+.reg_head{ width:770px; margin:0 auto;  position:relative;}
+.reg_logo{ width:210px; height:75px; position:absolute; margin-top:10px; background-image:url(../images/biglogo.jpg);position:relative;}
+.reg_line{height:7px; background-image:url(../images/reg_line.jpg); width:100%;position:relative; margin-top:10px;overflow:hidden;}
+.reg_center_container{width:770px; height:450px; position:relative; margin:0 auto;  }
+.reg_choose{width:157px; height:42px; position:relative; background-image:url(../images/reg_choose.jpg); margin-left:85px; margin-top:10px; }
+
+.reg_left{ width:309px; position:absolute; height:200px; margin-left:20px; font-size:12px; margin-top:30px;}
+.reg_left_column{ width:309px; height:53px; background-image:url(../images/reg_left_column.jpg);}
+.reg_left_content{ width:257px; border-left:1px #f98b20 solid; border-right:1px #f98b20 solid; padding-left:50px; padding-top:10px; }
+.reg_left_content input{border:1px #f98b20 solid;}
+.reg_left_content img{ border:0; margin-left:30px;}
+.reg_left_bottom{ width:309px; height:16px; background-image:url(../images/reg_left_bottom.jpg); background-repeat:no-repeat;}
+
+.reg_left_down{ width:309px; position:absolute; height:200px; margin-left:40px; font-size:12px; margin-top:250px;text-indent:1em; line-height:20px; }
+
+.reg_center{
+	width:86px;
+	height:312px;
+	background-image:url(../images/reg_fenge.jpg);
+	position:absolute;
+	margin-left:330px;}
+	
+	
+	
+.reg_right{ width:309px; position:absolute; height:200px; margin-left:440px; font-size:12px; margin-top:20px; }
+.reg_right input,textarea{border:1px #f98b20 solid;}
+.reg_right img{ border:0; margin-left:40px;}
+
+.reg_bottom_line{ width:600px; border-bottom:1px #ececec solid; height:10px; margin:0 auto;}
+.reg_foot{ font-size:12px; text-align:center; margin-top:20px;}
+
+.reg_main_container{width:770px;  position:relative; margin:0 auto;  }
+.reg_banner{ width:624px; height:47px; background-image:url(../images/reg_banner.jpg); position:relative;}
+.reg_main_content{ width:288px; margin:10px auto; font-size:12px;  position:relative;}

@@ -24,7 +24,7 @@ CREATE TABLE `tb_bookcase` (
   `name` varchar(30) default NULL,
   `Column_3` char(10) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_bookcase` VALUES (3,'书架1',NULL);
 INSERT INTO `tb_bookcase` VALUES (4,'书架2',NULL);
 
@@ -48,7 +48,7 @@ CREATE TABLE `tb_bookinfo` (
   `del` tinyint(1) default '0',
   `id` int(11) NOT NULL auto_increment,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_bookinfo` VALUES ('9787302047230','Java 2 实用教程',1,'shuanyulin','ceshi','978-7',39,440,4,'2007-11-22','tsoft',1,1);
 INSERT INTO `tb_bookinfo` VALUES ('jk','kjkj',1,'***','','7-302',12,0,1,'2007-11-22','tsoft',1,2);
 INSERT INTO `tb_bookinfo` VALUES ('9787115157690','JSP程序开发范例',1,'***','','978-7',89,816,3,'2007-11-23','tsoft',1,3);
@@ -69,7 +69,7 @@ CREATE TABLE `tb_booktype` (
   `typename` varchar(30) default NULL,
   `days` int(10) unsigned default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_booktype` VALUES (1,'经济管理',40);
 INSERT INTO `tb_booktype` VALUES (3,'人文科教',50);
 INSERT INTO `tb_booktype` VALUES (6,'计算机',30);
@@ -90,7 +90,7 @@ CREATE TABLE `tb_borrow` (
   `operator` varchar(30) default NULL,
   `ifback` tinyint(1) default '0',
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_borrow` VALUES (1,1,1,'2007-11-22','2007-12-22','tsoft',1);
 INSERT INTO `tb_borrow` VALUES (2,1,3,'2007-11-26','2007-12-26','tsoft',0);
 INSERT INTO `tb_borrow` VALUES (3,1,1,'2007-11-26','2007-12-26','tsoft',0);
@@ -116,7 +116,7 @@ CREATE TABLE `tb_giveback` (
   `backTime` date default NULL,
   `operator` varchar(30) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_giveback` VALUES (1,1,1,'2007-11-22','tsoft');
 INSERT INTO `tb_giveback` VALUES (2,3,3,'2007-01-03','Tsoft');
 INSERT INTO `tb_giveback` VALUES (3,7,8,'2010-02-01','admin');
@@ -138,7 +138,7 @@ CREATE TABLE `tb_library` (
   `createDate` date default NULL,
   `introduce` text,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_library` VALUES (1,'智慧图书馆','汪建林','13558690869','四川成都','wangjianlin1985@126.com','http://shop34864101.taobao.com','1999-05-06','本市高级图书馆');
 
 #
@@ -151,7 +151,7 @@ CREATE TABLE `tb_manager` (
   `name` varchar(30) default NULL,
   `PWD` varchar(30) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_manager` VALUES (3,'admin','admin');
 INSERT INTO `tb_manager` VALUES (4,'tsoft','111');
 INSERT INTO `tb_manager` VALUES (5,'wangjianlin','198517');
@@ -166,7 +166,7 @@ CREATE TABLE `tb_parameter` (
   `cost` int(10) unsigned default NULL,
   `validity` int(10) unsigned default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_parameter` VALUES (1,40,3);
 
 #
@@ -177,7 +177,7 @@ DROP TABLE IF EXISTS `tb_publishing`;
 CREATE TABLE `tb_publishing` (
   `ISBN` varchar(20) default NULL,
   `pubname` varchar(30) default NULL
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 INSERT INTO `tb_publishing` VALUES ('7-302','清华大学出版社');
 INSERT INTO `tb_publishing` VALUES ('978-7','人民邮电出版社');
 INSERT INTO `tb_publishing` VALUES ('978-6','中信出版社');
@@ -197,7 +197,7 @@ CREATE TABLE `tb_purview` (
   `borrowback` tinyint(1) default '0',
   `sysquery` tinyint(1) default '0',
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 INSERT INTO `tb_purview` VALUES (3,1,1,1,1,1);
 INSERT INTO `tb_purview` VALUES (4,1,1,1,1,1);
 INSERT INTO `tb_purview` VALUES (5,1,1,1,1,1);
@@ -223,7 +223,7 @@ CREATE TABLE `tb_reader` (
   `remark` text,
   `typeid` int(11) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_reader` VALUES (5,'庞晓庆','男','050930222','学生','1985-05-12','身份证','123456789745614578','010-78945613','fdsfds@ffwe.com','2009-12-18','admin','',1);
 INSERT INTO `tb_reader` VALUES (6,'杨杰','男','050930233','图书馆工作人员','1981-05-12','身份证','123456789745614578','010-456789123','fdsfds@ffwe.com','2009-12-18','admin','',2);
 INSERT INTO `tb_reader` VALUES (7,'欧阳花','女','050930234','教师','1983-05-12','身份证','123456789745614578','010-456789123','fdsfds@ffwe.com','2009-12-18','admin','',3);
@@ -238,7 +238,7 @@ CREATE TABLE `tb_readertype` (
   `name` varchar(50) default NULL,
   `number` int(4) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=gb2312;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 INSERT INTO `tb_readertype` VALUES (1,'学生',3);
 INSERT INTO `tb_readertype` VALUES (2,'工作人员',5);
 INSERT INTO `tb_readertype` VALUES (3,'教师',4);

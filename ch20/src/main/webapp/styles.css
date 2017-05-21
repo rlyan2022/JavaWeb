@@ -1,0 +1,29 @@
+BODY {
+	FONT-FAMILY: "ËÎÌו"; FONT-SIZE: 10pt; LINE-HEIGHT: 10pt;
+}
+TD {
+	FONT-FAMILY: "ËÎÌו"; FONT-SIZE: 10pt; 
+}
+
+a:Link,a:Visited{padding:2px 1px 0 1px;color:#C10202;text-decoration:underline;LINE-HEIGHT: 15pt;}
+a:Hover,a:Active{padding:2px 1px 0 1px;color:#FFFFFF;background:#739342;text-decoration:none;}
+
+hr {
+	filter:alpha(opacity=100,finishopacity=2,style=0);
+	height:3px;
+	color:#A0BF71;
+}
+li {
+	color:#739342;
+	list-style-type: square;
+}
+
+.position {
+	background-color: #D9EBBE;
+}
+.tableheader {
+	background-color: #A0BF71;
+}
+.pager {
+	background-color: #E6E6E6;
+}
