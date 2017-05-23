@@ -153,6 +153,13 @@
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
+                <configuration>
+                    <port>8282</port>
+                    <path>/oa</path>
+                    <uriEncoding>UTF-8</uriEncoding>
+                    <finalName>oa</finalName>
+                    <server>tomcat7</server>
+                </configuration>
             </plugin>
         </plugins>
     </build>
